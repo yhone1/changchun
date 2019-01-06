@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*banner大图*/
+.bannerTitle{
+    text-align: center;
+    background-color: #d9e3d9;
+}
+.bannerTitle p{
+    padding: 15px;
+}
+
+/*套餐*/
+.package{
+    padding: 20px;
+}
+.pacRow{
+    padding-top: 30px;
+}
+.bjColor{
+    text-align: center;
+    background-color: #e1dfd1;
+    padding-bottom: 30px;
+}
+.bjP{
+    line-height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.bjColor h2{
+    margin-top: 0;
+    padding-top: 30px;
+    color: #1e522e;
+}
+
+.packageImg{
+    width: 100%;
+}

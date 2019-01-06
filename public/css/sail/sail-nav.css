@@ -1,0 +1,246 @@
+
+@font-face {
+    font-family: iconfont;
+    src: url("../../fonts/iconfonty.ttf") format("truetype");
+}
+li, ul {
+    list-style: none none;
+    padding: 0;
+}
+body, h1, h3, h5, li, p, ul {
+    margin: 0;
+    font-weight: 400;
+}
+a:hover a:active, a:link, a:visited {
+    text-decoration: none;
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 90;
+}
+.header .header-bar{
+    background-color: black;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.logo a:hover{
+    text-decoration: none;
+}
+.header .logo-cont {
+    height: 80px;
+    position: absolute;
+    left: 32px;
+    top: 0;
+    z-index: 9;
+}
+.header .logo {
+    position: absolute;
+    width: auto;
+    height: 83%;
+    left: 0;
+    top: 9%;
+    overflow: hidden;
+}
+.iconfont {
+    font-family: iconfont,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale
+}
+.header .logo i {
+    color: #fff;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 100%;
+}
+.icon-logo:before {
+    content: "\E616";
+}
+.header .nav-bar {
+    position: relative;
+    width: 100%;
+    z-index: 6;
+}
+.header .nav-bar ul.navigator {
+    display: inline-block;
+    margin-top: 30px;
+}
+.header .nav-bar ul.navigator li.nav-item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 18px;
+    font-size: 18px;
+}
+.header .nav-bar ul.navigator li.nav-item>a {
+    display: block;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.header .nav-bar ul.navigator li.nav-item>a:hover {
+    color: #72bdc4;
+    text-decoration: none;
+}
+.header .nav-bar ul.navigator li.nav-item>a span {
+    display: block;
+    height: 32px;
+}
+.header .nav-bar ul.navigator li.nav-item>a:hover span{
+    border-bottom: 2px solid #72bdc4;
+}
+.subNav .container .subNav-item>a:hover{
+    /*background:none;*/
+    color: #72bdc4;
+    text-decoration: none;
+}
+.roomHover:hover .one{
+    display: block;
+}
+.diningHover:hover .two{
+    display: block;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header .subNav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 58px;
+    left: 0;
+    top: 80px;
+    text-align: left;
+    background-color: #1d1d1d;
+    background-color: rgba(6,6,6,.6);
+}
+.header .subNav>ul {
+    padding-left: 328px;
+}
+.header .subNav .subNav-item {
+    height: 58px;
+    line-height: 58px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 14px;
+}
+.header .nav-bar ul.navigator a {
+    color: white;
+}
+/*.container {*/
+/*max-width: 500px;*/
+/*width: 100%;*/
+/*margin: 0 auto;*/
+/*}*/
+.header .right {
+    z-index: 7;
+    position: absolute;
+    height: 75px;
+    line-height: 75px;
+    color: white;
+    top: 0;
+    right: 32px;
+}
+.header .book-button {
+    position: relative;
+}
+.header .right>* {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 20px;
+}
+.button-golden-filled, .button-primary {
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 40px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff!important;
+    background-color:#72bdc4;
+    /*padding: 0 20px;*/
+    /*margin-top: 0;*/
+}
+.button-primary:hover{
+    background-color: #9cd0d5;
+}
+.header .right .iconfont {
+    cursor: pointer;
+    display: inline-block;
+}
+.icon-menu:before {
+    content: "\E606";
+}
+.icon-close:before {
+    content: "\E602";
+}
+.icon-close,.icon-menu {
+    font-size: 22px;
+    cursor: pointer;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 40px;
+}
+.header .nav-more {
+    display: block;
+    right: -310px;
+    transition: right .4s ease-in;
+    z-index: 9;
+    position: absolute;
+    height: 100%;
+    width: 310px;
+    top: 0;
+    background-color: #141414;
+    background-color: hsla(0,0%,8%,.95);
+    color: #fff;
+    text-align: left;
+    border-radius: 0 0 0 10px;
+}
+.header .nav-more .space {
+    font-size: 20px;
+    color: #fff;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 260px;
+    border-bottom: 1px solid #595959;
+}
+.header .nav-more a{
+    color: white;
+    text-decoration: none;
+}
+.header .nav-more a:hover{
+    color: white;
+    text-decoration: none;
+}
+.header .nav-more .menu-item {
+    position: relative;
+}
+.header .nav-more .menu a, .header .nav-more .menu span, .header .nav-more .submenu a, .header .nav-more .submenu span {
+    font-size: 18px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    cursor: pointer;
+}

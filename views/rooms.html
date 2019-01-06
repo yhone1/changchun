@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>sas</title>
+</head>
+<body>
+
+<%= in_date %>
+房屋模块
+<%= room.room %>
+<% for(var i=0;i<room["room"].length;i++){ %>
+<%= room.room[i].room_type_name %>
+<% for(var j=0;j<room.room[i].device.length;j++){ %>
+<%= room.device[room.room[i].device[j]] %>
+<% } %>
+<%= room.room[i].room_type_more %>
+<%= room.room[i].roomPrice %>
+<% for(var n=0;n<room.room[i].consume.length;n++){ %>
+<%= room.room[i].consume[n].room_consume_name %>
+<%= room.room[i].consume[n].more %>
+<%= room.room[i].consume[n].consume_price %>
+<% for(let value of room.room[i].consume[n].active_consume){ %>
+<%= room.active[value] %>
+<% } %>
+<% } %>
+<% } %>
+</body>
+</html>

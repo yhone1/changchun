@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    width: 100%;
+
+}
+
+.div{
+    border: 1px red solid;
+}
+.sheji{
+    width: 100%;
+    height: 430px;
+    background-color: #f2efe1;
+    margin-top: -5px;
+    text-align: center;
+    overflow: hidden;
+}
+h2{
+    margin-top: 20px;
+    font-weight: lighter;
+    color: #1c7a26;
+}
+.sheji1{
+    width: 45%;
+    height: 60%;
+    padding-top: 70px;
+    float: left;
+    margin-left: 40px;
+}
+.sheji2{
+    width: 500px;
+    height: 300px;
+    /*padding-top: 70px;*/
+    overflow: hidden;
+    float: left;
+    margin-left: 110px;
+    margin-top: 30px;
+    position: relative;
+}
+.sheji3{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+
+}
+.sheji3 img{
+    width: 480px;
+    height: 300px;
+
+}
+.left{
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    left: -30px;
+    top: 45%;
+    z-index: 99;
+}
+.right{
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    right: -30px;
+    top: 45%;
+    z-index: 99;
+}
+
+.bieshu{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    background-color: #e5e5cf;
+}
+
+.bieshu1{
+    margin: 40px;
+    margin-left: 200px;
+    float: left;
+}
+
+.rightsp{
+    color: #1c7a26;
+    font-weight: lighter;
+    font-size: 23px;
+}
+
+.bieshu2{
+    width: 35%;
+    height: 380px;
+    margin: 40px;
+    margin-left: 200px;
+    float: left;
+
+}
+li{
+    font-size: 12px;
+    line-height: 8px;
+}
+.dujia{
+    width: 100%;
+    height: 460px;
+    background-color: #f2efe1;
+}
+.bieshu1a{
+    margin-left: 10px;
+}
+.fuwu{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    background-color: #e5e5cf;
+}
+.fuwu1{
+    margin-top: 130px;
+    margin-left: 240px;
+}
+.lainxi{
+     width: 100%;
+     height: 200px;
+     text-align: center;
+ }
+
+.span1{
+    font-size: 30px;
+    color: gainsboro;
+    font-weight: lighter;
+}.span2{
+     font-size: 21px;
+     color: black;
+     /*font-weight: bold;*/
+ }

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--bootstrap引入-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <title>我们的酒店</title>
+    <!--日期插件-->
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        .p20{
+            padding:20px;
+        }
+        /*.mt20{*/
+        /*margin-top:20px;*/
+        /*}*/
+        .mt40{
+            margin-top:40px;
+        }
+        .mt10{
+            margin-top:10px;
+        }
+        .hide{
+            display: none;
+        }
+        /*body{*/
+        /*height:1000px;*/
+        /*}*/
+    </style>
+    <!--我的样式链接-->
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+<!--首页导航-->
+<nav>
+    <img src="../images/home/logo-retreats.jpg">
+
+    <ul>
+        <li><a href="./stables/stables.html">常青谷</a></li>
+        <li><a href="./castle/castle.html">常青堡</a></li>
+        <li><a href="./sail/sail.html">常青帆</a></li>
+        <li><a href="">盛大开业</a>
+            <ul>
+                <li><a href="./jobOpportunity/water.html">常青泊</a></li>
+                <li><a href="./jobOpportunity/park.html">常青园</a></li>
+                <li><a href="./jobOpportunity/pond.html">常青潭</a></li>
+                <li><a href="./jobOpportunity/wall.html">常青壁</a></li>
+            </ul>
+        </li>
+        <li><a href="./construction/teambuilding.html">团队建设</a></li>
+    </ul>
+    <a href="#">
+        <span>
+        预定房间
+        </span>
+    </a>
+    <a href="/user/user"><span class="glyphicon glyphicon-user ren"></span></a>
+</nav>
+<!--banner轮播-->
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators swiperbutton">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img style="width: 100%" src="../images/home/19_143108_nS_1.jpg">
+        </div>
+        <div class="item">
+            <img style="width: 100%" src="../images/home/23_094603_nC_1.jpg">
+        </div>
+    </div>
+</div>
+
+<!--=================================查找客房=========================-->
+<div class="findRoom">
+
+    <form action="/option.html" method="post">
+        <!--地点-->
+        <input type="text" name="hotelname" list="mydata1" placeholder="酒店类型" >
+        <datalist id="mydata1">
+            <option value="常青谷"></option>
+            <option value="常青堡"></option>
+        </datalist>
+        <!--日期-->
+        <!--<input type="text" readonly placeholder="2018-11-20 至 2018-11-22">-->
+        <div class="p20">
+            <div class="mt40">
+                <!--<div>年月日范围选择，无最大最小值</div>-->
+                <div class="c-datepicker-date-editor J-datepicker-range-day mt10">
+                    <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+                    <input placeholder="开始日期" name="in_date" class="c-datepicker-data-input only-date" value="">
+                    <span class="c-datepicker-range-separator">-</span>
+                    <input placeholder="结束日期" name="out_date" class="c-datepicker-data-input only-date" value="">
+                </div>
+            </div>
+        </div>
+        <!--套房数-->
+        <input type="text" name="room_number" list="mydata2" placeholder="套房数" >
+        <datalist id="mydata2">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+        </datalist>
+        <!--每套房人数-->
+        <input name="adultNum" type="text" list="mydata3" placeholder="每套房人数" >
+        <datalist id="mydata3">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+        </datalist>
+        <!--查找客房-->
+        <!--<a href="booking/option.html">-->
+        <span class="find">
+                查找客房
+            </span>
+        <!--</a>-->
+        <!--儿童数-->
+        <br>
+
+        <input name="childNum" type="text" list="mydata4" placeholder="儿童数" >
+        <datalist id="mydata4">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+        </datalist>
+        <!--优惠码-->
+        <input type="text" placeholder="优惠码" readonly>
+    </form>
+</div>
+
+<!--优惠套餐-->
+<div class="onSale">
+    <div class="onSale1">
+        <div class="onSaleTitle">
+            <h2>优惠套餐</h2>
+        </div>
+        <!--优惠四项-->
+        <div class="waiWei">
+            <div class="zi1 z1">
+                <img src="../images/home/17_115337_20180813-nS-Autumn-FIT-webbanner-v1.jpg" alt="">
+                <div class="content1">
+                    <h3>“趣”野秋谷套餐</h3>
+                    <p>常青谷, 莫干山</p>
+                    <p>承欢于大自然的丰裕季节，凉爽的秋风送来收获的喜悦！</p>
+                    <span><a href="castle/off-qu.html">了解更多</a></span>
+                </div>
+            </div>
+            <div class="zi1 z2">
+                <img src="../images/home/banner.jpg" alt="">
+                <div class="content1">
+                    <h3>提前预订 优惠立享</h3>
+                    <p>常青谷/常青堡, 莫干山</p>
+                    <p>即日起提前14日预订常青谷或常青堡度假村即可享受标准门市价9折优惠！</p>
+                    <span><a href="OnSale/lead1.html">了解更多</a></span>
+                </div>
+            </div>
+            <div class="zi1 z3">
+                <img src="../images/home/06_111334_banner.jpg" alt="">
+                <div class="content1">
+                    <h3>常青深度体验之旅</h3>
+                    <p>常青谷/常青堡, 莫干山</p>
+                    <p>针对马术学习者推出量身订制的套餐，你将在假期中获得休憩，同时收获新事物又结识同好！</p>
+                    <span><a href="stables/immersive.html">了解更多</a></span>
+                </div>
+            </div>
+            <div class="zi1 z4">
+                <img src="../images/home/1525939832091.jpg" alt="">
+                <div class="content1">
+                    <h3>常青山林洗肺套餐</h3>
+                    <p>常青谷/常青堡, 莫干山</p>
+                    <p>失序的生活作息让你喘不过气，何不试试以度假的方式来改变？</p>
+                    <span><a href="castle/off-xifei.html">了解更多</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--常青度假村-->
+<div class="village">
+    <div class="onSaleTitle village1">
+        <h2>常青度假村</h2>
+    </div>
+    <!--<div>-->
+    <!--<h2>常青度假村</h2>-->
+    <!--</div>-->
+    <!--度假村效果图====================-->
+    <div class="boxV">
+        <div>
+            <a href="./stables/stables.html" style="color: white">
+                <img src="../images/home/p-stables.jpg" alt="">
+                <!--<p>常青谷</p>-->
+                <h3>常青谷</h3>
+                <h5>莫干山</h5>
+            </a>
+        </div>
+        <div>
+            <a href="./castle/castle.html" style="color: white">
+                <img src="../images/home/p-castle.jpg" alt="">
+                <h3>常青堡</h3>
+                <h5>莫干山</h5>
+            </a>
+        </div>
+        <div>
+            <a href="./sail/sail.html" style="color: white">
+                <img src="../images/home/p-sail.jpg" alt="">
+                <h3>常青帆</h3>
+                <h5>普吉</h5>
+            </a>
+        </div>
+    </div>
+</div>
+<!--即将开业酒店-->
+<div class="hotel">
+    <div class="onSaleTitle village1">
+        <h2>即将开业酒店</h2>
+    </div>
+    <div class="bao">
+        <a href="./jobOpportunity/water.html">
+            <div class="tu1">
+                <div class="tu">
+                    <img src="../images/home/nWater.jpg" alt="">
+                </div>
+                <div>
+                    <h3 style="color: #3f3f3f">常青泊</h3>
+                    <h5>苏州</h5>
+                    <div style="color: #3f3f3f">即将开业</div>
+                </div>
+            </div>
+        </a>
+        <a href="./jobOpportunity/park.html">
+            <div class="tu1">
+                <div class="tu">
+                    <img src="../images/home/nOrchard.jpg" alt="">
+                </div>
+                <div>
+                    <h3 style="color: #3f3f3f">常青园</h3>
+                    <h5>苏州</h5>
+                    <div style="color: #3f3f3f">即将开业</div>
+                </div>
+            </div>
+        </a>
+        <a href="./jobOpportunity/pond.html">
+            <div class="tu1">
+                <div class="tu">
+                    <img src="../images/home/nSpring.jpg" alt="">
+                </div>
+                <div>
+                    <h3 style="color: #3f3f3f">常青潭</h3>
+                    <h5>绍兴</h5>
+                    <div style="color: #3f3f3f">即将开业</div>
+                </div>
+            </div>
+        </a>
+        <a href="./jobOpportunity/wall.html">
+            <div class="tu1">
+                <div class="tu">
+                    <img src="../images/home/nCreek.jpg" alt="">
+                </div>
+                <div>
+                    <h3 style="color: #3f3f3f">常青壁</h3>
+                    <h5>重庆</h5>
+                    <div style="color: #3f3f3f">即将开业</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<!--关于常青-->
+<div class="About">
+    <div class="onSaleTitle village1">
+        <h2>关于常青</h2>
+    </div>
+    <div>
+        <p>常青是一个度假村品牌，它注重于和周围的自然环境融为一体，使人能无拘无束的接近大自然。人类原 <br>
+            本不是生活在喧嚣的城市里。我们已经完全适应这种都市的生活方式了，但有时，我们应该赤裸裸的回<br>
+            归那个最原本的自己。有别于中国其它度假酒店，我们的高端度假酒店提供独特难忘的度假体验，旨在<br>
+            引导人们优雅地回归到自然中。我们的核心理念是：自然，可持续，卓越的客户服务。</p>
+    </div>
+    <div>
+        <a href="about-our.html">了解更多</a>
+    </div>
+    <!--=========================预定热线=====================-->
+    <div class="tell">
+        <div>
+            <h2>预订热线</h2>
+        </div>
+        <div class="tellA">
+            <h3>个人预定</h3>
+            <div>400 9200 518</div>
+            <a href="#">reservations@nakedretreats.cn</a>
+        </div>
+        <div class="tellA tellB">
+            <h3>团队预订</h3>
+            <div>+86 21 5339 1059</div>
+            <a href="#">groups@nakedretreats.cn</a>
+        </div>
+    </div>
+</div>
+<!--引入页尾-->
+<div class="footer">
+    <div class="container clearfix">
+        <div class="retreats visible-xs">
+            <div class="opened-resort">
+                <a href="./stables/stables.html" target="_blank">常青谷</a>
+            </div>
+        </div>
+        <div class="retreats visible-xs">
+            <div class="opened-resort">
+                <a href="./castle/castle.html">常青堡</a>
+            </div>
+        </div>
+        <div class="retreats visible-xs">
+            <div class="opened-resort">
+                <a href="./sail/sail.html">常青帆</a>
+            </div>
+        </div>
+        <div class="info">
+            <div class="sub-title">
+                <b>实用信息</b>
+                <span class="iconfont icon-down"></span>
+            </div>
+            <div class="footer-cont">
+                    <span>
+                        <a href="about-our.html">关于常青</a>
+                    </span>
+                <span>
+                        <a href="contact.html">联系我们</a>
+                    </span>
+                <span><a href="media.html">媒体中心</a>
+                    </span>
+                <span><a href="/naked-stables/zh-CN/gallery">图库</a>
+                    </span>
+                <span><a href="./jobOpportunity/jobOpportunity.html">工作机会</a>
+                    </span>
+                <span><a href="./jobOpportunity/invest.html">投资机会</a>
+                    </span>
+                <span><a href="./jobOpportunity/privacy.html">隐私策略</a>
+                    </span>
+                <span><a href="./jobOpportunity/policy.html">政策与条款</a>
+                    </span>
+                <span><a href="./jobOpportunity/CommonProblems.html">常见问题</a>
+                    </span>
+            </div>
+        </div>
+        <div class="retreats">
+            <div class="sub-title">
+                <b>即将开业酒店</b>
+                <span class="iconfont icon-down"></span>
+            </div>
+            <div class="footer-cont">
+                <span><a href="./jobOpportunity/water.html">常青泊</a></span>
+                <span><a href="./jobOpportunity/park.html">常青园</a></span>
+                <span><a href="./jobOpportunity/pond.html">常青潭</a></span>
+                <span><a href="./jobOpportunity/wall.html">常青壁</a></span>
+            </div>
+        </div>
+        <div class="products">
+            <div class="sub-title">
+                <b>更多常青项目</b>
+                <span class="iconfont icon-down"></span>
+            </div>
+            <div class="footer-cont">
+                <span><a href="http://www.nakedhub.com/">常青社</a></span>
+                <span><a href="http://www.livenaked.com/things">常青品</a></span>
+            </div>
+        </div>
+        <div class="follow">
+            <div class="follow-title">
+                <b data-reactid=".1byte5nemlc.4.0.4.0.0">关注我们</b>
+            </div>
+            <div class="footer-cont">
+                <form class="subscribe" id="subscribeForm" method="post">
+                    <input type="hidden" name="DMDtask" value="subscribe">
+                    <input type="hidden" name="lang" value="cn">
+                    <input type="text" maxlength="255" name="email" value="" placeholder="填写邮箱 订阅讯息">
+                    <button type="submit">订阅</button>
+                </form>
+                <div class="qrcode"><img src="../images/qr-code.gif">
+                    <small>扫码或搜索“常青naked”关注我们</small>
+                    <div class="share-wrap">
+                        <p class="share">
+                            <a href="http://weibo.com/nakedretreats" class="weibo">
+                                <img src="../images/weibo.png">
+                            </a>
+                        </p>
+                        <p class="share">
+                            <a href="http://www.linkedin.com/company/naked-group" class="linkedin">
+                                <img src="../images/linkedin.png">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="back-top visible-xs">
+        <span class="top">回到顶部</span>
+        <span></span>
+        <i class="iconfont icon-up"></i>
+    </a>
+    <div class="copyright">
+        <span>常青酒店管理(上海)有限公司 Copyright 2011-2018 all rights reserved </span>
+        <a href="http://www.miitbeian.gov.cn">沪ICP备14028165号-7</a>
+        <a href="">
+            <img width="30" src="../images/zhizhao.png" alt="">
+        </a>
+    </div>
+</div>
+
+<!--日期插件引入内容-->
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/plugins/moment.min.js"></script>
+<script src="js/datepicker.all.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        var DATAPICKERAPI = {
+            // 默认input显示当前月,自己获取后填充
+            activeMonthRange: function () {
+                return {
+                    begin: moment().set({ 'date': 1, 'hour': 0, 'minute': 0, 'second': 0 }).format('YYYY-MM-DD HH:mm:ss'),
+                    end: moment().set({ 'hour': 23, 'minute': 59, 'second': 59 }).format('YYYY-MM-DD HH:mm:ss')
+                }
+            },
+            shortcutMonth: function () {
+                // 当月
+                var nowDay = moment().get('date');
+                var prevMonthFirstDay = moment().subtract(1, 'months').set({ 'date': 1 });
+                var prevMonthDay = moment().diff(prevMonthFirstDay, 'days');
+                return {
+                    now: '-' + nowDay + ',0',
+                    prev: '-' + prevMonthDay + ',-' + nowDay
+                }
+            },
+            // 注意为函数：快捷选项option:只能同一个月份内的
+            rangeMonthShortcutOption1: function () {
+                var result = DATAPICKERAPI.shortcutMonth();
+                return [{
+                    name: '昨天',
+                    day: '-1,-1',
+                    time: '00:00:00,23:59:59'
+                }, {
+                    name: '这一月',
+                    day: result.now,
+                    time: '00:00:00,'
+                }, {
+                    name: '上一月',
+                    day: result.prev,
+                    time: '00:00:00,23:59:59'
+                }];
+            },
+            // 快捷选项option
+            rangeShortcutOption1: [{
+                name: '最近一周',
+                day: '-7,0'
+            }, {
+                name: '最近一个月',
+                day: '-30,0'
+            }, {
+                name: '最近三个月',
+                day: '-90, 0'
+            }],
+            singleShortcutOptions1: [{
+                name: '今天',
+                day: '0'
+            }, {
+                name: '昨天',
+                day: '-1',
+                time: '00:00:00'
+            }, {
+                name: '一周前',
+                day: '-7'
+            }]
+        };
+        //十分秒年月日单个
+        $('.J-datepicker').datePicker({
+            hasShortcut:true,
+            min:'2018-01-01 04:00:00',
+            max:'2019-04-29 20:59:59',
+            shortcutOptions:[{
+                name: '今天',
+                day: '0'
+            }, {
+                name: '昨天',
+                day: '-1',
+                time: '00:00:00'
+            }, {
+                name: '一周前',
+                day: '-7'
+            }],
+            hide:function(){
+                console.info(this)
+            }
+        });
+
+        //年月日单个
+        $('.J-datepicker-day').datePicker({
+            hasShortcut: true,
+            format:'YYYY-MM-DD',
+            shortcutOptions: [{
+                name: '今天',
+                day: '0'
+            }, {
+                name: '昨天',
+                day: '-1'
+            }, {
+                name: '一周前',
+                day: '-7'
+            }]
+        });
+
+        //年月日范围
+        $('.J-datepicker-range-day').datePicker({
+            hasShortcut: true,
+            format: 'YYYY-MM-DD',
+            isRange: true,
+            shortcutOptions: DATAPICKERAPI.rangeShortcutOption1
+        });
+
+        //十分年月日单个
+        $('.J-datepickerTime-single').datePicker({
+            format: 'YYYY-MM-DD HH:mm'
+        });
+
+        //十分年月日范围
+        $('.J-datepickerTime-range').datePicker({
+            format: 'YYYY-MM-DD HH:mm',
+            isRange: true
+        });
+
+        //十分秒年月日范围，包含最大最小值
+        $('.J-datepicker-range').datePicker({
+            hasShortcut: true,
+            min: '2018-01-01 06:00:00',
+            max: '2019-04-29 20:59:59',
+            isRange: true,
+            shortcutOptions: [{
+                name: '昨天',
+                day: '-1,-1',
+                time: '00:00:00,23:59:59'
+            },{
+                name: '最近一周',
+                day: '-7,0',
+                time:'00:00:00,'
+            }, {
+                name: '最近一个月',
+                day: '-30,0',
+                time: '00:00:00,'
+            }, {
+                name: '最近三个月',
+                day: '-90, 0',
+                time: '00:00:00,'
+            }],
+            hide: function () {
+                console.info(this.$input.eq(0).val(), this.$input.eq(1).val())
+            }
+        });
+        //十分秒年月日范围，限制只能选择同一月，比如2018-10-01到2018-10-30
+        $('.J-datepicker-range-betweenMonth').datePicker({
+            isRange: true,
+            between:'month',
+            hasShortcut: true,
+            shortcutOptions: DATAPICKERAPI.rangeMonthShortcutOption1()
+        });
+
+        //十分秒年月日范围，限制开始结束相隔天数小于30天
+        $('.J-datepicker-range-between30').datePicker({
+            isRange: true,
+            between: 30
+        });
+
+        //年月单个
+        $('.J-yearMonthPicker-single').datePicker({
+            format: 'YYYY-MM',
+            min: '2018-01',
+            max: '2019-04'
+        });
+
+        //选择年
+        $('.J-yearPicker-single').datePicker({
+            format: 'YYYY',
+            min: '2018',
+            max: '2020'
+        });
+    });
+</script>
+<!--引入JQuery-->
+<script src="../js/jquery-3.3.1.js"></script>
+<!--引入bootstrap-->
+<script src="../css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<!--我的JS链接-->
+<script src="../js/home.js"></script>
+<script>
+    if(window.location.pathname!="/home.html"){
+        window.location.pathname="/home.html"
+    }
+</script>
+</body>
+</html>

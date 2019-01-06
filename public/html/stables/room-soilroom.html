@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>夯土小屋</title>
+
+    <!--引用bootstrap.css-->
+    <link rel="stylesheet" href="../../css/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <!--引用自己写的stables-room.css-->
+    <link rel="stylesheet" href="../../css/stables/room-soilroom.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/stables/s_footer.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-bar"></div>
+    <div class="logo-cont">
+        <div class="logo">
+            <a href="stables.html">
+                <i class="iconfont icon-logo"></i>
+            </a>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <ul class="navigator one">
+            <li class="story nav-item">
+                <a href="stables-story.html">
+                    <span>探</span>
+                </a>
+            </li>
+            <li class="rooms nav-item roomHover">
+                <a href="stables-room.html">
+                    <span>住</span>
+                </a>
+                <div class="subNav one">
+                    <ul class="container">
+                        <li class="subNav-item">
+                            <a href="room-soilroom.html">
+                                <span>夯土小屋</span>
+                            </a>
+                        </li>
+                        <li class="subNav-item">
+                            <a href="room-mountainroom.html">
+                                <span>山顶夯土小屋</span>
+                            </a>
+                        </li>
+                        <li class="subNav-item">
+                            <a href="room-treeroom.html">
+                                <span>树顶别墅</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="dining nav-item diningHover">
+                <a href="stables-dining.html">
+                    <span>食</span>
+                </a>
+                <div class="subNav two">
+                    <ul class="container">
+                        <li class="subNav-item">
+                            <a href="dining-taste.html">
+                                <span>常青味</span>
+                            </a>
+                        </li>
+                        <li class="subNav-item">
+                            <a href="dining-kikaboni.html">
+                                <span>kikaboni餐厅</span>
+                            </a>
+                        </li>
+                        <li class="subNav-item">
+                            <a href="dining-pastoral.html">
+                                <span>田舍餐厅</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="weddings nav-item">
+                <a href="stables-private.html">
+                    <span>宴</span>
+                </a>
+            </li>
+            <li class="activity nav-item">
+                <a href="stables-activities.html">
+                    <span>玩</span>
+                </a>
+            </li>
+            <li class="deals nav-item">
+                <a href="stables-off.html">
+                    <span>惠</span>
+                </a>
+            </li>
+            <li class="gallery nav-item">
+                <a href="stables-gallery.html">
+                    <span>相册</span>
+                </a>
+            </li>
+            <li class="contact nav-item">
+                <a href="stables-ac-comp.html">
+                    <span>联系</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <a href="../home.html" class="button-primary book-button">
+            <span>预定房间</span>
+        </a>
+        <a href="../user/user.html"><span class="glyphicon glyphicon-user"></span></a>
+        <span class="show-menu">
+                <i class="iconfont icon-menu"></i>
+            </span>
+    </div>
+    <div class="nav-more" style="height: 360px">
+        <div class="space"><i class="iconfont icon-close"></i></div>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="../home.html">度假村首页</a>
+            </li>
+            <li class="menu-item">
+                <a href="../stables/stables.html">常青谷</a>
+            </li>
+            <li class="menu-item">
+                <a href="../castle/castle.html">常青堡</a>
+            </li>
+            <li class="menu-item">
+                <a href="../sail/sail.html">常青帆</a>
+            </li>
+            <li class="menu-item">
+                <a href="../jobOpportunity/water.html">即将开业的度假村</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<section>
+    <!--banner轮播-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img  class="bannerbig" src="../../images/castle/castle-rooms/soilroom/room_detail_hangtu_hero1_w.jpg">
+            </div>
+            <div class="item">
+                <img class="bannerbig" src="../../images/castle/castle-rooms/soilroom/room_detail_hangtu_hero2_w.jpg">
+            </div>
+            <div class="item">
+                <img class="bannerbig" src="../../images/castle/castle-rooms/soilroom/room_detail_hangtu_hero3_w.jpg">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--夯土小屋-->
+    <div class="soilRoom">
+        <div class="container">
+            <div class="soilTitle row">
+                <h2>夯土小屋</h2>
+            </div>
+            <div class="soilContain row">
+                <p>踏过铺着松针的石阶，走进隐匿在松林间，或凌驾于湖边或池边的小屋，幽静浪漫。54到64平米的房间含有屋外阳台，能让你体会苍松是无语的良伴，星空是闪烁的知己的心境。房间内处处可见南非粗犷自然的设计，夯土小屋采用可持续性当地传统建筑工法，特殊土质制成的墙面，冬暖夏凉。户外的淋浴间，让你体验大自然纯净的洗礼。夯土小屋整体设计完美融入山林中，非常适合情侣或是夫妻（与幼童）入住，享受一段沉浸森林里的假期。</p>
+            </div>
+            <div class="bookRoomBox row">
+                <a href="../booking/option.html"><p class="bookRoom">预定该客房</p></a>
+            </div>
+        </div>
+    </div>
+
+    <!--服务与设施-->
+    <div class="service">
+        <div class="container">
+            <div class="serviceTitle row">
+                <h2>服务与设施</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-3 col-xs-12">
+                    <ul>
+                        <li>阳台上有户外休闲躺椅</li>
+                        <li>SPA淋浴，附全天然沐浴用品</li>
+                        <li>32寸乐视电视</li>
+                        <li>部分小屋有户外淋浴设备</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <ul>
+                        <li>可在室内或室外用餐</li>
+                        <li>高速无线上网</li>
+                        <li>亚洲／非洲风格的装潢</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <ul>
+                        <li>顶极寝具</li>
+                        <li>顶级影音设备</li>
+                        <li>每日清洁服务</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid contact-bottom">
+    <div class="container">
+        <div class="contact-bottom__cont">
+            <p class="contact-bottom__cont-title">预定热线</p>
+            <ul class="contact-bottom__list">
+                <li>
+                    <div class="contact-bottom__list-title">个人预定</div>
+                    <p>
+                        <i class="iconfont icon-phone"></i>
+                        <a href="">400 9200 518</a>
+                    </p>
+                    <p>
+                        <i class="iconfont icon-mail"></i>
+                        <a href="">reservations@naked.cn</a>
+                    </p>
+                </li>
+                <li>
+                    <div class="contact-bottom__list-title">团队预定</div>
+                    <p>
+                        <i class="iconfont icon-phone"></i>
+                        <a href="">+86 21 5339 1059</a>
+                    </p>
+                    <p>
+                        <i class="iconfont icon-mail"></i>
+                        <a href="">groups@nakedretreats.cn</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container clearfix">
+        <div class="retreats visible-xs">
+            <div class="opened-resort">
+                <a href="stables.html" target="_blank">常青谷</a>
+            </div>
+        </div>
+        <div class="retreats visible-xs">
+            <div class="opened-resort">
+                <a href="../castle/castle.html">常青堡</a>
+            </div>
+        </div>
+        <div class="retreats visible-xs">
+            <div class="opened-resort">
+                <a href="../sail/sail.html">常青帆</a>
+            </div>
+        </div>
+        <div class="info">
+            <div class="sub-title">
+                <b>实用信息</b>
+                <span class="iconfont icon-down"></span>
+            </div>
+            <div class="footer-cont">
+                    <span>
+                        <a href="../about-our.html">关于常青</a>
+                    </span>
+                <span>
+                        <a href="../contact.html">联系我们</a>
+                    </span>
+                <span><a href="../media.html">媒体中心</a>
+                    </span>
+                <span><a href="stables-gallery.html">图库</a>
+                    </span>
+                <span><a href="http://careers.livenaked.com/">工作机会</a>
+                    </span>
+                <span><a href="../jobOpportunity/invest.html">投资机会</a>
+                    </span>
+                <span><a href="../jobOpportunity/privacy.html">隐私策略</a>
+                    </span>
+                <span><a href="../jobOpportunity/policy.html">政策与条款</a>
+                    </span>
+                <span><a href="../jobOpportunity/CommonProblems.html">常见问题</a>
+                    </span>
+            </div>
+        </div>
+        <div class="retreats">
+            <div class="sub-title">
+                <b>即将开业酒店</b>
+                <span class="iconfont icon-down"></span>
+            </div>
+            <div class="footer-cont">
+                <span><a href="../jobOpportunity/water.html">常青泊</a></span>
+                <span><a href="../jobOpportunity/park.html">常青园</a></span>
+                <span><a href="../jobOpportunity/pond.html">常青潭</a></span>
+                <span><a href="../jobOpportunity/wall.html">常青壁</a></span>
+            </div>
+        </div>
+        <div class="products">
+            <div class="sub-title">
+                <b>更多常青项目</b>
+                <span class="iconfont icon-down"></span>
+            </div>
+            <div class="footer-cont">
+                <span><a href="http://www.nakedhub.com/">常青社</a></span>
+                <span><a href="http://www.livenaked.com/things">常青品</a></span>
+            </div>
+        </div>
+        <div class="follow">
+            <div class="follow-title">
+                <b data-reactid=".1byte5nemlc.4.0.4.0.0">关注我们</b>
+            </div>
+            <div class="footer-cont">
+                <form class="subscribe" id="subscribeForm" method="post">
+                    <input type="hidden" name="DMDtask" value="subscribe">
+                    <input type="hidden" name="lang" value="cn">
+                    <input type="text" maxlength="255" name="email" value="" placeholder="填写邮箱 订阅讯息">
+                    <button type="submit">订阅</button>
+                </form>
+                <div class="qrcode"><img src="../../images/qr-code.gif">
+                    <small>扫码或搜索“常青naked”关注我们</small>
+                    <div class="share-wrap">
+                        <p class="share">
+                            <a href="http://weibo.com/nakedretreats"class="weibo">
+                                <img src="../../images/weibo.png">
+                            </a>
+                        </p>
+                        <p class="share">
+                            <a href="http://www.linkedin.com/company/naked-group" class="linkedin">
+                                <img src="../../images/linkedin.png">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="back-top visible-xs">
+        <span class="top">回到顶部</span>
+        <span></span>
+        <i class="iconfont icon-up"></i>
+    </a>
+    <div class="copyright">
+        <span>常青酒店管理(上海)有限公司 Copyright 2011-2018 all rights reserved </span>
+        <a href="http://www.miitbeian.gov.cn">沪ICP备14028165号-7</a>
+        <a href="">
+            <img width="30" src="../../images/zhizhao.png" alt="">
+        </a>
+    </div>
+</div>
+<!--引用jquery-3.3.1.js-->
+<script src="../../js/jquery-3.3.1.js"></script>
+<script src="../../js/nav.js"></script>
+<!--引用bootstrap.js-->
+<script src="../../css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+
+<!--自己写的stables-story.js-->
+<script src="../../js/stables/room-soilroom.js"></script>
+</body>
+</html>

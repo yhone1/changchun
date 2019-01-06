@@ -1,0 +1,253 @@
+/*初始化*/
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.fl{
+    float: left;
+}
+.zuo{
+    background-color:#96b6a1 ;
+}
+.you{
+    background-color: #dfd6bb;
+}
+h3{
+    /*font-size: 100%;*/
+}
+h3 {
+    font-size: 1.428em;
+}
+div{
+    display: block;
+}
+/*.glyphicon {*/
+    /*position: relative;*/
+    /*top: 1px;*/
+    /*display: inline-block;*/
+    /*font-family: 'Glyphicons Halflings';*/
+    /*font-style: normal;*/
+    /*font-weight: normal;*/
+    /*line-height: 1;*/
+
+    /*-webkit-font-smoothing: antialiased;*/
+    /*-moz-osx-font-smoothing: grayscale;*/
+/*}*/
+
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+*, :after, :before {
+    box-sizing: inherit;
+    font: inherit;
+}
+body, h1, h2, h3, h4, h5, li, p, ul {
+    margin: 0;
+    font-weight: 400;
+    color: inherit;
+}
+/*头部*/
+.header {
+    background-color: #111;
+    height: 70px;
+    color: #fff;
+    padding: 0 35px 0 20px;
+    position: relative;
+}
+
+.header .container {
+    position: relative;
+    z-index: 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height:50px;
+}
+.header .logo {
+    height: 50px;
+    line-height: 50px;
+}
+
+.header a {
+    color: #fff!important;
+}
+
+a, a:active, a:hover, a:visited {
+    /*color: inherit;*/
+    text-decoration: none;
+    outline-width: 0;
+}
+a, button, input, select, textarea {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+a {
+    background-color: transparent;
+}
+.header h1 {
+    margin: 0;
+    width: 111px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 24px;
+}
+.header .iconfont, .header h1 {
+    vertical-align: middle;
+    display: inline-block;
+}
+.header .iconfont {
+    font-size: 50px;
+}
+
+.header .lang {
+    float: right;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.ren{
+    display: inline;
+    background-color: #000;
+    font-size: 25px;
+
+    color: #ffffff;
+    float: right;
+}
+/*body*/
+.page-index {
+    padding: 40px 0;
+    text-align: center;
+}
+.page {
+    background-color: #f6f6f6;
+}
+.page-index .select-hotel {
+    background-color: #fff;
+    padding: 40px 0 60px;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+}
+.page-index .select-hotel h2 {
+    color: #333;
+}
+
+h2 {
+    font-size: 1.72em;
+}
+.page-index .hotel-list {
+    margin-top: 40px;
+}
+
+li, ul {
+    list-style: none none;
+    padding: 0;
+}
+
+
+.page-index .hotel-list li {
+    display: inline-block;
+    width: 380px;
+    margin: 0 30px;
+    padding: 0;
+}
+.page-index .hotel-list li a {
+    display: block;
+    position: relative;
+}
+.page-index .hotel-list li a div {
+    height: 212px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.page-index .hotel-list li a .hotel-name.nS {
+    background-color: #96b6a1;
+}
+.page-index .hotel-list li a .hotel-name.nC {
+    background-color: #dfd6bb;
+}
+.page-index .hotel-list li a .hotel-name {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    color: #333;
+}
+
+
+
+/*页尾*/
+.page-bottom {
+    background-color: #333;
+    color: #aaa;
+}
+.help-bottom {
+    border-bottom: 1px solid #404040;
+    padding: 40px 150px;
+}
+.help-bottom h2, .help-bottom h3, .help-bottom h4 {
+    color: #ddd;
+    margin-bottom: .25em;
+    line-height: 1.4em;
+}
+h3 {
+    font-size: 1.428em;
+}
+
+body, h1, h2, h3, h4, h5, li, p, ul {
+    margin: 0;
+    font-weight: 400;
+    /*color: inherit;*/
+}
+.help-bottom .contact {
+    width: 70%;
+}
+.help-bottom .contact, .help-bottom .time {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.help-bottom .phone {
+    margin-top: .5em;
+}
+h4 {
+    font-size: 1.143em;
+}
+a:active,  a:hover,a:link, a:visited {
+    color: #5f9271;
+}
+
+.footer, .footer:after, .footer:before {
+    box-sizing: border-box;
+}
+.footer {
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #aaa!important;
+}
+
+.visible-xs, .visible-xs-inline, .visible-xs-inline-block {
+    display: none!important;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: .83em;
+}

@@ -1,0 +1,588 @@
+body{
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+    background-size:100% 150%;
+    background-repeat: no-repeat;
+    background-image:url("../images/jobOpportunity/logon/tp3.jpg");
+}
+
+input{
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+    outline: none;
+
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    z-index: auto;
+}
+nav {
+    position:relative;
+    padding-bottom:12px;
+    left: 300px;
+    padding-left: 50px;
+    top: 25px;
+}
+nav .line {
+    height:2px;
+    position:absolute;
+    bottom:0;
+    margin:10px 0 0 0;
+    background: #ff1e64;
+}
+nav ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    display:flex;
+}
+nav ul li {
+    margin:0 40px 0 0;
+    opacity:0.4;
+    transition:all 0.4s ease;
+}
+nav ul li:hover {
+    opacity:0.7;
+}
+nav ul li.active {
+    opacity:1;
+}
+nav ul li:last-child {
+    margin-right:0;
+}
+nav ul li a {
+    text-decoration:none;
+    color:#fff;
+    text-transform:uppercase;
+    display:block;
+    font-weight:lighter;
+    letter-spacing:0.2em;
+    font-size:18px;
+}
+nav span{
+    position: absolute;
+    left:990px;
+    top: -10px;
+    color: rgba(255, 255, 255, 0.56);
+    cursor: pointer;
+}
+/*登录界面*/
+.logon{
+    z-index:10;
+    width: 30%;
+    height: 380px;
+    /*border: 1px gainsboro solid;*/
+    margin-left: 35%;
+    margin-top: 80px;
+    padding-top:100px ;
+    box-shadow: 3px 3px 10px #393939;
+    border-radius: 5px;
+    background-size: 420px 380px;
+    /*background-image: url("../images/jobOpportunity/logon/bj2.jpg");*/
+    background-color: rgba(255, 250, 250, 0.11);
+    opacity: 0.8;
+    position: relative;
+    overflow: hidden;
+
+    /*text-align: center;*/
+}
+
+/*头像*/
+.head{
+    width: 80px;
+    height:80px;
+    border-radius: 50px;
+    background-color:white;
+    /*border: 1px white solid;*/
+    position: relative;
+    top: -60px;
+    left: 40%;
+    background-image: url("../images/jobOpportunity/logon/1.jpg");
+    background-size: 80px 80px;
+}
+input {
+    width:100%;
+    height:40px;
+    /*border:1px solid #dbdbdb;*/
+    outline:none;
+    font-size:18px;
+    text-indent:10px;
+    /*border-radius: 4px;*/
+    color: white;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+
+    /*margin-top: 100px;*/
+}
+label {
+    position:relative;
+    width:100%;
+    margin:2px auto;
+    display:inline-block;
+}
+label:after {
+    content:"";
+    display:inline-block;
+    width:0;
+    height:2px;
+    background: white;
+    transition:width 1s;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+form{
+    margin-left: 29%;
+    margin-top:-40px ;
+}
+span{
+    font-size: 14px;
+    color: white;
+    font-family: 微软雅黑;
+    font-weight: lighter;
+}
+.active:after {
+    width:calc(100% - 0px)
+}
+
+.form-group {
+    width: 200px;
+    position: relative;
+    font-size: 15px;
+    color: #666;
+}
+.form-group + .form-group {
+    margin-top: 20px;
+}
+.form-group .form-label {
+    position: absolute;
+    /*z-index: 1;*/
+    left: 0;
+    top: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.form-group .form-control {
+    width: 100%;
+    position: relative;
+    height: 35px;
+    background: none;
+    border: none;
+    padding: 0px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-bottom: 1px solid rgb(55, 54, 56);
+}
+.form-group .form-control:invalid {
+    outline: none;
+}
+.form-group .form-control:focus, .form-group .form-control:valid {
+    outline: none;
+}
+.form-group .form-control:focus + .form-label, .form-group .form-control:valid + .form-label {
+    font-size: 12px;
+    -ms-transform:translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+.c-btn {
+    color:#ffffff;
+    display:inline-block;
+    height:100%;
+    position:relative;
+    text-decoration:none;
+}
+.c-btn::after {
+    content:"";
+    display:block;
+    position:absolute;
+}
+.c-btn::before {
+    content:"";
+    display:block;
+    position:absolute;
+}
+.c-btn--border-line {
+    background:rgba(0,0,0,0) none repeat scroll 0 0;
+    border:0 none;
+    box-shadow:0 0 0 0 transparent inset;
+    box-sizing:border-box;
+}
+/*按钮，鼠标移入的线条特效*/
+.c-btn--border-line::after,.c-btn--border-line::before {
+    border:1px solid transparent;
+    box-sizing:border-box;
+    height:0;
+    width:0;
+}
+.c-btn--border-line::after {
+    left:0;
+    top:0;
+    transition:border-color 0s ease-in 0.8s,width 0.2s ease-in 0.6s,height 0.2s ease-in 0.4s;
+}
+.c-btn--border-line::before {
+    bottom:0;
+    right:0;
+    transition:border-color 0s ease-in 0.4s,width 0.2s ease-in 0.2s,height 0.2s ease-in 0s;
+}
+.c-btn--border-line:hover::after,.c-btn--border-line:hover::before {
+    height:100%;
+    width:100%;
+}
+/*线条的颜色*/
+.c-btn--border-line:hover::after {
+    border-right-color: white;
+    border-top-color: white;
+    transition:width 0.2s ease-out 0s,height 0.2s ease-out 0.2s;
+}
+.c-btn--border-line:hover::before {
+    border-bottom-color: white;
+    border-left-color: white;
+    transition:border-color 0s ease-out 0.4s,width 0.2s ease-out 0.4s,height 0.2s ease-out 0.6s;
+}
+.c-btn--line::after {
+    /*background-color:#168f20;*/
+    bottom:0;
+    transform:scaleX(0);
+    transform-origin:right center 0;
+    transition:transform 0.6s cubic-bezier(0.55,0,0.1,1) 0s,-webkit-transform 0.6s cubic-bezier(0.55,0,0.1,1) 0s;
+}
+.c-btn--line:hover::after {
+    transform:scaleX(1);
+    transform-origin:left center 0;
+    transition:transform 0.6s cubic-bezier(0.55,0,0.1,1) 0s,-webkit-transform 0.6s cubic-bezier(0.55,0,0.1,1) 0s;
+}
+
+/*登录按钮的样式*/
+.nav-zi button{
+    width:100%;
+    display:block;
+    height:40px;
+    line-height:40px;
+    margin-top:20px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    cursor:pointer;
+    transition:all 0.6s ease-in 0s;
+    border: rgba(240, 240, 240, 0.34) 1px solid;
+}
+
+.account{
+    font-weight: bold;
+    font-size: 12px;
+    margin-left:30px;
+    cursor: pointer;
+    z-index: 999;
+    float: left;
+    color: white;
+
+}
+.account1{
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    left: 20px;
+    /*top: -5px;*/
+    cursor: pointer;
+    z-index: 999;
+    color: white;
+    float: left;
+}
+
+#zz{
+    font-size: 12px;
+    font-weight: lighter;
+    /*font-family: 华文细黑;*/
+}
+/*注册*/
+#lagin{
+    height: 30px;
+    width: 70px;
+    line-height: 30px;
+
+}
+a{
+    color: white;
+    text-decoration:none;
+}
+.logon1{
+    /*width: 60px;*/
+    /*height:60px;*/
+    /*border-radius: 50px;*/
+    /*border: 1px rgb(254, 246, 255) solid;*/
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: lighter;
+    font-family: 华文行楷;
+    line-height: 60px;
+    /*box-shadow: 0 1px 8px grey;*/
+
+}
+.zhuce{
+    z-index: 1;
+    width: 30%;
+    height:100%;
+    /*border: 1px gainsboro solid;*/
+    margin-left:35%;
+    margin-top: 80px;
+    padding-top:80px ;
+    padding-bottom: 28px;
+    box-shadow: 3px 3px 10px #393939;
+    border-radius: 5px;
+    background-color: rgba(255, 250, 250, 0.11);
+    /*background-size: 420px 100%;*/
+    /*background-image: url("../images/jobOpportunity/logon/bj2.jpg");*/
+    position: relative;
+    top: -460px;
+    transform:rotateY(180deg);
+    display: none;
+    transition: all 2s linear;
+    overflow: hidden;
+    opacity: 0.6;
+
+}
+.zhuce span{
+    display: block;
+}
+.zhuce input{
+    width:90%;
+    height:35px;
+    /*border:1px solid #dbdbdb;*/
+    outline:none;
+    font-size:18px;
+    /*text-indent:10px;*/
+    /*border-radius: 2px;*/
+    background-color: white;
+    border: none;
+    color: black;
+    margin-top: 10px;
+    /*border-bottom: 1px solid #dbdbdb;*/
+}
+.button{
+    width:27% ;
+    height:35px;
+    font-size: 12px;
+    background-color: white;
+    text-align: center;
+    color: grey;
+    position: relative;
+    left: 220px;
+    top: -35px;
+    border: none;
+    line-height: 35px;
+    cursor: pointer;
+    /*box-shadow: 0 0 5px 1px #afafaf;*/
+    /*border-radius: 5px;*/
+}
+#code{
+    width:65%;
+    height:35px;
+    margin-top: -10px;
+    font-size: 14px;
+}
+#yanz{
+    margin-top: 20px;
+}
+.yanz{
+    width:100%;
+    height:37px;
+    /*background-color: white;*/
+}
+
+.zhuce form{
+    margin-left: 15%;
+}
+.zhuce input:hover{
+    box-shadow: 0 0 5px 2px #ffffff;
+}
+
+#zc{
+    background-color: #168f20;
+    width: 90%;
+    text-align: center;
+    padding-left: 0;
+    margin:0 auto ;
+    color: white;
+    font-size: 16px;
+    font-family: 华文细黑;
+    font-weight: normal;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.hr{
+    height: 1px;
+    width: 90%;
+    margin:0 auto;
+    background-color: white;
+    margin-top: 10px;
+    z-index: -1;
+}
+.div{
+    border: 1px red solid;
+}
+.xieyi{
+    font-size: 12px;
+    margin-left: 15%;
+    /*display: block;*/
+    margin-top:10px;
+}
+.tiaojian{
+    color: #ff161a;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.flip-container {
+    perspective:1340px;
+    /*margin-left: 500px;.*/
+}
+
+
+.flipper {
+    transition:1s;
+    transform-style:preserve-3d;
+    position:relative;
+    transform:perspective(800px);
+    margin-top: 50px;
+
+}
+.fanhui{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-size: 30px 30px;
+    background-image: url("../images/jobOpportunity/logon/4.png");
+}
+.guanbi{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    background-size: 20px 20px;
+    background-image: url("../images/jobOpportunity/logon/10.png");
+
+}
+#zz{
+    height: 20px;
+    display: none;
+    position: relative;
+    color: red;
+
+}
+
+/*密码验证*/
+.strengthLv0 {
+    height: 6px;
+    width: 120px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.strengthLv1 {
+    background-color: red;
+    height: 6px;
+    width: 40px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.strengthLv2 {
+    background-color: orange;
+    height: 6px;
+    width: 80px;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.strengthLv3 {
+    background-color: green;
+    height: 6px;
+    width: 120px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    color: rgba(255, 255, 255, 0);
+}
+
+#strengthLevel{
+    position: relative;
+    left: 80px;
+    top: -10px;
+}
+.qd{
+    font-size: 10px;
+    color: red;
+}
+.qd1{
+    position: relative;
+    top: 7px;
+    display: none;
+}
+
+#tjian ul{
+    margin-top: -2px;
+    margin-left: 50px;
+}
+#tjian ul li{
+    font-size: 12px;
+    color: #ff161a;
+}
+
+#xianshi{
+    width: 25px;
+    height: 25px;
+    /*border-radius: 10px;*/
+    background-image: url("../images/jobOpportunity/logon/2.jpg");
+    background-size: 25px 25px;
+    position: absolute;
+    right: 40px;
+    top:  159px;
+    cursor: pointer;
+}
+ul,li {
+    list-style:none;
+}
+
+#rightfixed {
+    width:140px;
+    position:fixed;
+    right:0px;
+    top:0px;
+}
+#rightfixed li {
+    background: rgba(171, 165, 172, 0.28);
+    color:#fff;
+}
+#rightfixed ul li {
+    height:40px;
+    line-height:40px;
+    position:relative;
+    left:100px;
+}
+#rightfixed ul li span {
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background: rgba(20, 41, 24, 0.24);
+    color:#fff;
+    text-align:center;
+    line-height:40px;
+    margin-right:10px;
+}
+* {
+    margin:0;
+    padding:0;
+}

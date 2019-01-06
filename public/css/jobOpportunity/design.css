@@ -1,0 +1,73 @@
+.img{
+    width: 100%;
+}
+
+.wemzi{
+    width: 100%;
+    height: 650px;
+    background-color: #e5e5cf;
+    margin-top: -4px;
+    overflow: hidden;
+}
+.wenzi1{
+    width: 765px;
+    height: 150px;
+    margin-left: 20%;
+    margin-top: 40px;
+
+}
+.div{
+    border: 1px red solid;
+}
+.wenzi2{
+    font-size: 14px;
+    line-height: 28px;
+}
+.tp{
+    margin-left: 20%;
+}
+.sheji{
+    width: 100%;
+    height: 460px;
+    background-color: #f2efe1;
+
+    overflow: hidden;
+    padding-top: 20px;
+}
+h2{
+    color: #1c7a26;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.sheji1{
+    float: left;
+    width: 40%;
+    height: 80%;
+    margin-left: 90px;
+    line-height: 15px;
+}
+h4{
+    color: rgba(31, 173, 47, 0.94);
+    font-weight: lighter;
+    font-size: 16px;
+}
+p{
+    font-size: 14px;
+}
+
+.lainxi{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.span1{
+    font-size: 30px;
+    color: gainsboro;
+    font-weight: lighter;
+}.span2{
+     font-size: 21px;
+     color: black;
+     /*font-weight: bold;*/
+ }

@@ -1,0 +1,129 @@
+/*.pA{*/
+    /*position: absolute;*/
+/*}*/
+.gray {
+    background: #f7f8f9;
+}
+section{
+    text-align: center;
+    padding: 70px 0;
+}
+/*头部图片*/
+.headerBg{
+    background:url(../../images/teambuilding/nS-landing-bg.jpg) no-repeat center center;
+    background-size:cover;
+}
+header{
+    color: #ffffff;
+}
+header p{
+    font-size: 18px;
+}
+.title1{
+    padding: 295px 0;
+}
+
+/*内容部分1*/
+.content1{
+    color: #ffffff;
+    background-color: #1b532e;
+    padding: 0 0 25px;
+}
+h3{
+    font-size: 35px;
+}
+/*内容部分二*/
+.center-line{
+    width: 60px;
+    height: 2px;
+    background: #3ba65f;
+    display: inline-block;
+    margin: 17px 0;
+}
+.feature {
+    margin: 38px 0 0;
+}
+.feature-icon {
+    margin: 0 0 25px;
+}
+.feature h4 {
+    margin-bottom: 10px;
+}
+h4 {
+    /*font-size: 2rem;*/
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.content2 p {
+    color: #666;
+}
+.content2 p {
+    font-size: 1.6rem;
+}
+
+/*内容部分3*/
+.training-image {
+    margin: 35px 0 0;
+}
+.training-image img {
+    width: 100%;
+}
+
+.price-box {
+    display: inline-block;
+    height: 110px;
+    width: 100%;
+}
+
+.green {
+    background: #32884f;
+}
+
+.price-box h4 {
+    color: #fff;
+    margin: 32px 0 5px;
+}
+
+/*内容部分4*/
+.row-center {
+    float: none;
+    text-align: center;
+}
+/*5*/
+.video {
+    margin: 38px 0 0;
+}
+.video video {
+    width: 100%;
+}
+/*6*/
+.client-box {
+    margin: 105px 0 0;
+}
+.client-image {
+    height: 90px;
+}
+.client-text {
+    background: #fff;
+    padding: 48px 10px;
+}
+.client-image img {
+    border: 5px solid #f7f8f9;
+    border-radius: 50%;
+    height: 140px;
+    margin: -70px 0 0;
+    width: 140px;
+}
+.red-text {
+    color: #ee2b49;
+}
+
+
+/*尾部*/
+.footerBg{
+    background:url(../../images/teambuilding/bg-birdview.png) no-repeat center center;
+    background-size:cover;
+}
+.footerBg h2{
+    color: #ffffff;
+}

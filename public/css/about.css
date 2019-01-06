@@ -1,0 +1,154 @@
+ul.booking-select {
+    display: none;
+    width: 90px
+}
+
+ul.booking-select.adults {
+    width: 140px
+}
+
+ul.booking-select:before {
+    margin-left: 36px;
+    display: block;
+    height: 13px;
+    line-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color: #f3f1ea;
+    font-family: iconfont!important;
+    content: "\E61B"
+}
+
+ul.booking-select li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #f3f1ea;
+    border-width: 1px 0 0
+}
+
+ul.booking-select li a {
+    display: block
+}
+
+.page {
+    padding-top: 0
+}
+
+.about-page h1 {
+    font-size: 32px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    text-align: center
+}
+
+@media (max-width: 767px) {
+    .about-page h1 {
+        font-size:24px
+    }
+}
+
+.about-page p {
+    line-height: 26px;
+    margin-bottom: 15px
+}
+
+.about-page .about {
+    width: 83.6%;
+    padding: 50px 0
+}
+
+.about-page .link {
+    background-color: #e8e8e8;
+    padding: 50px 0
+}
+
+.about-page .link .cont {
+    display: inline-block;
+    width: 440px;
+    height: 212px;
+    line-height: 212px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px
+}
+
+@media (max-width: 767px) {
+    .about-page .link .cont {
+        width:100%
+    }
+}
+
+.about-page .link .idea {
+    float: left;
+    background: url(../images/footer/img-idea.jpg) no-repeat
+}
+
+.about-page .link .design {
+    float: right;
+    background: url(../images/footer/img-design.jpg) no-repeat
+}
+
+.about-page .rewards {
+    padding: 50px 0
+}
+
+.about-page .rewards-list li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 65px
+}
+
+@media (max-width: 767px) {
+    .about-page .rewards-list li {
+        text-align:center;
+        margin-bottom: 30px
+    }
+}
+
+.about-page .rewards-list li img {
+    width: 150px;
+    height: 212px;
+    display: inline-block
+}
+
+.about-page .rewards-list li dl {
+    display: inline-block;
+    vertical-align: top;
+    width: 285px;
+    margin: 10px 0 0 15px
+}
+
+.about-page .rewards-list li dl dt {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 120%
+}
+
+.about-page .rewards-list li dl dd {
+    margin: 0;
+    line-height: 140%
+}
+
+@media (max-width: 767px) {
+    .about-page .rewards-list li dl dd {
+        text-align:left
+    }
+}
+
+@media (max-width: 767px) {
+    .about-page .rewards-list li dl {
+        width:auto
+    }
+}
+
+.about-page .rewards-list li.odd {
+    margin-right: 80px
+}
+
+@media (max-width: 767px) {
+    .about-page .rewards-list li.odd {
+        margin-right:0
+    }
+}

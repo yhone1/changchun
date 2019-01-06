@@ -1,0 +1,24 @@
+body{
+    background-color:#231f20;
+    color: #bbbdc0;
+}
+.content{
+    margin-top: 80px;
+    width: 655px;
+}
+.content h2{
+    margin-bottom: 20px;
+}
+.content-block {
+    margin: 1em auto 3em;
+    line-height: 1.5em;
+}
+.activity-details__share {
+    margin-bottom: 100px;
+}
+.activity-details__share .button-next {
+    float: right;
+}
+.icon-right:before{
+    content: "\E60C";
+}

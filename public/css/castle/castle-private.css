@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*banner大图*/
+.bannerTitle{
+    text-align: center;
+    background-color: #d9e3d9;
+}
+.bannerTitle p{
+    padding: 15px;
+}
+
+/*3种宴会类型*/
+.banquet{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f2efe1;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+/*预定热线*/
+.bookPhone{
+    background-color: grey;
+    padding: 30px;
+}
+.bookPhone p{
+    color: #1e522e;
+    font-weight: bold;
+}
+.telephone{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.telephone h2{
+    color: white;
+}
+.weddings-events p {
+    line-height: 26px;
+    font-size: 14px
+}
+
+.weddings-events .innerpage-title .content-block {
+    padding: 0 90px
+}
+
+@media (max-width: 767px) {
+    .weddings-events .innerpage-title .content-block {
+        padding:0 15px
+    }
+}
+
+.weddings-events__first {
+    background-color: #231f20;
+}
+
+@media (max-width: 767px) {
+    .weddings-events__first {
+        background-color:transparent
+    }
+}
+
+.weddings-events__block {
+    padding: 30px;
+    font-size: 0
+}
+
+.weddings-events__pic {
+    width: 55%;
+    height: 376px;
+    display: inline-block;
+    position: relative
+}
+
+.weddings-events__pic-bg {
+    position: absolute;
+    right: 0;
+    width: 200%;
+    height: 100%
+}
+
+.weddings-events__pic-bg.pic-right {
+    left: 0;
+    right: auto
+}
+
+.weddings-events__cont {
+    box-sizing: border-box;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 40px;
+    color: #beaf88;
+}
+
+.weddings-events__cont.copy-left {
+    padding-right: 40px;
+    padding-left: 0
+}
+
+.weddings-events__cont h2 {
+    font-size: 26px;
+    margin: 30px 0 20px;
+    color: #beaf88;
+}
+
+@media (max-width: 767px) {
+    .weddings-events__cont h2 {
+        margin:30px 0 0
+    }
+}
+
+.weddings-events__body-content {
+    line-height: 1.6em;
+    font-size: 14px
+}
+
+.weddings-events__body-content p {
+    line-height: 1.6em
+}
+
+.contact-bottom__cont p {
+    font-size: 22px;
+    line-height: 140%
+}
+
+@media (max-width: 767px) {
+    .weddings-events {
+        width:100%
+    }
+
+    .weddings-events__description {
+        box-sizing: border-box
+    }
+
+    .weddings-events__block {
+        padding: 0
+    }
+
+    .weddings-events__pic {
+        width: 100%;
+        height: 220px
+    }
+
+    .weddings-events__pic-bg {
+        width: 100%;
+        background-size: auto 100%
+    }
+
+    .weddings-events__pic-bg.pic-right {
+        float: left
+    }
+
+    .weddings-events__cont {
+        width: 100%;
+        padding: 0
+    }
+
+    .weddings-events__cont.copy-left {
+        padding: 0;
+        float: right;
+        background-color: #fefefb
+    }
+
+    .weddings-events__cont h2 {
+        text-align: center
+    }
+}
+.weddings-events__pic {
+    width: 55%;
+    height: 376px;
+    display: inline-block;
+    position: relative;
+}
+.float-r {
+    float: right!important;
+}
+.clearfix:after, .clearfix:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.weddings-events .innerpage-title .content-block {
+    padding: 0 90px;
+}
+.weddings-events p {
+    line-height: 26px;
+    font-size: 14px;
+}
+.innerpage-title {
+    background: #beaf88;
+    color: #231f20;
+    box-sizing: border-box;
+    padding: 30px 0;
+    text-align: center;
+}
+body{
+    background: black;
+}

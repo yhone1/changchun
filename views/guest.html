@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>宾客信息</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../css/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+  <link rel="stylesheet" href="../../css/booking/main.css">
+  <link rel="stylesheet" href="../../css/booking/guest.css">
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!--页头开始-->
+<div class="header">
+  <div class="container">
+    <a href="/" class="logo">
+      <i class="iconfont icon-nakedcn"></i>
+    </a>
+    <h1><a href="booking.html"><span>客房预订</span></a>
+    </h1><a href="javascript:;" class="enfont lang"><span class="glyphicon glyphicon-user ren"></span></a>
+  </div>
+</div>
+<!--页头结束-->
+<form action="/comfirm.html" method="post">
+  <div class="page page-guest">
+    <div class="booking-status" style="background-image: url(../../images/booking/ban-stables.jpg);">
+      <div class="container">
+        <ul>
+          <li class="step1 done">
+            <div class="bg">
+              <div></div>
+            </div>
+            <div class="text">
+              <span class="number">1</span><span class="cont">选择日期</span>
+            </div>
+          </li>
+          <li class="step2 done">
+            <div class="bg">
+              <div></div>
+            </div>
+            <div class="text">
+              <span class="number">2</span><span class="cont">房间及价格</span>
+            </div>
+          </li>
+          <li class="step3 active">
+            <div class="bg">
+              <div></div>
+            </div>
+            <div class="text">
+              <span class="number">3</span><span class="cont">宾客信息</span>
+            </div>
+          </li>
+          <li class="step4">
+            <div class="bg">
+              <div></div>
+            </div>
+            <div class="text">
+              <span class="number">4</span><span class="cont">确认</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container booking-option-detail">
+      <h2><span>您的预订信息</span><i class="iconfont icon-triangle-down"></i></h2>
+      <div class="row detail-content">
+        <div class="booking-info col-9 col-xs-24">
+          <dl>
+            <dt><span>入住日期</span>:</dt>
+            <dd><%=in_date%>&nbsp;&nbsp;<span id="InDate"></span></dd>
+            <dt><span>离店日期</span>:</dt>
+            <dd><%=out_date%>&nbsp;&nbsp;<span id="OutDate"></span></dd>
+            <dt><span>入住晚数</span>:</dt>
+            <dd><span><%=sum%></span> <span>晚</span></dd>
+            <dt><span>客房数量</span>:</dt>
+            <dd><span><%=room_number%></span></dd>
+            <dt><span>每套成人</span>:</dt>
+            <dd><span><%=adultNum%></span></dd>
+          </dl>
+        </div>
+        <div class="col-1 col-xs-0"></div>
+        <div class="booking-info col-14 col-xs-24">
+          <dl>
+            <dt><span>客房类型</span>:</dt>
+            <dd><%=room_type_name%></dd>
+            <dt><span>套餐类型</span>:</dt>
+            <dd><%=room_consume_name%></dd>
+            <dt><span>客房费用</span>:</dt>
+            <dd>RMB <%=s_roomPrice%></dd>
+            <dt><span>服务费</span>:</dt>
+            <dd>RMB <%=s_serverMoney%></dd>
+            <dt><span>税金</span>:</dt>
+            <dd>RMB <%=s_tax%></dd>
+            <dt><span>预计总额</span>:</dt>
+            <dd><strong>RMB <%=s_allMoney%></strong></dd>
+          </dl>
+          <!--<button class="gray-button" data-tracking="Resv,Click,BackToStep2_Step3">上一步</button>-->
+          <div class="gray" style="margin-top: 1em;">* 儿童及成人加床产生的额外费用将根据实际情况收取，详见预订条款。</div>
+        </div>
+      </div>
+    </div>
+    <h2 class="page-title hidden-xs">请填写您的个人信息以提交订单</h2>
+    <div class="container form-block">
+      <h2>宾客信息</h2>
+      <div class="form form-guest row">
+        <div class="col-12 col-xs-24">
+          <div class="form-item">
+            <label><span class="hidden-xs-inline">*</span> <span>称呼</span></label>
+            <div class="html-select form-item-input">
+              <i class="iconfont icon-triangle-down"></i>
+              <select name="sex" id="sex">
+                <option value="男">先生</option>
+                <option value="女">女士</option>
+                <!--<option value="FEMALE">夫人</option>-->
+              </select>
+            </div>
+          </div>
+        </div>
+        <!--<div class="col-0"></div>-->
+        <div class="col-12 col-xs-24">
+          <div class="form-item">
+            <label for="firstName"><span class="hidden-xs-inline">*</span> <span>名字</span></label>
+            <div class="form-item-input">
+              <input type="text" id="firstName" name="guest_name" placeholder="">
+            </div>
+          </div>
+        </div>
+        <!--<div class="col-12 col-xs-24">-->
+        <!--<div class="form-item">-->
+        <!--<label for="lastName"><span class="hidden-xs-inline">*</span> <span>姓氏</span></label>-->
+        <!--<div class="form-item-input">-->
+        <!--<input type="text" id="lastName" name="lastName" value="hb" placeholder="">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="col-12 col-xs-24">
+          <div class="form-item">
+            <label for="customerPhone"><span class="hidden-xs-inline">*</span> <span>手机</span></label>
+            <div class="form-item-input">
+              <input type="text" id="customerPhone" name="guest_tel"  placeholder="">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xs-24">
+          <div class="form-item">
+            <label for="customerEmail"><span class="hidden-xs-inline">*</span> <span>邮件</span></label>
+            <div class="form-item-input">
+              <input type="text" id="customerEmail" name="guest_email"  placeholder="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3><span>联系人</span><span class="optional">（可选）</span></h3>
+      <div class="form form-contact row">
+        <div class="col-12 col-xs-24 nAme">
+          <div class="form-item">
+            <label for="contactName"><span class="hidden-xs-inline">*</span> <span>姓名</span></label>
+            <div class="form-item-input">
+              <input type="text" id="contactName" name="contact_name" value="" placeholder="">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xs-24 telNum">
+          <div class="form-item">
+            <label for="contactPhone"><span class="hidden-xs-inline">*</span> <span>手机</span></label>
+            <div class="form-item-input"><input type="text" id="contactPhone" name="contact_phone" value="" placeholder=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container form-block">
+      <h2>担保金支付</h2>
+      <div class="form-pay">
+        <div class="deposit-desc">
+          <p class="deposit">您本次应付预订担保金 <span class="money">RMB 1,000.00</span> (余款到店内支付)</p>
+          <p class="gray">* 预订担保金收取规则为每间房每晚RMB1000, 该费用将在您的房费中抵扣。</p>
+          <p class="gray">* 如有任何取消和更改，请务必在您入住日前7天通知我们，否则将收取全额担保金。</p>
+        </div>
+        <div class="pay-method-cont">
+          <h3>支付方式</h3>
+          <div class="row pay-method">
+            <div class="col-8 col-xs-24">
+              <input type="radio" id="wechatpay"value="微信" name="pay">
+              <label for="wechatpay"><i class="icon icon-wechat"></i><span class="label"><span>微信支付</span><i class="iconfont icon-success"></i></span></label>
+            </div>
+            <div class="col-8 col-xs-24">
+              <input type="radio" id="alipay" value="支付宝" name="pay">
+              <label for="alipay"><i class="icon icon-alipay"></i><span class="label"><span>支付宝</span><i class="iconfont icon-success"></i></span></label>
+            </div>
+            <div class="col-8 col-xs-24">
+              <input type="radio" id="unionpay" value="银联" name="pay">
+              <label for="unionpay"><i class="icon icon-unionpay"></i><span class="label"><span>银联支付</span><i class="iconfont icon-success"></i></span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container form-block">
+      <h2><span>特殊需求</span><span class="optional">（可选）</span></h2>
+      <div class="form exMeet row">
+        <div class="col-24">
+          <div class="form-item auto-height">
+            <textarea name="specials"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container form-block form-agree">
+      <label>
+            <span class="html-checkbox">
+                <input type="checkbox" id="formAgree" value="on" name="formAgree">
+                <i class="iconfont icon-success"></i>
+            </span>
+        <span class="label tiaKua">
+                <span> 我已阅读并同意</span>&nbsp;
+                <a href="javascript:;">预订条款</a>
+                &nbsp;<span>和</span>&nbsp;
+                <a href="/zh-CN/privacy-policy" target="_blank">隐私政策</a>
+            </span>
+      </label>
+    </div>
+    <div class="container row subm it-button">
+        <button class="button full-button uppercase">下一步</button>
+
+    </div>
+  </div>
+</form>
+<!--页尾开始-->
+<div class="page-bottom">
+  <div class="help-bottom container">
+    <h3>需要帮助？</h3>
+    <div class="contact">
+      <p>请联系裸心专业预订团队:</p>
+      <h4 class="phone">
+        <a href="tel:400 9200 518">400 9200 518</a> <span>或</span>
+        <a href="tel:021 6431 8901">＋86 21 6431 8901</a><br>Email:
+        <a href="mailto:reservations@nakedretreats.cn">reservations@nakedretreats.cn</a>
+      </h4>
+    </div>
+    <div class="time">
+      <h4>工作时间</h4>
+      <p><span>周一至周五</span> <span>08:00-20:00</span></p>
+      <p><span>周六及周日</span> <span>10:00-17:00</span></p>
+    </div>
+  </div>
+  <div class="footer container">
+    <a class="back-top visible-xs" href="javascript:;">
+      <span class="top">回到顶部</span>
+      <i class="iconfont icon-up"></i>
+    </a>
+    <div class="copyright">Copyright 2011-2018 all rights reserved <a href="http://www.miitbeian.gov.cn">沪ICP备14028165号-7</a></div>
+  </div>
+</div>
+<!--页尾结束-->
+<script>
+  window.onload=function () {
+      let in_date=document.getElementById("InDate");
+      let out_date=document.getElementById("OutDate");
+      in_date.innerHTML=getWeek("<%=in_date%>");
+      out_date.innerHTML=getWeek("<%=out_date%>");
+  }
+  function getWeek(...date) {
+      let myDate;
+      if(date.length>0){
+           myDate=new Date(date[0]);
+      }else {
+          myDate=new Date();
+      }
+      let Week="";
+      switch (myDate.getDay()){
+          case 0:Week="周日";break;
+          case 1:Week="周一";break;
+          case 2:Week="周二";break;
+          case 3:Week="周三";break;
+          case 4:Week="周四";break;
+          case 5:Week="周五";break;
+          case 6:Week="周六";break;
+          default:break;
+      }
+      myDate=null;
+      return Week
+  }
+</script>
+</body>
+</html>

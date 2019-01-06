@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*裸心味*/
+.taste{
+    background-image: url("../../images/castle/castle-dining/dining/bg-pattern-3.jpg");
+    padding-bottom: 50px;
+}
+.tasteTitle{
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 40px;
+}
+.tasteIntro{
+    line-height: 30px;
+}
+.tasteIntro h4{
+    font-weight: bold;
+}
+.tasteTime{
+    width: 70%;
+    padding: 20px 40px;
+    background-color: #e9dab5;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+}
+.tasteTime h4{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+/*精选优惠*/
+.discounts{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.discTitle{
+    padding-bottom: 30px;
+}
+.discImg{
+    width: 100%;
+}
+.discBj{
+    background-color: #d8e2d8;
+    padding-bottom: 40px;
+}
+.discBj h4{
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.discBj p{
+    line-height: 30px;
+    padding: 0 30px;
+}
+.discounts .col-md-3{
+    width: 27%;
+}
+
+
+/*顶级佳肴*/
+.cate{
+    background-color: #231f20;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 5%;
+}
+.cate h2{
+    color: #c4b58e;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.cate img{
+    margin-left: 5%;
+}
+
+

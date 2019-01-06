@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+}
+.content{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding:2% 0;
+    /*background-color: #808080;*/
+}
+.content h2{
+    color: #72bdc4;
+}
+.content span{
+    color: #ff5607;
+}
+.wid-input{
+    width: 70%;
+    height: 32px;
+    border:1px solid #72b9bf;
+    border-radius: 5px;
+}
+.btn-oder{
+    width: 70%;
+    height: 40px;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    background-color: #72b9bf;
+}
+
+
+/*预订热线*/
+.oder{
+    background-color:#000b0f;
+    padding:2em 0;
+    margin-top: 80px;
+    border-top: 1px solid #252525;
+    text-align: center;
+}
+.oder p{
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 8px;
+}
+.oder span{
+    color: #72bdc4;
+    font-size: 22px;
+    line-height: 140%;
+}

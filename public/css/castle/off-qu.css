@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*“趣”野秋谷套餐*/
+.quIntro{
+    background-color:#beaf88;
+    padding: 50px;
+}
+.leftQuI h2{
+    padding-bottom: 20px;
+    padding-left: 3%;
+}
+.leQuI h2,.leftQuI h5,.leftQuI h6{
+    margin: 3%;
+}
+.leftQuI p,.leftQuI li{
+    margin: 3%;
+    line-height: 30px;
+}
+.leftQuI h3{
+    color: #1e522e;
+    margin: 3%;
+}
+
+
+.leQuRes li{
+    line-height: 200%;
+}
+.dot-li{
+    display: inline-block;
+    width:4px;
+    height:4px;
+    border-radius: 5px;
+    margin:0 4px 4px;
+    background-color: #575757;
+}
+
+
+/*右边白色预定框*/
+.quBook{
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.quBook input{
+    width: 90%;
+    height: 32px;
+    margin-bottom: 4%;
+}
+.quBook select{
+    width: 44%;
+    height: 32px;
+    margin-bottom: 4%;
+}
+.xifeiBook{
+    color: black;
+}
+.searchRoom{
+    background-color: #beaf88;
+    border: none;
+    outline: none;
+    color: white;
+}
+.searchRoom:hover{
+    background-color: #e1dfd1;
+}
+.quPhone{
+    text-align: left;
+}
+.quPhone h5{
+    font-weight: bold;
+}
+.quMTop{
+    padding-top: 5%;
+}
+
+
+/*套餐包含*/
+.quPackage{
+    padding: 3%;
+    text-align: center;
+    background-color: #000;
+}
+.quPackage .row{
+    padding-top: 2%;
+}
+.quPackage h2{
+    padding-bottom: 1%;
+    color: #beaf88;
+}
+.quPackage h4{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin-top: 0;
+    color: black;
+}
+.quCombo img{
+    width: 100%;
+}
+.leQuPac img{
+    width: 90%;
+    padding-top: 5%;
+}
+.leftQuI .border{
+    border: 1px solid #464747;
+}
+.quBj{
+    background-color: #e1dfd1;
+    padding: 20px 40px;
+}
+.quBj p{
+    text-align: left;
+}
+
+
+/*套餐预订条款*/
+.quReservation{
+    background-color: #231f20;
+    color: #bbbdc0;
+    padding-bottom: 2%;
+}
+.quReservation h2{
+    text-align: center;
+    padding: 2%;
+}
+.quReservation .row{
+    padding-bottom: 2%;
+}
+.quReservation li{
+    line-height: 150%;
+}

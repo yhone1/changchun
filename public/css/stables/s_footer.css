@@ -1,0 +1,375 @@
+.contact-bottom {
+    background-color: #191d19;
+    color: #a0baa0;
+}
+
+.contact-bottom {
+    padding: 3em 0;
+    border-top: 1px solid #252525;
+}
+.contact-bottom__cont {
+    width: 100%;
+    text-align: center;
+}
+.icon-mail:before {
+    content: "\E609";
+}
+.icon-phone:before {
+    content: "\E603";
+}
+.contact-bottom__cont p.contact-bottom__cont-title {
+    font-size: 30px;
+    color: #828282;
+    padding-bottom: 8px;
+}
+.contact-bottom__cont p {
+    font-size: 22px;
+    line-height: 140%;
+}
+.contact-bottom__list li {
+    display: inline-block;
+    padding: 0 30px;
+    text-align: center;
+}
+.contact-bottom__list-title {
+    font-size: 16px;
+    padding: 15px 0;
+}
+.contact-bottom__cont p {
+    font-size: 22px;
+    line-height: 140%;
+}
+.contact-bottom__cont .iconfont {
+    font-size: 18px;
+    margin-right: .5em;
+}
+.contact-bottom__list a{
+    color: #a0baa0;
+    text-decoration: none;
+}
+.contact-bottom__list a:hover{
+    text-decoration: none;
+    color: #a0baa0;
+}
+.footer {
+    width: 100%;
+    padding-top: 20px;
+    color: #bbbdc0;
+    background-color: #000;
+    border-top: 1px solid #252525
+}
+
+.footer,.footer:after,.footer:before {
+    box-sizing: border-box
+}
+
+.footer .container {
+    padding-top: 22px
+}
+
+.footer a {
+    text-decoration: none
+}
+
+.footer .follow,.footer .info,.footer .products,.footer .retreats {
+    width: 24%;
+    height: 270px;
+    float: left;
+    padding-left: 40px
+}
+
+.footer .products,.footer .retreats {
+    width: 23%
+}
+
+.footer .follow {
+    border-right: 0;
+    width: 30%
+}
+
+.footer .follow-title,.footer .sub-title,.footer h2 {
+    font-size: 14px;
+    margin: 1em 0 1.2em;
+    border-bottom: 1px solid #3a3939;
+    padding-bottom: 16px
+}
+
+.footer .follow-title b,.footer .sub-title b,.footer h2 b {
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+.footer .follow-title .iconfont,.footer .sub-title .iconfont,.footer h2 .iconfont {
+    display: none
+}
+
+.footer .footer-cont {
+    font-size: 12px
+}
+
+.footer .footer-cont span {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin-bottom: 1.6em;
+}
+
+.footer .footer-cont span.long {
+    width: 100%;
+    float: none
+}
+
+.footer .subscribe {
+    width: 85%;
+    border: 1px solid #464747;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 18px;
+    font-size: 0
+}
+
+.footer .subscribe button,.footer .subscribe input {
+    border: 0;
+    height: 32px;
+    padding: 6px;
+    line-height: 20px;
+    background-color: transparent;
+    color: #bbbdc0;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top
+}
+
+.footer .subscribe input[type=text] {
+    width: 75%
+}
+
+.footer .subscribe button {
+    width: 25%;
+    background-color: #464747;
+    color: #bbbdc0
+}
+
+.footer .subscribe .icon-footer-subs {
+    float: none;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    border: 0;
+    padding: 0
+}
+
+.footer .qrcode {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center
+}
+
+.footer .qrcode img {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 0 auto .4em
+}
+
+.footer .qrcode span {
+    display: block;
+    white-space: nowrap;
+    word-break: keep-all
+}
+
+.footer .share-wrap {
+    margin-top: 1em
+}
+
+.footer .share-wrap img {
+    height: auto
+}
+
+.footer .share {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 0 1.3em 1.3em
+}
+
+.footer .share a img {
+    width: 30px
+}
+
+.footer .share a.linkedin img {
+    width: 26px
+}
+
+.footer .share:first-of-type {
+    margin: 0 0 1.3em
+}
+
+.footer .copyright {
+    text-align: center;
+    padding: 3em 0;
+    font-size: 12px;
+    color: #7b7b7b
+}
+
+.footer .copyright a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px
+}
+
+@media (max-width: 767px) {
+    .footer,.footer .container {
+        padding-top:0
+    }
+
+    .footer .follow,.footer .info,.footer .products,.footer .retreats {
+        width: 100%;
+        float: none;
+        height: auto;
+        border: 0;
+        padding: 0;
+        margin-left: 0
+    }
+
+    .footer .opened-resort,.footer .sub-title,.footer h2 {
+        border-bottom: 1px solid #464747;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+        position: relative;
+        color: #808284;
+        font-size: 14px
+    }
+
+    .footer .opened-resort b,.footer .sub-title b,.footer h2 b {
+        text-transform: none
+    }
+
+    .footer .opened-resort .iconfont,.footer .sub-title .iconfont,.footer h2 .iconfont {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 20px
+    }
+
+    .footer .footer-cont {
+        font-size: 14px;
+        display: none
+    }
+
+    .footer .footer-cont span {
+        border-bottom: 1px solid #464747;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+        float: none;
+        width: 100%!important;
+        background-color: #353535
+    }
+
+    .footer .footer-cont span a {
+        color: #beaf88;
+        display: block;
+        width: 100%;
+        height: 100%
+    }
+
+    .footer .container>.show-sub .sub-title,.footer .container>.show-sub h2 {
+        background-color: #353535;
+        color: #beaf88
+    }
+
+    .footer .container>.show-sub .sub-title .iconfont,.footer .container>.show-sub h2 .iconfont {
+        transform: rotate(180deg);
+        display: block
+    }
+
+    .footer .container>.show-sub .footer-cont {
+        display: block
+    }
+
+    .footer .follow .follow-title,.footer .follow h2 {
+        border: 0;
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: .5em;
+        color: #808284;
+        font-size: 18px
+    }
+
+    .footer .follow .footer-cont {
+        display: block;
+        text-align: center
+    }
+
+    .footer .subscribe {
+        width: 80%;
+        margin: 0 auto
+    }
+
+    .footer .qrcode {
+        display: block;
+        margin: 2em auto
+    }
+
+    .footer .qrcode small {
+        display: none
+    }
+
+    .footer .share-wrap {
+        margin-top: 0
+    }
+
+    .footer .share {
+        display: inline-block
+    }
+
+    .footer .share,.footer .share:first-of-type {
+        margin: 1em .5em 2em
+    }
+
+    .footer .copyright {
+        border-top: 1px solid #252525
+    }
+
+    .footer .back-top {
+        text-align: center;
+        display: block!important;
+        margin: 0 auto;
+        padding: .5em 0
+    }
+
+    .footer .back-top .iconfont,.footer .back-top .top {
+        display: inline-block;
+        vertical-align: middle
+    }
+
+    .footer .back-top .icon-up {
+        position: relative;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #ddd;
+        color: #fefefb
+    }
+
+    .footer .back-top .icon-up:before {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        font-size: 10px
+    }
+}
+.footer a{
+    color:#bbbdc0;
+}
+.footer a:hover{
+    color:#bbbdc0;
+    text-decoration: none;
+}

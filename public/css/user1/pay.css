@@ -1,0 +1,186 @@
+input[type=radio] {
+    position: absolute;
+    opacity: 0
+}
+label {
+    background-color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    display: block;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+    height: 4.642rem;
+    line-height: 4.442rem;
+    padding: 0 20px;
+    font-size: 1.142em
+}
+.icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 1.171rem 0 0;
+    background: transparent no-repeat 50%;
+    background-size: 100% auto
+}
+.icon.icon-wechat {
+    background-image: url(../../images/wechat.png)
+}
+.icon-alipay {
+    background-image: url(../../images/Alipay.png)
+}
+.icon-unionpay {
+    background-image: url(../../images/cash.png)
+}
+.match {
+    display: block;
+    margin-left: 50px
+}
+.match .iconfont {
+    float: right;
+    color: #ddd;
+    font-size: 1.33em
+}
+input[type=radio]:checked+label {
+    border: 1px solid #888
+}
+.pay-method .col-8:first-child {
+    padding-right: 20px
+}
+.pay-method .col-8:nth-child(2) {
+    padding-right: 10px;
+    padding-left: 10px
+}
+.pay-method .col-8:nth-child(3) {
+    padding-left: 20px
+}
+.in-wechat-app .deposit-desc {
+    border-bottom: 0;
+    padding-bottom: 0
+}
+.icon-success:before {
+    content: "\E61E";
+}
+.in-wechat-app .pay-method-cont {
+    display: none
+}
+input[type=radio]:checked+label {
+    border-color: #96b6a1
+}
+input[type=radio]:checked+label .match .iconfont {
+    color: #5f9271
+}
+.pay-method-cont{
+    width: 100%;
+}
+.pay-title{
+    line-height: 250%;
+    padding-left: 4%;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #fafafa;
+}
+.pay-method{
+    width: 90%;
+    margin: 2% auto;
+}
+.operation{
+    height: 20%;
+    width: 100%;
+    padding: 2%;
+    text-align: right;
+}
+.operation span:first-child{
+    margin-left: 5%;
+}
+.payBtn{
+    background-color:rgb(92,133,96);
+}
+.buttont{
+    display: inline-block;
+    width: 100px;
+    height:33px ;
+    color: whitesmoke;
+    line-height: 33px;
+    font-size: 14px;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 5%;
+}
+.buttont:hover{
+    color: white;
+}
+.cancelBtn{
+    background-color: #beaf88;
+}
+.button{
+    display: inline-block;
+    width: 100px;
+    height:33px ;
+    color: whitesmoke;
+    line-height: 33px;
+    font-size: 14px;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 5%;
+    background-color:rgb(92,133,96);
+}
+.button:hover{
+    color: white;
+    background: #1e522f
+}
+.modalblock{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 40%;
+    background-color: #f1f1f1;
+    background-image: url(../../images/stables/stables-private/companyactivity/bg-pattern-5.png);
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,0.2);
+    border-radius: 5px;
+}
+.title{
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+.title span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.title i{
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.group{
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.group span{
+    font-weight: bold;
+}
+.m_input{
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    border:1px solid #1e522f;
+    background: transparent;
+}
+.cancel,.confirm{
+    margin: 0 3%;
+    border: 1px solid #3c3c3c;
+}
+.cancel{
+    background: transparent;
+    color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+}
+.cancel:hover{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+.logout{
+    top: 28%;
+    height: 150px;
+}

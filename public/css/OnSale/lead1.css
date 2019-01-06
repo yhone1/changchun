@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ban{
+    overflow: hidden;
+
+}
+.ban>img{
+    width: 100%;
+}
+.ban1{
+    margin-top: -4px;
+    width: 100%;
+    height: 772px;
+    /*border: 1px red solid;*/
+    background-color: rgb(223,223,221);
+    overflow: hidden;
+    text-align: center;
+}
+.ban1>h1{
+    color: #ffa200;
+    /*border: 1px red solid;*/
+    width: 20%;
+margin: 6% auto 1%;
+}
+.ban1>:nth-child(2){
+    font-size: 1.2em;
+    color: #ffa200;
+    width: 16%;
+    margin: auto;
+}
+.ban1>:nth-child(3){
+    font-size: 1em;
+    width: 38%;
+    margin: 1% auto;
+}
+.ban1>:nth-child(4){
+    font-size: 1em;
+    width: 45%;
+    margin: auto;
+}
+.bai0{
+    width: 80%;
+    height: 420px;
+    background-color: white;
+    margin: 4% auto;
+    /*outline: 1px red solid;*/
+    overflow: hidden;
+}
+.huang{
+    color: #ffa200;
+}
+.bai0>:nth-child(1){
+    margin-top: 4%;
+}
+.bai0>:nth-child(3){
+    margin-top: 2%;
+}
+.bai0>:nth-child(5){
+    color: rgb(77,83,85);
+}
+.Jia{
+    background-color: #ffa200;
+    width: 20%;
+    height: 50px;
+    margin: 4% auto 3%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Jia0{
+    width: 90%;
+    height: 50px;
+    background-color: #4d5355;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.Jia:hover .Jia0{
+    width: 100%;
+    transition: width .3s linear;
+}
+
+.ban2{
+    width: 100%;
+    height: 848px;
+    /*border: 1px red solid;*/
+    overflow: hidden;
+    text-align: center;
+}
+
+.banBan{
+    width: 50%;
+    height: 80%;
+    /*outline: 1px red solid;*/
+    margin: 4% auto;
+    text-align: left;
+}
+.ban2>h2{
+    margin-top: 40px;
+}
+.ban2>:nth-child(2){
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+.yuanDian{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 200px;
+}
+.banBan>p{
+    margin-top: 16px;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*banner大图*/
+.bannerTitle{
+    text-align: center;
+    background-color: #d9e3d9;
+}
+.bannerTitle p{
+    padding: 15px;
+}
+
+/*玩的类型*/
+.chooseRow{
+    margin-bottom: 30px;
+    background-color: #e1dfd1;
+}
+.chooseRow img{
+    margin-left: -14px;
+}
+.bjColor h4{
+    padding-top: 25px;
+}
+.bjP{
+    line-height: 30px;
+}
+.moreBox{
+    position: relative;
+}
+/*.more{*/
+    /*border: 1px solid #1e522e;*/
+    /*padding: 3px 25px;*/
+    /*display: inline-block;*/
+/*}*/
+.actImg{
+    width: 100%;
+}
+

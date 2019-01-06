@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+.gallery{
+    padding-top: 5.9%;
+    padding-bottom: 5%;
+}
+
+.gallerycover{
+    padding-top: 5%;
+}
+.gallerycover:hover{
+    cursor: pointer;
+}
+
+
+
+
+ /*相册封面css*/
+ .figcaption {
+     width:320px;
+     /*height:290px;*/
+     background-size:100% 100%;
+     position:relative;
+     overflow:hidden;
+ }
+
+ /*每个封面的图片*/
+.albumCover1{
+    background:url("../../images/castle/castle-gallery/gallery/1507706984409.jpg") no-repeat;
+}
+.albumCover2{
+    background:url("../../images/castle/castle-gallery/gallery/1507709569936.jpg") no-repeat;
+}
+.albumCover3{
+    background:url("../../images/castle/castle-gallery/gallery/1507705682121.jpg") no-repeat;
+}
+.albumCover4{
+    background:url("../../images/castle/castle-gallery/gallery/1507702490642.jpg") no-repeat;
+}
+.albumCover5{
+    background:url("../../images/castle/castle-gallery/gallery/1507704156612.jpg") no-repeat;
+}
+.albumCover6{
+    background:url("../../images/castle/castle-gallery/gallery/1507707626607.jpg") no-repeat;
+}
+.albumCover7{
+    background:url("../../images/castle/castle-gallery/gallery/1507703335748.jpg") no-repeat;
+}
+.albumCover8{
+    background:url("../../images/castle/castle-gallery/gallery/1493978408735.jpg") no-repeat;
+}
+.albumCover9{
+    background:url("../../images/castle/castle-gallery/gallery/1507706401018.jpg") no-repeat;
+}
+
+
+
+.figcaption:hover img {
+    transform:scale(3,3);
+    opacity: 0.5;
+    transition:all 0.5s ease-in-out;
+}
+.figcaption:hover .more {
+    transform:scale(1,1) rotate(0deg);
+    opacity:1;
+    transition:all 0.5s ease-in-out;
+}
+.more {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    margin-left: -30px;
+    margin-top: -20px;
+    transition: 0.3s ease-in-out;
+    transform-origin: 50% 50%;
+    transform: scale(0, 0) rotate(-45deg);
+}

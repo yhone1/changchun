@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/**/
+.banner-pic img{
+    width: 100%;
+    height:500px;
+}
+.page-title{
+    color: #beaf88;
+}
+body{
+    background-color: #000;
+}
+.brand{
+    width: 100%;
+    padding: 5% 25%;
+    position: relative;
+    background-color:#231f20;
+}
+.brand h2{
+    line-height: 230%;
+    color:#beaf88;
+}
+.brand p{
+    margin-top: 30px;
+    line-height: 280%;
+    color: #bbbdc0;
+}
+.brand div{
+    float: right;
+}
+
+/**/
+ul.booking-select {
+    display: none;
+    width: 90px
+}
+
+ul.booking-select.adults {
+    width: 140px
+}
+
+ul.booking-select:before {
+    margin-left: 36px;
+    display: block;
+    height: 13px;
+    line-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color: #1e522f;
+    font-family: iconfont!important;
+    content: "\E61B"
+}
+
+ul.booking-select li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /*border: 1px solid #a0baa0;*/
+    border-width: 1px 0 0;
+}
+
+ul.booking-select li a {
+    display: block
+}
+
+.contact-page {
+    background:#000;
+    line-height: 150%
+}
+
+/*.contact-page .page-title {*/
+/*!*padding: 40px 0 20px;*!*/
+/*font-size: 28px;*/
+/*text-align: center;*/
+/*color: #221e1f;*/
+/*}*/
+.page-title{
+    color: #beaf88 ;
+    padding: 50px 0;
+    text-align: center;
+
+}
+.contact-page .contact-list {
+    padding: 60px 0
+}
+
+@media (max-width: 767px) {
+    .contact-page .contact-list {
+        padding:20px 0
+    }
+}
+
+.contact-page .contact-list ul {
+    overflow: hidden;
+    width: 102%;
+    margin-left: -1%
+}
+
+.contact-page .contact-list ul,.contact-page .contact-list ul:after,.contact-page .contact-list ul:before {
+    box-sizing: border-box
+}
+
+@media (max-width: 767px) {
+    .contact-page .contact-list ul {
+        width:100%;
+        padding: 0 12px;
+        margin-left: 0
+    }
+}
+
+.contact-page .contact-list li {
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0 10px
+}
+
+@media (max-width: 767px) {
+    .contact-page .contact-list li {
+        width:auto;
+        float: none;
+        padding: 0;
+        margin-bottom: 12px
+    }
+}
+
+.contact-page .contact-list .list-item {
+    padding: 10px 120px;
+    color:#bbbcbf
+}
+
+@media (max-width: 767px) {
+    .contact-page .contact-list .list-item {
+        height:auto
+    }
+}
+
+.contact-page .contact-list h3 {
+    font-size: 20px;
+    padding-bottom: .6em;
+    color: #beaf88
+}
+
+.contact-page .contact-list .content {
+    line-height: 1.8em
+}
+
+.contact-page .contact-list .content .iconfont {
+    display: inline-block;
+    width: 22px;
+    text-align: center;
+    color: #9e9c9c
+}
+
+.contact-page .contact-list .content label,.contact-page .contact-list .content span {
+    display: inline-block;
+    vertical-align: top
+}
+
+.contact-page .contact-list .content label {
+    margin-right: .5em
+}
+
+.contact-page .block-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #221e1f;
+    width: 100%
+}
+
+.contact-page .block-content .site-title {
+    font-size: 24px;
+    color: #beaf88;
+    margin: 0 0 1em
+}
+
+.contact-page .block-content .site-address {
+    margin-bottom: 10px
+}
+
+.contact-page .block-content ul li {
+    width: 33.3333333%;
+    float: left;
+    padding: 30px;
+    color: #bbbcbf
+}
+
+@media (max-width: 767px) {
+    .contact-page .block-content ul li {
+        width:100%;
+        text-align: center
+    }
+}

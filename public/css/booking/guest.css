@@ -1,0 +1,600 @@
+/*公共的板块*/
+button, input, select {
+    border-radius: 0;
+    outline: none;
+}
+.col-8 {
+    width: 33.33333333%;
+}
+.col-16 {
+    width: 66.66666667%;
+}
+.col-12 {
+    width: 50%;
+}
+.col-24 {
+    width: 100%;
+}
+.col-11 {
+    width: 45.83333333%;
+}
+.col-15 {
+    width: 62.5%;
+}
+.col-10 {
+    width: 41.66666667%;
+}
+.col-14 {
+    width: 58.33333333%;
+}
+
+.col-9 {
+    width: 37.5%;
+}
+.col-1 {
+    width: 4.16666667%;
+}
+.col-24 {
+    width: 100%;
+}
+.col-11 {
+    width: 45.83333333%;
+}
+.col-13 {
+    width: 54.16666667%;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+input{
+    border: none;
+}
+dt,label{
+    font-weight: inherit;
+}
+
+body, button, input, select {
+    font-family: Helvetica Neue,PingFang SC,Heiti SC,STHeiti,Microsoft YaHei,calibri;
+}
+button, input, select {
+    border-radius: 0;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16, .col-17, .col-18, .col-19, .col-20, .col-21, .col-22, .col-23, .col-24, .col-lg-24, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .col-xs-19, .col-xs-20, .col-xs-21, .col-xs-22, .col-xs-23, .col-xs-24 {
+    display: block;
+    position: relative;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    box-sizing: border-box;
+}
+.gray {
+    color: #888;
+}
+body, h1, h2, h3, h4, h5, li, p, ul {
+    margin: 0;
+    font-weight: 400;
+    color: inherit;
+}
+h2 {
+    font-size: 1.72em;
+}
+li, ul {
+    list-style: none none;
+    padding: 0;
+}
+.zh-CN .booking-status li.step1 .text, .zh-CN .booking-status li.step3 .text {
+    width: 100%;
+}
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*背景图片区*/
+.page-room {
+    padding-bottom: 1px;
+}
+.page {
+    background-color: #f6f6f6;
+}
+
+.booking-status {
+    padding-top: 60px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+/*进度条*/
+.booking-status .container {
+    overflow: hidden;
+    padding:0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.booking-status ul {
+    font-size: 0;
+    width: 104%;
+    margin-left: -2%;
+    position: relative;
+    display: table;
+}
+.booking-status li {
+    display: table-cell;
+    /*height: 100%;*/
+    font-size: .857rem;
+    position: relative;
+    height: 36px;
+    cursor: pointer;
+}
+.booking-status li .bg {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 2px;
+}
+
+.booking-status li.done .bg div {
+    background-color: #96b6a1;
+}
+
+.booking-status li .bg div {
+    width: 100%;
+    height: 100%;
+    background: #e6e6e6;
+    -webkit-transform: skew(-25deg);
+    transform: skew(-25deg);
+}
+
+/*文字*/
+.booking-status li .text {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    color: #b9b9b9;
+}
+.booking-status li.done .text {
+    color: #333;
+}
+.booking-status li.done .text .number {
+    border-color: #333;
+}
+.booking-status li .text span.number {
+    font-size: 1em;
+    height: 20px;
+    width: 20px;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid #b9b9b9;
+    border-radius: 50%;
+    margin-right: .6em;
+}
+
+.booking-status li .text span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.booking-status li.active .bg div {
+    background-color: #004712;
+}
+/*预定信息*/
+.booking-option-detail {
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+
+.booking-option-detail {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.booking-option-detail h2 {
+    height: 4.642rem;
+    line-height: 4.642rem;
+    padding: 0 20px;
+}
+.booking-option-detail h2 {
+    font-size: 1.285em;
+    height: 4.285rem;
+    line-height: 4.285rem;
+    padding: 0 17px;
+    cursor: pointer;
+}
+
+/*标题*/
+.icon-triangle-down:before {
+    content: "\E61D";
+}
+.booking-option-detail h2 span {
+    float: none;
+}
+.booking-option-detail h2 .iconfont {
+    float: none;
+    margin-top: 0;
+}
+.booking-option-detail h2 .iconfont {
+    font-size: .5em;
+    margin-left: 1em;
+}
+
+/*内容*/
+.page-guest .booking-option-detail .detail-content {
+    padding-bottom: 25px;
+}
+.booking-option-detail .booking-info.col-9 {
+    border-right: 1px solid #ddd;
+}
+.booking-option-detail .booking-info {
+    padding: 0 30px 23px;
+}
+
+.booking-option-detail .booking-info dl {
+    margin: 0 auto 20px;
+}
+
+.booking-option-detail .booking-info dt {
+    width: 40%;
+    float: left;
+    margin-bottom: .7em;
+    color: #666;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    clear: left;
+}
+
+.booking-option-detail .booking-info dd {
+    margin-left: 40%;
+    margin-bottom: .7em;
+    min-height: 1.5rem;
+    line-height: 1.5rem;
+}
+.booking-option-detail .booking-info strong {
+    font-size: 1.142em;
+    font-weight: 700;
+    color: #ed8123;
+}
+
+
+.page-guest .booking-option-detail .booking-info .gray-button {
+    margin-left: 32%;
+}
+
+ .booking-option-detail .booking-info .gray-button {
+    color: #5f9271;
+}
+
+.booking-option-detail .booking-info .gray-button {
+    height: auto;
+    line-height: 1.2em;
+    background-color: transparent;
+    padding: 0;
+}
+.gray-button {
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.147em;
+    margin-left: 173px;
+}
+
+/*填写订单*/
+.page-guest .page-title {
+    font-size: 1.428em;
+    text-align: center;
+    margin: 2em auto 1.5em;
+}
+.hidden-xs {
+    display: block!important;
+}
+.page-guest .form-block {
+    padding: 30px 20px 10px;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.page-guest .form-block h2, .page-guest .form-block h3 {
+    margin-bottom: .5em;
+    font-size: 1.714em;
+}
+
+.page-guest .form-guest {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.page-guest .form div[class^=col-]:nth-child(odd) {
+    padding-right: 20px;
+}
+.page-guest .form div[class^=col-] {
+    padding-bottom: 20px;
+}
+.page-guest .one-col {
+    margin-right: 50%;
+}
+
+.page-guest .form-item {
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+    height: 4.642rem;
+    padding: 0 20px;
+}
+.page-guest .form-item label {
+    float: left;
+    width: 35%;
+    color: #888;
+    font-size: 1.285em;
+    line-height: 4.642rem;
+}
+
+.hidden-xs-inline {
+    display: inline!important;
+}
+
+.page-guest .form-item .form-item-input {
+    margin-left: 35%;
+    height: 100%;
+    line-height: 4.642rem;
+}
+
+.html-select {
+    display: block;
+    width: auto;
+    position: relative;
+}
+
+.html-select .iconfont {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 30px;
+    font-size: .8em;
+    pointer-events: none;
+}
+
+.html-select select {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    /*appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*-ms-appearance: none;*/
+    border: 0;
+    background-color: transparent;
+    font-size: 1.285em;
+    cursor: pointer;
+}
+
+.page-guest .form-item input[type=text], .page-guest .form-item textarea {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 1.285em;
+}
+.nAme{
+    padding-left: 15px; ;
+}
+.telNum{
+    padding-right: 15px;
+}
+
+/*担保金支付*/
+.page-guest .form-pay {
+    padding-bottom: 20px;
+}
+.page-guest .form-pay .deposit-desc {
+    background-color: #f2f6f3;
+}
+.page-guest .form-pay .deposit-desc {
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.page-guest .form-pay .deposit-desc .deposit {
+    font-size: 1.142em;
+    margin-bottom: .5em;
+}
+.money {
+    color: #ed8123;
+}
+
+/*支付方式*/
+.page-guest .form-block h3 {
+    font-size: 1.428em;
+}
+
+.page-guest .form-pay .pay-method .col-8:first-child {
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.page-guest .form-pay .pay-method .col-8:nth-child(2) {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.page-guest .form-pay .pay-method .col-8:nth-child(3) {
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.page-guest .form-pay input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.page-guest .form-pay input[type=radio]:checked+label {
+    border-color: #96b6a1;
+}
+
+.page-guest .form-pay input[type=radio]:checked+label {
+    border: 1px solid #888;
+}
+.page-guest .form-pay label {
+    background-color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    display: block;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+    height: 4.642rem;
+    line-height: 4.442rem;
+    padding: 0 20px;
+    font-size: 1.142em;
+}
+.pay-method span{
+    margin-top: 15px;
+    color: #333333;
+    font-weight: inherit;
+    font-size: 16px;
+}
+
+/*微信*/
+.page-guest .form-pay .icon.icon-wechat {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR…70fEmZkVSHcrwIlb8CEzyF7klMwDn83pI+ag5/PX7Kqtv/AMEoGoX5hY55AAAAAElFTkSuQmCC);
+}
+
+.page-guest .form-pay .icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 1.171rem 0 0;
+    background: transparent no-repeat 50%;
+    background-size: 100% auto;
+}
+
+.page-guest .form-pay .label {
+    display: block;
+    margin-left: 50px;
+}
+
+
+/*特殊需求*/
+.page-guest .form div[class^=col-]:nth-child(odd) {
+    padding-right: 10px;
+}
+.page-guest .form div[class^=col-] {
+    padding-bottom: 20px;
+}
+
+.page-guest .form-item.auto-height {
+    height: auto;
+}
+
+ .page-guest .form-item textarea {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 1.285em;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+.exMeet{
+    margin: 0;
+}
+
+/*条款*/
+.page-guest .form-agree {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    height: 4.642rem;
+    line-height: 4.642rem;
+    font-size: 1.142em;
+    margin-bottom: 20px;
+}
+.page-guest .form-agree label {
+    display: block;
+}
+
+.html-checkbox {
+    position: relative;
+    display: inline-block;
+}
+
+.html-checkbox input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin: 0;
+}
+.tiaKua{
+    color: #333333;
+    font-size: 16px;
+    font-weight: inherit;
+}
+.icon-success:before {
+    content: "\E61E";
+}
+
+a:link{
+    color: #5f9271;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*btn*/
+.page-guest .submit-button {
+    padding: 2em 0 4em;
+}
+
+.page-guest .submit-button .button {
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+}
+.button, a.button {
+    background-color: #5f9271;
+}
+.full-button {
+    width: 100%;
+    height: 4.285rem;
+}
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    line-height: 2.76rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.147em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+}
+.uppercase {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.it-button{
+    margin-bottom: 0;
+}

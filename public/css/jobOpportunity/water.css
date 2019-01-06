@@ -1,0 +1,172 @@
+.bigDiv{
+    width: 100%;
+    height: 500px;
+    /*margin-left: 10px;*/
+
+    position: relative;
+}
+
+.sss{
+    border: red 1px solid;
+}
+/*banner*/
+.banner{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.divImg{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top:0;
+    display: none;
+    transition: all 1s ;
+}
+
+.slide1{
+
+    background-image:url("../../images/jobOpportunity/water/water1_md.jpg");
+    background-repeat: no-repeat;
+    position: center;
+}
+
+.slide2{
+
+    background-image:url("../../images/jobOpportunity/water/water2_md.jpg");
+    background-repeat: no-repeat;
+    position: center;
+}
+.slide3{
+
+    background-image:url("../../images/jobOpportunity/water/water3_md.jpg");
+    background-repeat: no-repeat;
+    position: center;
+}.slide4{
+
+    background-image:url("../../images/jobOpportunity/water/water4_md.jpg");
+    background-repeat: no-repeat;
+    position: center;
+}
+.slide5{
+
+    background-image:url("../../images/jobOpportunity/water/water5_md.jpg");
+    background-repeat: no-repeat;
+    position: center;
+}
+.slide6{
+
+    background-image:url("../../images/jobOpportunity/water/water6_md.jpg");
+    background-repeat: no-repeat;
+    position: center;
+}
+
+
+
+
+
+.active{
+    display: block;
+}
+
+/*��һ�ţ���һ�Ű�ť*/
+.button{
+    display:inline-block;
+    width: 40px;
+    height: 80px;
+    background:url("../../images/jobOpportunity/img/arrow.png") no-repeat center center;
+    position: absolute;
+    left: 0;
+    top:38%;
+    margin-top:-40px ;
+
+}
+.button:hover{
+    background-color: gray;
+    opacity: 0.8;
+}
+.next{
+    left: auto;
+    right: 0;
+}
+.prev{
+    transform: rotate(180deg);
+}
+
+.dots span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left: 5px;
+    border: 1px solid white;
+    cursor:pointer;
+}
+
+.dots{
+    width: 200px;
+    position: relative;
+    /*right: 900px;*/
+    left: 630px;
+    bottom:30px  ;
+
+}
+.dots span.span_active{
+    background-color: wheat;
+
+}
+.kaiye{
+    width: 100%;
+    height: 200px;
+    /*background-color: #f5f5f5;*/
+    text-align: center;
+    overflow: hidden;
+    font-weight: lighter;
+
+}
+h2{
+margin-top: 20px;
+}
+p{
+    font-size: 23px;
+}
+
+.kaiye1{
+   background-color: #f9f9f9;
+}
+.fensi{
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-top: -10px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.input1{
+    width: 220px;
+    height: 34px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 2px #dedede;
+
+}
+.input2{
+    width: 58px;
+    height:34px;
+    background-color: #808080;
+    border: none;
+    color: white;
+    margin-left: -5px;
+    box-shadow: 0 2px 2px #dedede;
+
+}
+*{
+    box-sizing: border-box;
+}

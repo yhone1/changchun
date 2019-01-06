@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*banner大图*/
+.bannerTitle{
+    text-align: center;
+    background-image: url("../../images/castle/castle-dining/dining/bg-pattern-3.jpg");
+}
+.bannerTitle p{
+    padding: 3%;
+    margin: 0;
+}
+
+/*3钟类型的餐厅*/
+.threeRestaurant{
+    padding: 30px;
+    color: #beaf88;
+    background-color: black;
+}
+.restaurantBox{
+    padding-bottom: 20px;
+    background-color: #231f20;
+}
+.restaurantBox h2{
+    padding: 20px 20px 5px;
+    margin-top: 0;
+}
+.resP{
+    line-height: 30px;
+    padding: 5px 20px;
+}
+.restaurantBox a p{
+    margin-left: 20px;
+}
+
+.restaurantBox span{
+    border: 1px solid #1e522f;
+    padding: 10px 30px;
+}
+
+.lastResBox{
+    margin-top: 30px;
+}
+.imgWidth{
+    width: 100%;
+}
+
+
+
+
+/*预定热线*/
+.bookPhone{
+    background-color: grey;
+    padding: 30px;
+}
+.bookPhone p{
+    color: #1e522e;
+    font-weight: bold;
+}
+.telephone{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.telephone h2{
+    color: white;
+}

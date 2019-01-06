@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+/*白框--裸心的由来*/
+.whiteOrigin{
+    text-align: center;
+    background-image: url("../../images/castle/castle-dining/dining/bg-pattern-3.jpg");
+}
+.originBox{
+    padding: 60px;
+    margin: 0 auto;
+    width: 80%;
+}
+.originBox:first-child{
+    line-height:30px;
+}
+
+/*绿框--裸心故事*/
+.greenStory{
+    background-color: #231f20;
+    color: rgba(255, 255, 255, 0.6);
+}
+.storyBox{
+    width: 100%;
+    padding: 60px;
+}
+.rightText{
+    text-align: center;
+}
+.rightText h2{
+    color: #beae8a;
+}
+.rightText:nth-child(2){
+    line-height: 30px;
+}
+
+/*永续的设计、建造及经营理念*/
+.whiteDesign{
+    text-align: center;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.7);
+}
+.designTitle{
+    padding: 50px 80px;
+}
+.designTitle h2{
+    color: #beae8a;
+}
+.designTitle:nth-child(1){
+    line-height: 30px;
+}
+.designMiddle{
+    background-color: #3c3c3c;
+    margin-bottom: 6%;
+    padding-top: 1%;
+}
+.designMiddle>h4{
+    font-weight: bold;
+    padding: 10px;
+}
+.designMiddle>p{
+    line-height: 30px;
+    padding-bottom: 50px;
+}
+
+/*生态·环保*/
+.bjBamboo{
+    background-image: url("../../images/stables/stables-story/story_green_img_w.jpg");
+    color: white;
+}
+.bambooBox{
+    padding: 60px;
+}
+.bambooTitle{
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 10%;
+}
+.bambooTitle>h2{
+    border: 2px solid white;
+    padding: 9px;
+}
+.bambooContain{
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.bambooContain>div>ul{
+    margin-left: 20px;
+}
+
+/*六年经营，收获无数顾客及机构的认可与赞誉*/
+.whiteSixYear{
+    margin-bottom: 60px;
+}
+.sixYearBox{
+    padding: 60px;
+    text-align: center;
+}
+.sixYearBox>h2{
+    margin-bottom: 30px;
+}
+.sixYearBox>p{
+    line-height: 30px;
+}
+/*左边变化的滑动框*/
+.line{
+    position: absolute;
+    left: 64px;
+    width: 6px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #a0baa0;
+}
+dl{
+    vertical-align: middle;
+    position: relative;
+}
+.milestone{
+    position: relative;
+}
+.dot{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #a0baa0;
+    border: 2px solid #fff;
+    margin: 0 18px;
+    vertical-align: middle;
+}
+.cont{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #a0baa0;
+    color: #373535;
+    margin: 17px 0;
+    padding: 10px;
+    position: relative;
+    width: 288px;
+    line-height: 120%;
+}
+.cont:before{
+    content: "";
+    border-right: 10px solid #a0baa0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+.milestone:hover{
+    cursor: pointer;
+}
+.milestone:hover .dot,.milestone:hover .cont{
+    background-color: #f1b51c;
+}
+.milestone:hover .cont:before{
+    border-right: 10px solid #f1b51c;
+}
+/*右边变换的图片*/
+.rightImg{
+    padding-top: 70px;
+    position: relative;
+}
+.imgInit{
+    width: 87%;
+}
+
+
+/*预定热线*/
+.bookPhone{
+    background-color: grey;
+    padding: 30px;
+}
+.bookPhone p{
+    color: #1e522e;
+    font-weight: bold;
+}
+.telephone{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.telephone h2{
+    color: white;
+}

@@ -1,0 +1,580 @@
+/*@media (min-width: 1340px) {*/
+    /*.banner {*/
+        /*padding-top:40%*/
+    /*}*/
+/*}*/
+
+/*@media (min-width: 1570px) {*/
+    /*.banner {*/
+        /*padding-top:35%*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 767px) {*/
+    /*.banner {*/
+        /*padding-top:55%*/
+    /*}*/
+
+    /*.banner .book-bar {*/
+        /*display: none*/
+    /*}*/
+
+    /*.banner .content h2 {*/
+        /*font-size: 26px*/
+    /*}*/
+
+    /*.banner .content .text {*/
+        /*font-size: 18px*/
+    /*}*/
+
+    /*.banner .banner-swiper .swiper-pagination {*/
+        /*bottom: 10px*/
+    /*}*/
+
+    /*.banner.simple {*/
+        /*padding-top: 50%;*/
+        /*margin-top: 80px*/
+    /*}*/
+
+    /*.banner .title-cont {*/
+        /*padding-top: 0*/
+    /*}*/
+
+    /*.banner .video-container {*/
+        /*margin-top: 0*/
+    /*}*/
+
+    /*.banner .video-container p {*/
+        /*line-height: 200%*/
+    /*}*/
+
+    /*.banner .video-btn {*/
+        /*width: 46px;*/
+        /*height: 46px*/
+    /*}*/
+
+    /*.banner .video-btn .icon-play {*/
+        /*font-size: 20px;*/
+        /*margin: 11px 0 0 3px*/
+    /*}*/
+
+    /*.banner .banner-popup .popup-video {*/
+        /*top: 80px;*/
+        /*left: 0;*/
+        /*transform: none*/
+    /*}*/
+
+    /*.banner .banner-popup .close-popup {*/
+        /*top: -35px;*/
+        /*right: 2px*/
+    /*}*/
+/*}*/
+
+.banner .banner-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+.banner .no-swiper, .banner .no-swiper:after, .banner .no-swiper:before {
+    box-sizing: border-box;
+}
+.banner .no-swiper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.banner .no-swiper>div {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.banner .cover-image {
+    position: absolute;
+}
+.cover-image {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.weddings-details,.weddings-details:after,.weddings-details:before {
+    box-sizing: border-box
+}
+
+.weddings-details p {
+    line-height: 26px;
+    font-size: 14px;
+    margin-bottom: 15px
+}
+
+.weddings-details .underline {
+    text-decoration: underline;
+    color: black;
+}
+
+.weddings-details__body h2 {
+    margin: 15px 0 35px;
+    font-size: 26px;
+    color: #1e522f
+}
+
+@media (max-width: 767px) {
+    .weddings-details__body h2 {
+        margin:10px 0 20px
+    }
+}
+
+.weddings-details__body-content {
+    line-height: 1.6em
+}
+
+.weddings-details__body-content p {
+    line-height: 1.6em;
+    margin: 0 0 .5em
+}
+
+.weddings-details h3 {
+    margin: 60px 0 20px;
+    font-size: 26px
+}
+
+@media (max-width: 767px) {
+    .weddings-details h3 {
+        margin-top:30px
+    }
+}
+
+.weddings-details .innerpage-title {
+    font-size: 0;
+    text-align: left;
+    padding: 30px 15px;
+    background-color: #f1f1f1
+}
+
+.weddings-details .innerpage-title h1 {
+    font-size: 32px;
+    text-align: center
+}
+
+.weddings-details .innerpage-title__copy {
+    display: inline-block;
+    width: 60%;
+    font-size: 14px;
+    text-align: left;
+    padding-right: 60px
+}
+
+.weddings-details .innerpage-title__copy-content {
+    line-height: 1.6em
+}
+
+@media (max-width: 767px) {
+    .weddings-details .innerpage-title__copy-content {
+        padding:0 0 15px
+    }
+}
+
+.weddings-details .innerpage-title__copy-content p {
+    line-height: 1.6em;
+    margin: 0 0 .5em
+}
+
+@media (max-width: 767px) {
+    .weddings-details .innerpage-title__copy {
+        width:100%;
+        text-align: center
+    }
+
+    .weddings-details .innerpage-title__copy a.button-gray {
+        margin: 0 0 20px;
+        display: inline-block
+    }
+}
+
+.weddings-details .innerpage-title__copy p {
+    text-align: left;
+    margin-bottom: 20px
+}
+
+.weddings-details .innerpage-title__tel {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    padding: 30px 15px;
+    background-color: #d8e2d8;
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+    font-size: 14px;
+    margin-top: 5px
+}
+
+.weddings-details .innerpage-title__tel-content {
+    line-height: 1.6em
+}
+
+.weddings-details .innerpage-title__tel-content h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px
+}
+
+.weddings-details .innerpage-title__tel-content p {
+    line-height: 1.6em;
+    margin: 0 0 .5em
+}
+.innerpage-title__tel-content a{
+     color: black;
+     text-decoration: underline;
+ }
+.innerpage-title__tel-content a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.weddings-details .innerpage-title__tel-content img {
+    float: left;
+    width: 100px
+}
+
+@media (max-width: 767px) {
+    .weddings-details .innerpage-title__tel-content img {
+        width:60px
+    }
+}
+
+.weddings-details .innerpage-title__tel-content .innerpage-title__qrCode {
+    padding-top: 5px
+}
+
+.weddings-details .innerpage-title__tel-content .innerpage-title__qrCode-right {
+    margin: 0 0 0 40px;
+    display: table;
+    height: 100px;
+    float: left
+}
+
+@media (max-width: 767px) {
+    .weddings-details .innerpage-title__tel-content .innerpage-title__qrCode-right {
+        margin:0 0 0 10px;
+        height: auto
+    }
+}
+
+.weddings-details .innerpage-title__tel-content .innerpage-title__qrCode-right-cont {
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.weddings-details .innerpage-title__tel-content .innerpage-title__qrCode-right-cont p {
+    border-left: 1px solid rgba(0,0,0,.07);
+    padding: 0 0 0 35px
+}
+
+@media (max-width: 767px) {
+    .weddings-details .innerpage-title__tel-content .innerpage-title__qrCode-right-cont p {
+        padding:0 0 0 10px
+    }
+}
+
+@media (max-width: 767px) {
+    .weddings-details .innerpage-title__tel {
+        margin-left:0
+    }
+}
+
+.weddings-details__block-bg {
+    background-color: #fefefb
+}
+
+.weddings-details__pic {
+    width: 50%;
+    height: 360px;
+    position: relative;
+    float: left
+}
+
+.weddings-details__pic-bg {
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover
+}
+
+.weddings-details__pic-bg.pic-right {
+    right: auto;
+    left: 0;
+    background-position: 100%
+}
+
+.weddings-details__cont {
+    width: 50%;
+    padding-left: 60px;
+    float: right
+}
+
+.weddings-details__cont.copy-left {
+    padding-left: 0;
+    padding-right: 60px
+}
+
+.weddings-details__package {
+    font-size: 0
+}
+
+.weddings-details__package-title {
+    text-align: center;
+    margin-bottom: 70px
+}
+
+@media (max-width: 767px) {
+    .weddings-details__package-title {
+        margin-bottom:30px
+    }
+}
+
+.weddings-details__package-list .pic {
+    width: 50%;
+    padding-right: 30px;
+    display: inline-block;
+    vertical-align: top
+}
+
+.weddings-details__package-list>li {
+    margin-bottom: 30px
+}
+
+.weddings-details__package-info {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top
+}
+
+.weddings-details__package-info * {
+    font-size: 14px
+}
+
+.weddings-details__package-info h4 {
+    color: #beaf88;
+    font-size: 16px
+}
+
+.weddings-details__package-info li {
+    margin-bottom: 15px
+}
+
+.weddings-details__package-info .button-download {
+    text-decoration: underline
+}
+
+.weddings-details__package-content {
+    line-height: 1.4em;
+    margin-bottom: 1em
+}
+
+.weddings-details__package-content p {
+    line-height: 1.4em;
+    margin: 0 0 .3em
+}
+
+.weddings-details__body {
+    display: table-cell;
+    height: 350px;
+    vertical-align: middle
+}
+
+.weddings-details .case-study {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+    text-align: center
+}
+
+@media (max-width: 767px) {
+    .weddings-details .case-study {
+        padding:0
+    }
+
+    .weddings-details .case-study h1 {
+        margin-top: 30px
+    }
+}
+
+.weddings-details .case-study ul {
+    width: 61%;
+    margin: 0 auto
+}
+
+@media (max-width: 767px) {
+    .weddings-details .case-study ul {
+        width:100%;
+        padding: 15px
+    }
+}
+
+.weddings-details .case-study li {
+    padding: 30px 0
+}
+
+@media (max-width: 767px) {
+    .weddings-details .case-study li {
+        padding:10px 0
+    }
+}
+
+.weddings-details .case-study li .cont {
+    text-align: left;
+    line-height: 26px
+}
+
+.weddings-details .case-study li .author {
+    text-align: right;
+    color: #1e522f;
+    padding: 20px 0 0
+}
+
+.weddings-details .case-study li .author:before {
+    content: "- "
+}
+
+@media (max-width: 767px) {
+    .weddings-details .case-study li .author {
+        padding-right:0
+    }
+}
+
+.weddings-details .wedding-packages {
+    background-color: #f1f1f1;
+    padding-bottom: 30px
+}
+.wedding-packages * {
+    box-sizing: border-box
+}
+
+.wedding-packages h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 50px 0 10px
+}
+
+.wedding-packages ul {
+    width: 100%;
+    padding: 20px
+}
+
+.wedding-packages li {
+    float: left;
+    width: 50%;
+    font-size: 14px
+}
+
+.wedding-packages li img {
+    max-width: 100%;
+    transform: scale(1);
+    transition: all .6s
+}
+
+.wedding-packages li a {
+    display: inline-block;
+    margin: 10px;
+    background-color: #fff
+}
+
+.wedding-packages li a:hover img {
+    transform: scale(1.1);
+    transition: all .6s
+}
+
+@media (max-width: 767px) {
+    .weddings-details {
+        width:100%
+    }
+
+    .weddings-details .innerpage-title__copy {
+        width: 100%;
+        padding-right: 0
+    }
+
+    .weddings-details .innerpage-title__tel {
+        width: 100%
+    }
+
+    .weddings-details__pic {
+        width: 100%;
+        height: 220px
+    }
+
+    .weddings-details__pic-bg {
+        width: 100%;
+        background-size: auto 100%
+    }
+
+    .weddings-details__cont {
+        width: 100%;
+        padding: 0
+    }
+
+    .weddings-details__cont h2 {
+        text-align: center
+    }
+
+    .weddings-details__cont.copy-left {
+        padding-right: 0
+    }
+
+    .weddings-details__package-list .pic {
+        width: 100%;
+        padding-right: 0
+    }
+
+    .weddings-details__package-info {
+        width: 100%;
+        padding: 15px
+    }
+
+    .weddings-details__package-info h4 {
+        text-align: center;
+        margin-bottom: 10px
+    }
+
+    .weddings-details__body {
+        display: block;
+        height: auto
+    }
+}
+.float-l {
+    float: left!important
+}
+
+.float-r {
+    float: right!important
+}
+.wedding-packages {
+    background-color: #f1f1f1;
+    padding-bottom: 30px;
+}
+.wedding-packages h2 {
+    text-align: center;
+    padding: 50px 0 10px;
+}
+.wedding-packages ul {
+    width: 100%;
+    padding: 20px;
+}
+.wedding-packages li {
+    float: left;
+    width: 50%;
+    font-size: 14px;
+    text-align: center;
+}
+.wedding-packages li a {
+    display: inline-block;
+    margin: 10px;
+    background-color: #fff;
+}
+
+

@@ -1,0 +1,339 @@
+ul.booking-select {
+    display: none;
+    width: 90px
+}
+
+ul.booking-select.adults {
+    width: 140px
+}
+
+ul.booking-select:before {
+    margin-left: 36px;
+    display: block;
+    height: 13px;
+    line-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color: #f3f1ea;
+    font-family: iconfont!important;
+    content: "\E61B"
+}
+
+ul.booking-select li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #f3f1ea;
+    border-width: 1px 0 0
+}
+
+ul.booking-select li a {
+    display: block
+}
+
+.green-page {
+    line-height: 150%;
+    min-width: 1000px
+}
+
+@media (max-width: 767px) {
+    .green-page {
+        min-width:0
+    }
+}
+
+.green-page h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 30px
+}
+
+@media (max-width: 767px) {
+    .green-page h1 {
+        font-size:24px
+    }
+}
+
+.green-page p {
+    line-height: 26px;
+    margin-bottom: 15px
+}
+
+.green-page .green {
+    width: 83.6%;
+    padding: 50px 0
+}
+
+.green-page .green h1 span {
+    font-size: 18px;
+    vertical-align: top
+}
+
+.green-page .concept {
+    width: 88%;
+    padding-bottom: 50px
+}
+
+.green-page .develop {
+    margin-top: 50px
+}
+
+@media (max-width: 767px) {
+    .green-page .develop {
+        margin-top:16px
+    }
+}
+
+.green-page li,.green-page ul {
+    list-style: disc outside none!important
+}
+
+.green-page .concept ul,.green-page .concept ul li {
+    list-style: none!important
+}
+
+.green-page .develop li {
+    margin-left: 2em;
+    width: 46%;
+    float: left;
+    vertical-align: top;
+    margin-bottom: 20px
+}
+
+@media (max-width: 767px) {
+    .green-page .develop li {
+        width:auto;
+        margin-bottom: 16px
+    }
+}
+
+.green-page .develop li:nth-child(odd) {
+    margin-right: 10px
+}
+
+.green-page .odd {
+    margin-right: 2%
+}
+
+@media (max-width: 767px) {
+    .green-page .odd {
+        margin-right:0
+    }
+}
+
+.green-page .bg-container {
+    background: #e6e6da
+}
+
+.green-page .concept ul li {
+    padding: 26px 32px;
+    min-height: 170px;
+    background: #fff;
+    margin-bottom: 28px
+}
+
+.green-page .concept-left {
+    width: 33%;
+    min-height: 169px;
+    float: left
+}
+
+@media (max-width: 767px) {
+    .green-page .concept-left {
+        width:100%
+    }
+}
+
+.green-page .concept-left img {
+    width: 100%;
+    height: auto
+}
+
+@media (max-width: 767px) {
+    .green-page .concept-left img {
+        width:100%;
+        height: auto
+    }
+}
+
+.green-page .concept-right {
+    width: 63%;
+    margin-left: 2%;
+    float: left
+}
+
+@media (max-width: 767px) {
+    .green-page .concept-right {
+        width:100%;
+        margin-left: 0
+    }
+}
+
+.green-page .concept-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+@media (max-width: 767px) {
+    .green-page .concept-header {
+        margin-top:16px;
+        text-align: center
+    }
+}
+
+.green-page .concept-desc {
+    line-height: 26px
+}
+
+.green-page .author-left {
+    width: 20%;
+    float: left;
+    padding-left: 16px
+}
+
+@media (max-width: 767px) {
+    .green-page .author-left {
+        width:100%;
+        padding-left: 0
+    }
+}
+
+@media (max-width: 767px) {
+    .green-page .author-left img {
+        margin:0 auto;
+        display: block
+    }
+}
+
+.green-page .author-right {
+    width: 80%;
+    float: left
+}
+
+.green-page .author-right h1 {
+    text-align: left
+}
+
+@media (max-width: 767px) {
+    .green-page .author-right {
+        width:100%;
+        margin-top: 16px
+    }
+}
+
+.green-page .save-swiper {
+    position: relative;
+    background: #f1f1f1;
+    padding: 40px
+}
+
+@media (max-width: 767px) {
+    .green-page .save-swiper {
+        padding:30px
+    }
+}
+
+.green-page .save-title {
+    font-size: 24px;
+    line-height: 100%
+}
+
+.green-page .save-left {
+    width: 67%;
+    margin-right: 3%;
+    float: left
+}
+
+.green-page .save-left p {
+    margin-top: 16px
+}
+
+@media (max-width: 767px) {
+    .green-page .save-left {
+        width:100%;
+        margin-right: 0
+    }
+}
+
+.green-page .save-right {
+    width: 30%;
+    float: left;
+    margin-top: 40px
+}
+
+.green-page .save-right img {
+    width: 100%
+}
+
+@media (max-width: 767px) {
+    .green-page .save-right {
+        width:100%;
+        margin-top: 16px
+    }
+}
+
+.green-page .save-list {
+    padding: 16px
+}
+
+.green-page .save-list li {
+    margin-bottom: 16px;
+    width: 48%;
+    float: left;
+    vertical-align: top;
+    line-height: 20px
+}
+
+@media (max-width: 767px) {
+    .green-page .save-list li {
+        width:100%;
+        margin-bottom: 10px
+    }
+}
+
+.green-page .save-list li:nth-child(odd) {
+    margin-right: 20px
+}
+
+.green-page .save-list li:last-child {
+    margin-bottom: 0
+}
+
+.green-page .swiper-slide {
+    height: auto
+}
+
+@media (max-width: 767px) {
+    .green-page .swiper-slide {
+        height:auto
+    }
+}
+
+.green-page .single .save-left {
+    float: right;
+    margin-right: 0
+}
+
+.green-page .single .save-right {
+    float: right;
+    margin-right: 3%
+}
+
+@media (max-width: 767px) {
+    .green-page .single .save-right {
+        margin-right:0
+    }
+}
+
+.green-page .swiper-button {
+    top: 50%;
+    margin-top: -25px
+}
+
+.green-page .fr {
+    float: right!important;
+    margin-right: 3px!important
+}

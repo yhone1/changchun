@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*==================首页导航=================*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    z-index: 999;
+}
+nav img{
+    width: 5%;
+    margin-left: 2%;
+    /*height: 20%;*/
+    position: absolute;
+}
+nav>ul>li>a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav>ul>li{
+    float: left;
+    margin-left: 6%;
+    list-style: none;
+}
+nav>ul{
+    width: auto;
+    margin-left: 24%;
+    line-height: 80px;
+}
+nav>ul>li>ul>li>a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav>ul>li>ul>li{
+    float: left;
+    list-style: none;
+    margin-left: 1%;
+    width: 8%;
+
+}
+nav>ul>li>ul{
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(24,24,24);
+    display: none;
+}
+nav>ul>li>ul :nth-child(1){
+    margin-left: 40%;
+}
+/*导航的hover效果*/
+nav>ul>li :hover{
+    color: rgb(170,170,98);
+}
+nav>ul>li:nth-child(4):hover>ul{
+    display: block;
+}
+nav span{
+    display: inline-block;
+    width: 8%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #555;
+    color: white;
+    font-weight: bolder;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.ren{
+    display: inline;
+    background-color: #000;
+    margin-left: 4%;
+    font-size: 20px;
+}
+nav>:last-child{
+    text-decoration: none;
+}
+/*轮播================================================*/
+#banner{
+    position: relative;
+    /*border: 1px red solid;*/
+    height: 100%;
+    width: 100%;
+    /*padding: 325px 1440px 325px 1440px;*/
+    overflow: hidden;
+}
+.box{
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 650px;
+    width: 5760px;
+    /*border: 1px red solid;*/
+}
+.box img{
+    float: left;
+}
+/*按钮======================================================*/
+#banner>div>span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px white solid;
+    border-radius: 200px;
+}
+.AnNiu{
+    position: absolute;
+    left: 49%;
+    top: 78%;
+}
+.anNiu{
+    background-color: white;
+}
+.swiperbutton{
+    bottom: 15%;
+}
+/*==============================查找客房==============================*/
+.findRoom{
+    width: 86%;
+    height: 152px;
+    /*outline: 1px red solid;*/
+    position: absolute;
+    top: 85%;
+    left: 7%;
+    background-color: white;
+    z-index: 10;
+    /*overflow: hidden;*/
+}
+.find{
+    /*display: inline-block;*/
+    /*width: 15%;*/
+    /*height: 40px;*/
+    /*background-color: #555;*/
+    /*cursor: pointer;*/
+    /*font-size: 16px;*/
+    /*text-align: center;*/
+    /*line-height: 40px;*/
+    /*color: white;*/
+    /*margin-left: 420px;*/
+    /*outline: 1px red solid;*/
+    /*margin-top: 50px;*/
+
+}
+.findRoom>form>span{
+    display: inline-block;
+    width: 15%;
+    height: 40px;
+    background-color: #555;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    margin-left: 30%;
+    text-decoration: none;
+}
+/*.findRoom>form>:nth-child(1){*/
+/*margin-left: 30px;*/
+/*margin-top: 30px;*/
+/*border:none;*/
+/*border-bottom: gainsboro 1px solid;*/
+/*padding-bottom: 5px;*/
+/*}*/
+.p20{
+    position: absolute;
+    left: 50%;
+    top: -48px;
+}
+.findRoom>form>input{
+    margin-left: 60px;
+    margin-top: 30px;
+    border:none;
+    border-bottom: gainsboro 1px solid;
+    padding-bottom: 5px;
+}
+.findRoom>form :nth-child(6){
+    margin-left: -2px;
+}
+/*优惠套餐============================================*/
+.onSale{
+    width: 100%;
+    height: 1275px;
+    background-color: rgb(60,60,60);
+    position: relative;
+    overflow: hidden;
+}
+.onSale1{
+    width: 100%;
+    height: 1085px;
+    /*outline: 1px red solid;*/
+    margin-top: 190px;
+}
+.onSaleTitle{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    /*outline: 1px red solid;*/
+    /*line-height: 50%;*/
+    color: white;
+    font-size: 36px;
+}
+/*四项*/
+.waiWei{
+    height: 882px;
+    width: 100%;
+    /*text-align: center;*/
+    /*outline: 1px red solid;*/
+}
+.content1{
+    text-align: center;
+    line-height: 28px;
+}
+.content1 :nth-child(2){
+    color: #888;
+}
+.content1 span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.content1>span>a{
+    color: black;
+}
+.zi1{
+    /*margin: 2% 2% 0 5%;*/
+    background-color: white;
+    width: 41.45%;
+    height: 415px;
+    float: left;
+}
+.zi1 img{
+    width: 100%;
+}
+.z2 img{
+    /*width: 590px;*/
+    /*height: 220px;*/
+}
+.z1,.z2{
+    margin-top: -20px;
+}
+.z1,.z3{
+    margin-left: 7%;
+}
+.z2,.z4{
+    margin-left: 2%;
+}
+.z3,.z4{
+    margin-top: 2%;
+}
+/*================================裸心度假村===========================*/
+.village{
+    width: 100%;
+    height: 463px;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+    /*outline: 1px red solid;*/
+}
+.village1 h2{
+    line-height: 500%;
+}
+/*=================================度假村效果图=============*/
+.boxV{
+    width: 100%;
+    height: 362px;
+    /*outline: 1px red solid;*/
+    overflow: hidden;
+    position: relative;
+}
+.boxV div{
+    color: white;
+    text-align: center;
+    width: 33.33%;
+    /*width: 40%;*/
+    height: 300px;
+    /*outline: 1px red solid;*/
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.boxV div img{
+    /*position: fixed;*/
+}
+.boxV div h3{
+    position: absolute;
+    top: 190px;
+    left: 47%;
+}
+.boxV div h5{
+    position: absolute;
+    top: 240px;
+    left: 50%;
+}
+.boxV :nth-child(1){
+    /*background: url("../images/home/p-stables.jpg") no-repeat;*/
+}
+.boxV :nth-child(2){
+    /*background: url("../images/home/p-castle.jpg") no-repeat;*/
+}
+.boxV :nth-child(3){
+    /*background: url("../images/home/p-sail.jpg") no-repeat;*/
+}
+/*.boxV>div>h3{*/
+/*margin-top: 180px;*/
+/*!*border: 1px red dashed;*!*/
+/*background-color: rgba(255, 255, 255, 0.98);*/
+/*}*/
+/*.boxV div h5{*/
+/*margin-top: 16px;*/
+/*background-color: rgba(255, 255, 255, 0);*/
+/*}*/
+/*============================即将开业酒店=====================*/
+.hotel{
+    width: 100%;
+    height: 536px;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+
+}
+/*=======四张图的样式*/
+.bao{
+    width: 80%;
+    height: 300px;
+    /*outline: 1px red solid;*/
+    margin-left: 10%;
+    text-align: center;
+}
+.tu{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+.tu1{
+    margin-left: 1.6%;
+    width: 23%;
+    height: 300px;
+    /*outline: 1px red solid;*/
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    float: left;
+}
+.tu1 div h5{
+    color: #888;
+}
+/*===========================关于裸心=========================*/
+.About{
+    width: 100%;
+    height: 741px;
+    background-color: #3c3c3c;
+    overflow: hidden;
+    text-align: center;
+}
+.About div p{
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    /*margin-left: 20%;*/
+}
+.About>:nth-child(2){
+    width: 43%;
+    margin: auto;
+}
+.About :nth-child(3){
+    margin-top: 4%;
+}
+.About :nth-child(3) a{
+    color: white;
+    font-size: 16px;
+}
+/*============预定热线==========*/
+.tell{
+    width: 80%;
+    height: 310px;
+    /*outline: 1px red solid;*/
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: #d9d9d9;
+    overflow: hidden;
+}
+.tell :nth-child(1){
+    margin-top: 40px;
+}
+.tellA{
+    width: 30%;
+    height: 140px;
+    text-align: left;
+    margin-left: 20%;
+    float: left;
+}
+.tellA h3{
+    color: #888;
+}
+.tellA div{
+    font-size: 36px;
+}
+.About>.tell>.tellA>a{
+    color: #333;
+    font-size: 20px;
+    font-weight: lighter;
+    /*line-height: 1em;*/
+}
+.About>.tell>.tellB{
+    margin-top: -5px;
+    margin-left: 60px;
+}

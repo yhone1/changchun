@@ -1,0 +1,345 @@
+ul.booking-select {
+    display: none;
+    width: 90px
+}
+
+ul.booking-select.adults {
+    width: 140px
+}
+
+ul.booking-select:before {
+    margin-left: 36px;
+    display: block;
+    height: 13px;
+    line-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color: #f3f1ea;
+    font-family: iconfont!important;
+    content: "\E61B"
+}
+
+ul.booking-select li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #f3f1ea;
+    border-width: 1px 0 0
+}
+
+ul.booking-select li a {
+    display: block
+}
+
+.page-immersive .title-cont {
+    text-align: center;
+    padding: 60px 0
+}
+
+.page-immersive .title-cont h1 {
+    font-size: 48px;
+    color: #47ab00;
+    margin-bottom: 10px
+}
+
+.page-immersive .title-cont h2 {
+    font-size: 34px;
+    margin-bottom: 20px
+}
+
+.page-immersive .title-cont div {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.33em
+}
+
+@media (max-width: 767px) {
+    .page-immersive .title-cont {
+        padding:30px 0 50px
+    }
+
+    .page-immersive .title-cont h1 {
+        font-size: 30px
+    }
+
+    .page-immersive .title-cont h2 {
+        font-size: 20px
+    }
+
+    .page-immersive .title-cont div {
+        width: 80%;
+        font-size: 14px
+    }
+
+    .page-immersive .title-cont div br {
+        display: none
+    }
+}
+
+.page-immersive .package-list {
+    margin: 0 8%
+}
+
+@media (max-width: 767px) {
+    .page-immersive .package-list {
+        margin:0
+    }
+}
+
+.page-immersive .package-item {
+    margin-bottom: 100px
+}
+
+.page-immersive .package-item:after,.page-immersive .package-item:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.page-immersive .package-item:after {
+    clear: both
+}
+
+.page-immersive .package-item .pic {
+    float: left;
+    width: 420px;
+    max-width: 100%
+}
+
+.page-immersive .package-item .pic img {
+    display: block;
+    width: 100%
+}
+
+.page-immersive .package-item .content {
+    margin-left: 450px;
+    padding-top: 5
+}
+
+.page-immersive .package-item .content h2 {
+    color: #47ab00;
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+.page-immersive .package-item .content .desc {
+    line-height: 1.33em;
+    margin-bottom: 1.5em
+}
+
+.page-immersive .package-item .content ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.page-immersive .package-item .content ul:after,.page-immersive .package-item .content ul:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.page-immersive .package-item .content ul:after {
+    clear: both
+}
+
+.page-immersive .package-item .content li {
+    -ms-flex: auto;
+    flex: auto
+}
+
+.page-immersive .package-item .content li .pdf {
+    width: 100%;
+    margin-bottom: 3em
+}
+
+.page-immersive .package-item .content li .pdf a {
+    color: #000;
+    line-height: 1.25em;
+    text-decoration: underline
+}
+
+.page-immersive .package-item .content li h3 {
+    font-size: 16px;
+    margin-bottom: .5em
+}
+
+.page-immersive .package-item .content li p {
+    margin-bottom: .67em
+}
+
+.page-immersive .package-item .content li .price {
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #f5a623
+}
+
+.page-immersive .package-item .content li .btn {
+    margin-top: 1em
+}
+
+.page-immersive .package-item .content li .btn a {
+    display: block;
+    background-color: #ffdca4;
+    font-size: 20px;
+    line-height: 2.5em;
+    text-align: center;
+    color: #99763e;
+    text-transform: uppercase;
+    width: 150px
+}
+
+.page-immersive .package-item .content li:first-child {
+    margin-right: 10px
+}
+
+.page-immersive .package-item .content li:last-child {
+    margin-left: 10px
+}
+
+.page-immersive .package-item .pic-list {
+    margin-top: 60px
+}
+
+.page-immersive .package-item .pic-list:after,.page-immersive .package-item .pic-list:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.page-immersive .package-item .pic-list:after {
+    clear: both
+}
+
+.page-immersive .package-item .pic-list li {
+    float: left;
+    width: 32%;
+    margin-right: 2%
+}
+
+.page-immersive .package-item .pic-list li:last-child {
+    margin-right: 0
+}
+
+.page-immersive .package-item .pic-list li img {
+    display: block;
+    width: 100%
+}
+
+.page-immersive .package-item:nth-child(2n) .pic {
+    float: right
+}
+
+.page-immersive .package-item:nth-child(2n) .content {
+    margin-right: 450px;
+    margin-left: 0
+}
+
+@media (max-width: 767px) {
+    .page-immersive .package-item {
+        padding:0 20px 30px;
+        margin-bottom: 30px;
+        border-bottom: 10px solid #e6e6e6
+    }
+
+    .page-immersive .package-item:last-child {
+        border-bottom: 0
+    }
+
+    .page-immersive .package-item .pic {
+        float: none
+    }
+
+    .page-immersive .package-item .pic img {
+        width: 100%;
+        margin: 0 auto
+    }
+
+    .page-immersive .package-item .content {
+        margin: 0;
+        padding-top: 25px
+    }
+
+    .page-immersive .package-item .content h2,.page-immersive .package-item .content li {
+        text-align: center
+    }
+
+    .page-immersive .package-item .content h2 {
+        font-size: 24px
+    }
+
+    .page-immersive .package-item .content ul {
+        text-align: center
+    }
+
+    .page-immersive .package-item .content ul li {
+        margin: 0;
+        float: none;
+        display: inline-block
+    }
+
+    .page-immersive .package-item .content ul li .price {
+        font-size: 16px
+    }
+
+    .page-immersive .package-item .content ul li .btn {
+        margin-top: 1.5em
+    }
+
+    .page-immersive .package-item .content ul li .btn a {
+        display: inline-block;
+        width: 100%
+    }
+
+    .page-immersive .package-item .pic-list {
+        margin-top: 30px
+    }
+
+    .page-immersive .package-item:nth-child(2n) .pic {
+        float: none
+    }
+
+    .page-immersive .package-item:nth-child(2n) .content {
+        margin: 0
+    }
+}
+
+.page-immersive .terms {
+    width: 600px;
+    margin: 50px auto 100px
+}
+
+.page-immersive .terms h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5em
+}
+
+.page-immersive .terms ul {
+    font-size: 14px
+}
+
+.page-immersive .terms ul li {
+    margin-bottom: .5em;
+    line-height: 1.5em;
+    list-style: disc
+}
+
+@media (max-width: 767px) {
+    .page-immersive .terms {
+        width:80%
+    }
+}

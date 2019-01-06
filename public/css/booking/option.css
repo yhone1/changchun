@@ -1,0 +1,322 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+input{
+    border: none;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16, .col-17, .col-18, .col-19, .col-20, .col-21, .col-22, .col-23, .col-24, .col-lg-24, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .col-xs-19, .col-xs-20, .col-xs-21, .col-xs-22, .col-xs-23, .col-xs-24 {
+    display: block;
+    position: relative;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    box-sizing: border-box;
+}
+/*背景页头*/
+.page-option {
+    padding: 0 0 40px;
+}
+.page {
+    background-color: #f6f6f6;
+}
+
+.page-option .booking-status {
+    height: 200px;
+    padding-top: 140px;
+}
+.booking-status {
+    padding-top: 60px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.booking-status .container {
+    padding:0;
+    overflow: hidden;
+}
+
+
+.booking-status ul {
+    font-size: 0;
+    width: 104%;
+    margin-left: -2%;
+    position: relative;
+    display: table;
+}
+li, ul {
+    list-style: none none;
+    padding: 0;
+}
+
+.booking-status li {
+    display: table-cell;
+    /*height: 100%;*/
+    font-size: .857rem;
+    position: relative;
+    height: 36px;
+    cursor: pointer;
+}
+.booking-status li .bg {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 2px;
+}
+.booking-status li.active .bg div {
+    background-color: #004712;
+}
+
+.booking-status li .bg div {
+    width: 100%;
+    height: 100%;
+    background: #e6e6e6;
+    -webkit-transform: skew(-25deg);
+    transform: skew(-25deg);
+}
+
+.zh-CN .booking-status li.step1 .text, .zh-CN .booking-status li.step3 .text {
+    width: 100%;
+}
+
+.booking-status li.active .text {
+    color: #fff;
+}
+.booking-status li .text {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    color: #b9b9b9;
+}
+
+.booking-status li.active .text .number {
+    border-color: #fff;
+}
+.booking-status li .text span.number {
+    font-size: 1em;
+    height: 20px;
+    width: 20px;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid #b9b9b9;
+    border-radius: 50%;
+    margin-right: .6em;
+}
+
+.booking-status li .text span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*body*/
+.page-option .option-form {
+    width: 800px;
+    margin: 0 auto 100px;
+    padding-top: 40px;
+}
+
+.page-option .option-form .form-item {
+    margin-bottom: 2em;
+}
+
+.page-option .option-form .form-row {
+    background-color: #fff;
+    min-height: 4.642rem;
+    line-height: 4.642rem;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+}
+
+.row {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    display: block;
+    zoom: 1;
+}
+.col-8 {
+    width: 33.33333333%;
+}
+.col-9 {
+    width: 37.5%;
+}
+.col-12 {
+    width: 50%;
+}
+.col-15 {
+    width: 62.5%;
+}
+.col-16 {
+    width: 66.66666667%;
+}
+.row:before {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+}
+
+.row:after, .row:before {
+    content: " ";
+    display: table;
+}
+*, :after, :before {
+    /*box-sizing: inherit;*/
+    font: inherit;
+}
+
+.page-option .option-form .item-label {
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 1.285em;
+    cursor: pointer;
+    color: #888;
+    line-height: 1.3em;
+    font-weight: inherit;
+}
+.page-option .option-form .pikaday-cont input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 0;
+    /*line-height: -.358rem;*/
+    font-size: 1.285em;
+    cursor: pointer;
+}
+.input-number {
+    height: 4.642rem;
+    line-height: 4.642rem;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.input-number .input {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: auto;
+    margin-right: 30px;
+}
+.input-number .input input {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    font-size: 1.285em;
+    padding-left: 10px;
+}
+
+body, button, input, select {
+    font-family: Helvetica Neue,PingFang SC,Heiti SC,STHeiti,Microsoft YaHei,calibri;
+}
+button, input, select {
+    border-radius: 0;
+}
+.input-number button {
+    display: none;
+}
+
+.input-number .iconfont {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 30px;
+    font-size: .8em;
+}
+
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.page-option .option-form .pikaday-cont .iconfont {
+    font-size: 32px;
+    color: #aaa;
+    display: none;
+}
+.input-number select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.page-option .option-form .pikaday-cont {
+    background-color: #fff;
+}
+
+.page-option .option-form .option-title {
+    /*margin-bottom: .6em;*/
+    margin: 0 0 14px 0;
+}
+.page-option .option-form .option-title small {
+    font-size: .8em;
+    margin-left: .5em;
+}
+h2 {
+    font-size: 1.72em;
+}
+.page-option .option-form .full-input {
+    width: 100%;
+    border: 0;
+    padding: 0 2%;
+    font-size: 1.285em;
+    background-color: #fff;
+}
+
+.page-option .option-form .submit-button {
+    margin-top: 2em;
+    text-transform: uppercase;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+}
+
+/*.nS .button, .nS a.button {*/
+    /**/
+/*}*/
+.full-button {
+    background-color: #5f9271;
+    display: block;
+    width: 100%;
+    height: 4.285rem;
+    line-height: 4.285rem;
+    font-size: 1.285em;
+}
+.button {
+    /*display: inline-block;*/
+    vertical-align: middle;
+    border: 0;
+    /*height: 2.86rem;*/
+    /*line-height: 2.76rem;*/
+    color: #fff;
+    cursor: pointer;
+    /*font-size: 1.147em;*/
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+}

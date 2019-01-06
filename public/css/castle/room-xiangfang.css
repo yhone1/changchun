@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*夯土小屋*/
+.soilRoom{
+    /*background-color: #beaf88;*/
+    background-image: url("../../images/castle/castle-dining/dining/bg-pattern-3.jpg");
+    padding-bottom: 30px;
+}
+.soilTitle{
+    padding: 30px;
+    text-align: center;
+}
+.soilContain{
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.area{
+    padding-bottom: 30px;
+}
+.area li{
+    line-height: 30px;
+}
+
+.bookRoomBox{
+    text-align: center;
+}
+.bookRoom:hover{
+    background-color: #e9dbb5;
+    cursor: pointer;
+    color: black;
+}
+.bookRoom{
+    padding: 10px 40px;
+    background-color: #231f20;
+    display: inline-block;
+    color: #beaf88;
+}
+
+.bigLunBo{
+    margin-bottom: 3%;
+}
+.lunBo img{
+    width: 100%;
+}
+
+/*服务与设施*/
+.serviceTitle{
+    text-align: center;
+    padding: 30px;
+    color: #beaf88;
+}
+.service{
+    padding-bottom: 30px;
+    background-color: #231f20;
+    color: rgba(255, 255, 255, 0.5);
+}
+.service li{
+    line-height: 30px;
+}
+

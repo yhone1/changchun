@@ -1,0 +1,364 @@
+ul.booking-select {
+    display: none;
+    width: 90px
+}
+
+ul.booking-select.adults {
+    width: 140px
+}
+
+ul.booking-select:before {
+    margin-left: 36px;
+    display: block;
+    height: 13px;
+    line-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color: #f3f1ea;
+    font-family: iconfont!important;
+    content: "\E61B"
+}
+
+ul.booking-select li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #f3f1ea;
+    border-width: 1px 0 0
+}
+
+ul.booking-select li a {
+    display: block
+}
+
+.media-tabs {
+    padding: 106px 0 36px;
+    text-align: center;
+    background-color: #221e1f
+}
+
+.media-tabs li {
+    display: inline-block;
+    font-size: 0;
+    margin: 0 40px 0 18px
+}
+
+.media-tabs li a {
+    font-size: 14px;
+    padding: 0 5px 10px;
+    color: #fff
+}
+
+.media-tabs li.active a,.media-tabs li a:hover {
+    border-bottom: 2px solid #aaaa62
+}
+
+@media (max-width: 767px) {
+    .media-tabs li {
+        margin:0 15px
+    }
+}
+
+.media img {
+    width: 100%;
+    max-width: 100%
+}
+
+.media .box {
+    position: relative;
+    height: 298px;
+    overflow: hidden
+}
+
+.media .box .media-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.media .box .media-title .hover-cont {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 120%
+}
+
+.media .box .media-title .hover-cont h4 {
+    margin-bottom: 10px
+}
+
+.media .box:hover .media-title {
+    transform: translateY(-100%)
+}
+
+@media (max-width: 767px) {
+    .media .box {
+        height:auto
+    }
+}
+
+.media-net-list {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 15px
+}
+
+.media-net-list li {
+    width: 100%;
+    padding: 20px 0 18px;
+    border-bottom: 1px solid #e0e0e0;
+    display: table;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+@media (max-width: 767px) {
+    .media-net-list li {
+        display:inline-block;
+        box-sizing: border-box
+    }
+}
+
+.media-net-list li .origin-logo {
+    display: table-cell;
+    vertical-align: top;
+    float: none;
+    text-align: center
+}
+
+.media-net-list li .origin-logo img {
+    max-height: 128px;
+    width: auto;
+    display: inline-block
+}
+
+@media (max-width: 767px) {
+    .media-net-list li .origin-logo {
+        display:inline-block
+    }
+}
+
+.media-net-list li .origin-cont {
+    display: table-cell;
+    vertical-align: top;
+    float: none
+}
+
+.media-net-list li .origin-cont h3 {
+    font-size: 1.33em;
+    line-height: 1.42em
+}
+
+.media-net-list li .origin-cont .desc {
+    margin-bottom: .67em;
+    line-height: 1.4em
+}
+
+.media-net-list li .origin-cont .origin {
+    color: #808284
+}
+
+@media (max-width: 767px) {
+    .media-net-list li .origin-cont {
+        display:inline-block
+    }
+}
+
+.media-net-list li .origin-btn {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    text-align: right
+}
+
+@media (max-width: 767px) {
+    .media-net-list li .origin-btn {
+        display:inline-block;
+        text-align: left;
+        margin-top: 10px
+    }
+}
+
+.media-net-list li .origin-btn a {
+    color: #fff
+}
+
+.media-net-list li .origin-form h3 {
+    margin-bottom: 15px
+}
+
+.media-cooperation {
+    width: 73%;
+    margin: 146px auto 114px;
+    text-align: center;
+    border: 1px solid #221e1f;
+    padding: 40px
+}
+
+.media-cooperation h1 {
+    margin-bottom: 30px
+}
+
+.media-cooperation h4 {
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 1.5em
+}
+
+@media (max-width: 767px) {
+    .media-cooperation {
+        margin:30px auto;
+        padding: 20px 25px
+    }
+
+    .media-cooperation h4 {
+        display: block;
+        margin: 5px 0
+    }
+}
+
+.media-reporter-list {
+    width: 100%;
+    font-size: 0
+}
+
+.media-reporter-list img {
+    border: 5px solid #fff
+}
+
+.media-reporter-list li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 0 20px;
+    min-height: 100px
+}
+
+.media-reporter-list li .date {
+    font-size: 14px;
+    text-align: center;
+    margin: 12px 0 10px
+}
+
+.media-reporter-list li .title {
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.media-reporter-list li .box {
+    border: 1px solid #ccc
+}
+
+.media-video-list {
+    width: 100%;
+    font-size: 0
+}
+
+.media-video-list li {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 0;
+    min-height: 100px
+}
+
+.media-video-list li .date {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0
+}
+
+.media-video-list li .title {
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.pagination {
+    margin-top: 90px;
+    text-align: center
+}
+
+@media (max-width: 767px) {
+    .pagination {
+        margin-top:30px
+    }
+}
+
+.pagination a {
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    margin: 2px;
+    padding: 3px 8px;
+    color: #808284;
+    border: 1px solid #bbbcbf
+}
+
+.pagination a.active {
+    color: #000;
+    font-weight: 700
+}
+
+.pagination a.btn-next,.pagination a.btn-prev {
+    color: #000
+}
+
+.video-popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0,.7)
+}
+
+.video-popup .icon-close_c {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    z-index: 3;
+    font-size: 26px;
+    color: #fff
+}
+
+.video-popup .video-container {
+    position: absolute;
+    width: 920px;
+    height: 520px;
+    background-color: #000;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -460px
+}
+
+@media (max-width: 767px) {
+    .video-popup .video-container {
+        width:90%;
+        height: 30%;
+        left: 5%;
+        top: 25%;
+        margin: 0
+    }
+}
+.hidden{
+    display: none;
+}

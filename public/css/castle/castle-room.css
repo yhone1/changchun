@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*banner大图*/
+.bannerTitle{
+    text-align: center;
+    background-image: url("../../images/castle/castle-dining/dining/bg-pattern-3.jpg");
+    padding: 2% 10%;
+}
+.bannerTitle p{
+    padding: 15px;
+}
+
+/*选择客房*/
+.blackChoose{
+    background-color: black;
+}
+.chooseTitle{
+    text-align: center;
+    padding: 20px;
+    color: #bcad86;
+}
+.chooseRow{
+    margin-bottom: 30px;
+    background-color: #e1dfd1;
+}
+.chooseRow .col-md-4{
+    padding-left: 0;
+    padding-right: 0;
+}
+.chooseRow img{
+    /*width: 100%;*/
+}
+.bjColor h4{
+    padding-top: 25px;
+}
+.bjColor p{
+    line-height: 30px;
+}
+.moreBox{
+    padding-top: 30px;
+
+}
+.more{
+    border: 1px solid #1e522e;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 70px;
+}
+.blackMore{
+    color: black;
+}
+
+
+
+/*预定热线*/
+.bookPhone{
+    background-color: grey;
+    padding: 30px;
+}
+.bookPhone p{
+    color: #1e522e;
+    font-weight: bold;
+}
+.telephone{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.telephone h2{
+    color: white;
+}

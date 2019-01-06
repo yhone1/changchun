@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>日期选择</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+  <link rel="stylesheet"  type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="option.css">
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!--页头开始-->
+<div class="header">
+  <div class="container">
+    <a href="/" class="logo">
+      <i class="iconfont icon-nakedcn"></i>
+    </a>
+    <h1><a href="booking.html"><span>客房预订</span></a>
+    </h1><a href="javascript:;" class="enfont lang"><span class="glyphicon glyphicon-user ren"></span></a>
+  </div>
+</div>
+<!--页头结束-->
+<div class="page page-option">
+  <div class="booking-status" style="background-image: url('../../images/booking/ban-stables.jpg');">
+    <div class="container">
+      <ul>
+        <li class="step1 active">
+          <div class="bg">
+            <div></div>
+          </div>
+          <div class="text">
+            <span class="number">1</span><span class="cont">选择日期</span>
+          </div>
+        </li>
+        <li class="step2">
+          <div class="bg">
+            <div></div>
+          </div>
+          <div class="text">
+            <span class="number">2</span><span class="cont">房间及价格</span>
+          </div>
+        </li>
+        <li class="step3">
+          <div class="bg">
+            <div></div>
+          </div>
+          <div class="text">
+            <span class="number">3</span><span class="cont">宾客信息</span>
+          </div>
+        </li>
+        <li class="step4">
+          <div class="bg">
+            <div></div>
+          </div>
+          <div class="text">
+            <span class="number">4</span><span class="cont">确认</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--<div class="ban-pic visible-xs">-->
+  <!--<img src="assets/pic/hotel/ban-stables-m.jpg" alt="">-->
+  <!--</div>-->
+    <form action="/room.html" method="post">
+        <div class="container" style="display: block;">
+            <div class="option-form">
+                <div class="form-item">
+                    <h2 class="option-title">您的入住日期</h2>
+                    <div class="form-row row">
+                        <div class="col-8 col-xs-12">
+                            <div class="col-9 col-xs-24">
+                                <label class="item-label" for="startDate">从</label>
+                            </div>
+                            <div class="col-15 col-xs-24">
+                                <div class="pikaday-cont start-date">
+                                    <input type="text" id="startDate" name="startDate">
+                                    <!--<span><%=in_date%></span>-->
+                                    <i class="iconfont icon-calendar"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-xs-12">
+                            <div class="col-9 col-xs-24">
+                                <label class="item-label" for="endDate">到</label>
+                            </div>
+                            <div class="col-15 col-xs-24">
+                                <div class="pikaday-cont end-date">
+                                    <input type="text" id="arriveDate" name="arriveDate">
+                                    <!--<span><%=out_date%></span>-->
+                                    <i class="iconfont icon-calendar"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <h2 class="option-title">套房数及入住人数</h2>
+                    <div class="form-row row">
+                        <div class="col-8 col-xs-24">
+                            <div class="col-9 col-xs-24">
+                                <label class="item-label">套房数</label>
+                            </div>
+                            <div class="col-15 col-xs-12 input-number-left">
+                                <div class="input-number">
+                                <span class="input">
+                                    <input type="text" name="rooms" list="roomsList" id="room">
+                                </span>
+                                    <!--<span><%=room_number%></span>-->
+                                    <!--<button class="minus"><i class="iconfont icon-minus"></i></button>-->
+                                    <!--<button class="plus"><i class="iconfont icon-plus"></i></button>-->
+                                    <datalist id="roomsList">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </datalist>
+                                    <i class="iconfont icon-triangle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-16 col-xs-24">
+                            <div class="col-12">
+                                <div class="col-9 col-xs-24">
+                                    <label class="item-label">每套成人</label>
+                                </div>
+                                <div class="col-15 col-xs-24 input-number-left">
+                                    <div class="input-number">
+                                    <span class="input">
+                                        <input type="text" name="adults" list="adultList" id="adult" >
+                                    </span>
+                                        <!--<span><%=adultNum%></span>-->
+                                        <!--<button class="minus"><i class="iconfont icon-minus"></i></button>-->
+                                        <!--<button class="plus"><i class="iconfont icon-plus"></i></button>-->
+                                        <datalist id="adultList">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                        </datalist>
+                                        <i class="iconfont icon-triangle-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-9 col-xs-24">
+                                    <label class="item-label">儿童数量</label>
+                                </div>
+                                <div class="col-15 col-xs-24 input-number-right">
+                                    <div class="input-number">
+                                    <span class="input">
+                                        <input type="text" name="children" id="child" list="childList">
+                                    </span>
+                                        <!--<button class="minus"><i class="iconfont icon-minus"></i></button>-->
+                                        <!--<button class="plus"><i class="iconfont icon-plus"></i></button>-->
+                                        <datalist id="childList">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                        </datalist>
+                                        <i class="iconfont icon-triangle-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <h2 class="option-title">
+                        <span>优惠代码</span>
+                        <small class="gray">（节假日开放）</small>
+                    </h2>
+                    <div class="form-row row">
+                        <div class="promo-code">
+                            <input type="text" class="full-input" placeholder="请输入您的优惠码" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div><a href="room.html">
+                        <button class="button full-button submit-button" >查找客房</button></a>
+                </div>
+            </div>
+        </div>
+    </form>
+  <div class="container" style="display: none;">
+    <div class="option-unavailable">
+      <div class="unavailable-title">很抱歉，在您选择的日期暂无可预订的房间，请重新选择日期</div>
+      <div class="cale-container">
+        <div style="height: 0px; width: 0px; opacity: 0; overflow: hidden;">
+          <input type="text" readonly="">
+        </div>
+        <div id="caleContainer"></div>
+        <ul class="calendar-label">
+          <li>
+            <label class="selected"></label>
+            <span>已选日期</span>
+          </li>
+          <li>
+            <label class="available"></label>
+            <span>可预订</span>
+          </li>
+          <li>
+            <label class="full-booked"></label>
+            <span>不可预订</span>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-cont">
+        <div class="submit-cont">
+          <button class="button full-button submit-button">重新查找客房</button>
+        </div>
+        <div>
+          <a href="javascript:;" class="btn-back-index">返回修改预订信息</a>
+        </div>
+      </div>
+      <div class="unavailable-info">
+        <div>很抱歉在您选择的日期内，裸心谷没有可用的客房。您还可以预订我们在莫干山的另一度假村酒店——裸心堡，相信她一样会给您带来美妙的度假体验。</div>
+        <p>
+          <a href="option.html?hotelCode=H000001" class="button" data-tracking="Resv,Click,Book_nS_NoResults">预订裸心堡</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--页尾-->
+<div class="page-bottom">
+  <div class="help-bottom container">
+    <h3>需要帮助？</h3>
+    <div class="contact">
+      <p>请联系裸心专业预订团队:</p>
+      <h4 class="phone">
+        <a href="tel:400 9200 518">400 9200 518</a> <span>或</span>
+        <a href="tel:021 6431 8901">＋86 21 6431 8901</a><br>Email:
+        <a href="mailto:reservations@nakedretreats.cn">reservations@nakedretreats.cn</a>
+      </h4>
+    </div>
+    <div class="time">
+      <h4>工作时间</h4>
+      <p><span>周一至周五</span> <span>08:00-20:00</span></p>
+      <p><span>周六及周日</span> <span>10:00-17:00</span></p>
+    </div>
+  </div>
+  <div class="footer container">
+    <a class="back-top visible-xs" href="javascript:;">
+      <span class="top">回到顶部</span>
+      <i class="iconfont icon-up"></i>
+    </a>
+    <div class="copyright">Copyright 2011-2018 all rights reserved <a href="http://www.miitbeian.gov.cn">沪ICP备14028165号-7</a></div>
+  </div>
+</div>
+</body>
+<script>
+
+    document.getElementById("startDate").value="<%=in_date%>"
+    document.getElementById("arriveDate").value="<%=out_date%>"
+    document.getElementById("room").value="<%=room_number%>";
+    document.getElementById("adult").value="<%=adultNum%>";
+    document.getElementById("child").value="<%=childNum%>";
+
+</script>
+</html>

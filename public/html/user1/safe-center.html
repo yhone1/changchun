@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人中心</title>
+
+    <!--引用bootstrap.css-->
+    <link rel="stylesheet" href="../../css/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <!--引用自己写的stables-room.css-->
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/stables/s_footer.css">
+    <link rel="stylesheet" href="../../css/user1/user.css">
+    <link rel="stylesheet" href="../../css/user1/safe-center.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-bar"></div>
+    <div class="logo-cont">
+        <div class="logo">
+            <a href="stables.html">
+                <i class="iconfont icon-logo"></i>
+            </a>
+        </div>
+    </div>
+    <div class="nav-more" style="height: 360px">
+        <div class="space"><i class="iconfont icon-close"></i></div>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="../home.html">度假村首页</a>
+            </li>
+            <li class="menu-item">
+                <a href="../stables/stables.html">常青谷</a>
+            </li>
+            <li class="menu-item">
+                <a href="../castle/castle.html">常青堡</a>
+            </li>
+            <li class="menu-item">
+                <a href="../sail/sail.html">常青帆</a>
+            </li>
+            <li class="menu-item">
+                <a href="../jobOpportunity/water.html">即将开业的度假村</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container usercenter">
+    <div class="row">
+        <div class="col-md-3 col-xs-12">
+            <ul class="leftbar box">
+                <li><span class="glyphicon glyphicon-user"></span>个人信息</li>
+                <li><span class="glyphicon glyphicon-list-alt"></span>我的订单</li>
+                <li><span class="glyphicon glyphicon-lock"></span>账户安全</li>
+                <li><span class="glyphicon glyphicon-log-out"></span>退出登录</li>
+            </ul>
+        </div>
+        <div class="col-md-9 col-xs-12">
+            <div class="page-settings box">
+                <div class="setting-title">账户绑定</div>
+                <div class="setting">
+                    <div class="contentBox">
+                        <div class="bingd">
+                            <div class="itemBox">
+                                <div class="left">	<i class="glyphicon glyphicon-envelope"></i></div>
+                                <div class="center">
+                                    <p><span class="font1">邮箱</span>
+                                        <span class="font3">
+                            </span> <span class="font4">未绑定
+
+                            </span>
+                                    </p>
+                                    <p class="font2">可用邮箱加密码登陆，可用邮箱找回密码</p>
+                                </div>
+                                <div class="right">
+                                    <a href="" class="button">立即绑定</a>
+                                </div>
+                            </div>
+                            <div class="itemBox">
+                                <div class="left">  <i class="glyphicon glyphicon-phone"></i></div>
+                                <div class="center">
+                                    <p> <span class="font1">手机</span> <span class="font4" id="jsPhone">176******38</span></p>
+                                    <p class="font2">可用手机号加密码登录，可通过手机号找回密码</p>
+                                </div>
+                                <div class="right">
+                                    <span  class="button changeTel" >更改</span>
+                                    <input type="hidden" id="account" value="176******38">
+                                </div>
+                            </div>
+                            <div class="itemBox">
+                                <div class="left">	<i class="glyphicon glyphicon-lock"></i></div>
+                                <div class="center">
+                                    <p> <span class="font1">密码</span> 已设置</p>
+                                    <p class="font2">用于保护账号信息和登录安全</p>
+                                </div>
+                                <div class="right">
+                                    <a href="" class="button">修改</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--修改邮箱-->
+<div class="mailbind modalblock">
+    <div class="title">
+        <span>绑定邮箱</span>
+        <i class="glyphicon glyphicon-remove-circle closebtn mailbindclose"></i>
+    </div>
+    <div class="inner">
+        <div class="group">
+            <span>邮箱地址：</span>
+            <input type="email" placeholder="请输入您的邮箱" class="js-email m_input">
+        </div>
+        <div class="group">
+            <a href="" class="button confirm">确定</a>
+            <a href="" class="button cancel">取消</a>
+        </div>
+    </div>
+</div>
+<!--已发送确认邮件-->
+<div class="mailbindsent modalblock">
+    <div class="title">
+        <span>修改邮箱</span>
+        <i class="glyphicon glyphicon-remove-circle closebtn mailsentclose"></i>
+    </div>
+    <div class="inner">
+        <div class="group">
+            <i class="glyphicon glyphicon-ok ok"></i>
+        </div>
+        <div class="group">
+            <p class="success-hint">已向
+                <span class="color-red">754968254@qq.com</span>
+            </p>
+            <p>发送邮件</p>
+            <p>请登录邮箱点击确认链接完成验证</p>
+            <a href="" class="button confirm sentconfirm">马上去验证</a>
+            <a href="" class="button cancel sentcancel">暂不验证</a>
+        </div>
+    </div>
+</div>
+<!--修改手机号-->
+<div class="telmodify modalblock">
+    <div class="title">
+        <span>认证手机号码</span>
+        <i class="glyphicon glyphicon-remove-circle closebtn telclose"></i>
+    </div>
+    <div class="inner">
+        <div class="group">
+            <div class="keybox">解绑后，您将无法再使用此手机号进行找回密码及登录相关操作。</div>
+            <div class="formgroup">
+                <label>已绑定手机号：</label>
+                <span class="yanzheng-phone-text">176******38</span>
+            </div>
+            <div class="formgroup">
+                <label>请输入已绑定手机号：</label>
+                <input type="tel" class="tel" placeholder="请输入手机号">
+            </div>
+            <div class="formgroup">
+                <span  class="button cancel telcancel">取消</span>
+                <span  class="button confirm telconfirm">下一步</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--绑定手机-->
+<div class="telbind modalblock">
+    <div class="title">
+        <span>绑定手机</span>
+        <i class="glyphicon glyphicon-remove-circle closebtn telbindclose"></i>
+    </div>
+    <div class="inner">
+        <div class="group">
+            <span>新手机号码：</span>
+            <input type="tel" placeholder="请输入您的手机号" class="m_input">
+        </div>
+        <div class="group">
+            <span>短信验证码：</span>
+            <div class="code">
+                <input type="tel" placeholder="请输入验证码" class="hiddencode">
+                <a href="">发送验证码</a>
+            </div>
+        </div>
+        <div class="group">
+            <a href="" class="button confirm telbindconfirm">确定</a>
+            <a href="" class="button cancel telbindcancel">取消</a>
+        </div>
+    </div>
+</div>
+<!--修改密码-->
+<div class="pwdmodify modalblock">
+    <div class="title">
+        <span>修改密码</span>
+        <i class="glyphicon glyphicon-remove-circle closebtn pwdmodifyclose"></i>
+    </div>
+    <div class="inner">
+        <div class="group">
+            <span>输入原始密码：</span>
+            <input type="email" placeholder="输入密码" class="m_input">
+        </div>
+        <div class="group">
+            <span>输入新密码：</span>
+            <input type="email" placeholder="输入密码" class="m_input">
+        </div>
+        <div class="group">
+            <span>确认新密码：</span>
+            <input type="email" placeholder="再次输入密码" class="m_input">
+        </div>
+        <div class="group">
+            <a href="" class="button confirm pwdconfirm">确定</a>
+            <a href="" class="button cancel pwdcancel">取消</a>
+        </div>
+    </div>
+</div>
+<!--修改密码成功-->
+<div class="pwdsuccess modalblock">
+    <div class="inner">
+        <div class="group">
+            <span>密码修改成功，请重新登录</span>
+            <br><br><br>
+            <a href="" class="button confirm pwdconfirm">确定</a>
+        </div>
+    </div>
+</div>
+<!--退出登录确认框-->
+<div class="logout modalblock">
+    <div class="inner">
+        <div class="group">
+            <span>确定要退出登录吗？</span>
+            <br><br><br>
+            <a href="" class="button confirm logoutconfirm">确定</a>
+            <a href="" class="button cancel logoutcancel">取消</a>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container clearfix">
+        <div class="retreats visible-xs">
+            <div class="opened-resort">
+                <a href="stables.html" target="_blank">常青谷</a>
+            </div>
+        </div>
+        <div class="retreats visible-xs">
+            <div class="opened-resort">
+                <a href="../castle/castle.html">常青堡</a>
+            </div>
+        </div>
+        <div class="retreats visible-xs">
+            <div class="opened-resort">
+                <a href="../sail/sail.html">常青帆</a>
+            </div>
+        </div>
+        <div class="info">
+            <div class="sub-title">
+                <b>实用信息</b>
+                <span class="iconfont icon-down"></span>
+            </div>
+            <div class="footer-cont">
+                    <span>
+                        <a href="../about-our.html">关于常青</a>
+                    </span>
+                <span>
+                        <a href="../contact.html">联系我们</a>
+                    </span>
+                <span><a href="../media.html">媒体中心</a>
+                    </span>
+                <span><a href="stables-gallery.html">图库</a>
+                    </span>
+                <span><a href="http://careers.livenaked.com/">工作机会</a>
+                    </span>
+                <span><a href="../jobOpportunity/invest.html">投资机会</a>
+                    </span>
+                <span><a href="../jobOpportunity/privacy.html">隐私策略</a>
+                    </span>
+                <span><a href="../jobOpportunity/policy.html">政策与条款</a>
+                    </span>
+                <span><a href="../jobOpportunity/CommonProblems.html">常见问题</a>
+                    </span>
+            </div>
+        </div>
+        <div class="retreats">
+            <div class="sub-title">
+                <b>即将开业酒店</b>
+                <span class="iconfont icon-down"></span>
+            </div>
+            <div class="footer-cont">
+                <span><a href="../jobOpportunity/water.html">常青泊</a></span>
+                <span><a href="../jobOpportunity/park.html">常青园</a></span>
+                <span><a href="../jobOpportunity/pond.html">常青潭</a></span>
+                <span><a href="../jobOpportunity/wall.html">常青壁</a></span>
+            </div>
+        </div>
+        <div class="products">
+            <div class="sub-title">
+                <b>更多常青项目</b>
+                <span class="iconfont icon-down"></span>
+            </div>
+            <div class="footer-cont">
+                <span><a href="http://www.nakedhub.com/">常青社</a></span>
+                <span><a href="http://www.livenaked.com/things">常青品</a></span>
+            </div>
+        </div>
+        <div class="follow">
+            <div class="follow-title">
+                <b data-reactid=".1byte5nemlc.4.0.4.0.0">关注我们</b>
+            </div>
+            <div class="footer-cont">
+                <form class="subscribe" id="subscribeForm" method="post">
+                    <input type="hidden" name="DMDtask" value="subscribe">
+                    <input type="hidden" name="lang" value="cn">
+                    <input type="text" maxlength="255" name="email" value="" placeholder="填写邮箱 订阅讯息">
+                    <button type="submit">订阅</button>
+                </form>
+                <div class="qrcode"><img src="../../images/qr-code.gif">
+                    <small>扫码或搜索“常青naked”关注我们</small>
+                    <div class="share-wrap">
+                        <p class="share">
+                            <a href="http://weibo.com/nakedretreats"class="weibo">
+                                <img src="../../images/weibo.png">
+                            </a>
+                        </p>
+                        <p class="share">
+                            <a href="http://www.linkedin.com/company/naked-group" class="linkedin">
+                                <img src="../../images/linkedin.png">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="back-top visible-xs">
+        <span class="top">回到顶部</span>
+        <span></span>
+        <i class="iconfont icon-up"></i>
+    </a>
+    <div class="copyright">
+        <span>常青酒店管理(上海)有限公司 Copyright 2011-2018 all rights reserved </span>
+        <a href="http://www.miitbeian.gov.cn">沪ICP备14028165号-7</a>
+        <a href="">
+            <img width="30" src="../../images/zhizhao.png" alt="">
+        </a>
+    </div>
+</div>
+<script src="../../js/jquery-3.3.1.js"></script>
+<script src="../../css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script>
+    $("span.changeTel").on("click",function () {
+        $(".telmodify").css("display","block")
+    })
+    $("span.telconfirm").on("click",function () {
+        $(".telbind").css("display","block")
+    })
+</script>
+</body>
+</html>

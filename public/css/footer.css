@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Segoe UI,Heiti SC,STHeiti,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #221e1f;
+    box-sizing: border-box;
+}
+.footer .footer-cont {
+    font-size: 12px;
+}
+/*.container {*/
+    /*max-width: 1000px;*/
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+/*}*/
+.footer {
+    width: 100%;
+    padding-top: 20px;
+    color: #bbbdc0;
+    background-color: #000;
+    border-top: 1px solid #252525;
+    box-sizing: border-box;
+    float: left;
+}
+.footer-cont a{
+    font-size: 12px;
+    color:#7b7b7b ;
+}
+a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: color .3s;
+}
+a:hover{
+    color:#1890ff ;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer .follow, .footer .info, .footer .products, .footer .retreats{
+    width: 24%;
+    height: 270px;
+    float: left;
+    padding-left: 40px;
+}
+.footer .products, .footer .retreats {
+    width: 23%;
+}
+.sub-title{
+    font-size: 14px;
+    margin: 1em 0 1.2em;
+    border-bottom: 1px solid #3a3939;
+    padding-bottom: 16px;
+}
+.footer-cont span {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin-bottom: 1.6em;
+    float: left;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearhight{
+    height: 270px;
+}
+.copyright ,.copyright a{
+    text-align: center;
+    padding: 3em 0;
+    font-size: 12px;
+    color: #7b7b7b;
+}
+.footer .follow {
+    border-right: 0;
+    width: 30%;
+}
+/*div{*/
+    /*display: block;*/
+/*}*/
+small {
+    font-size: 80%;
+}
+.footer .subscribe {
+    width: 85%;
+    border: 1px solid #464747;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 18px;
+    font-size: 0;
+}
+.subscribe input{
+    width: 75%;
+}
+.footer .subscribe button {
+    width: 25%;
+    background-color: #464747;
+    color: #bbbdc0;
+}
+.subscribe button, .footer .subscribe input {
+    border: 0;
+    height: 32px;
+    padding: 6px;
+    line-height: 20px;
+    background-color: transparent;
+    color: #bbbdc0;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+}
+.footer .qrcode {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+}
+.footer .qrcode img {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 0 auto .4em;
+}
+.footer .share-wrap {
+    margin-top: 1em;
+}
+.footer .share {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 0 1.3em 1.3em;
+}
+.footer .share:first-of-type {
+    margin: 0 0 1.3em;
+}
+.footer .share a img {
+    width: 30px;
+}
+.footer .share-wrap img {
+    height: auto;
+}
+.zhizhao{
+    width: 30px;
+    height: auto;
+}
+.footer a{
+    color:#bbbdc0;
+}
+.footer a:hover{
+    color:#bbbdc0;
+    text-decoration: none;
+}

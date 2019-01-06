@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #666666;
+}
+.banner{
+    padding: 0;
+}
+.pay{
+    margin: 0 auto;
+    width: 850px;
+}
+div{
+    padding: 30px;
+}
+p{
+    font-size: 18px;
+}
+span{
+    font-size: 16px;
+}
+.subject p{
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid  #666666;;
+}
+.body span{
+    padding: 0 60px;
+}
+button{
+    margin-right: 50px;
+    width: 165px;
+    height: 48px;
+    font-size: 18px;
+    float: right;
+    background-color: #EE8123;
+    color: white;
+    border: 0;
+}

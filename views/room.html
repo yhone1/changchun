@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>房间详情</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../css/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../css/booking/main.css">
+    <link rel="stylesheet" href="../../css/booking/room.css">
+    <script src="../../js/jquery-3.3.1.js">  </script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--页头开始-->
+<div class="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <i class="iconfont icon-nakedcn"></i>
+        </a>
+        <h1><a href="booking.html"><span>客房预订</span></a>
+        </h1><a href="javascript:;" class="enfont lang"><span class="glyphicon glyphicon-user ren"></span></a>
+    </div>
+</div>
+
+<div class="page page-room">
+    <!--进度条-->
+    <div class="booking-status" style="background-image: url(/images/booking/ban-stables.jpg);">
+        <div class="container">
+            <ul>
+                <li class="step1 done">
+                    <div class="bg">
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <span class="number">1</span><span class="cont">选择日期</span>
+                    </div>
+                </li>
+                <li class="step2 active">
+                    <div class="bg">
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <span class="number">2</span><span class="cont">房间及价格</span>
+                    </div>
+                </li>
+                <li class="step3">
+                    <div class="bg">
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <span class="number">3</span><span class="cont">宾客信息</span>
+                    </div>
+                </li>
+                <li class="step4">
+                    <div class="bg">
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <span class="number">4</span><span class="cont">确认</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--前面传过来的预定信息，显示在界面-->
+    <div class="container booking-option-detail">
+        <h2><span>您的预订信息</span><i class="iconfont icon-triangle-down"></i></h2>
+        <div class="booking-info horizontal">
+            <dl>
+                <dt><span>入住日期</span>:</dt>
+                <dd><%= in_date %></dd>
+                <dt><span>离店日期</span>:</dt>
+                <dd><%= out_date %></dd>
+                <dt><span>入住晚数</span>:</dt>
+                <dd><%= sum %> <span>晚</span></dd>
+                <dt><span>客房数量</span>:</dt>
+                <dd><%= room_number %></dd>
+                <dt><span>每套成人</span>:</dt>
+                <dd><%= adultNum %></dd>
+            </dl>
+            <a href="/option.html" class="gray-button">返回选择日期</a>
+        </div>
+    </div>
+
+    <!--房屋表  最大的box-->
+    <div class="container room-list">
+        <!--房屋模块-->
+        <% for(var i=0;i<room.room.length;i++){ %><!--//每一个版块的循环allData，包括查看适用价格里面的各种套餐-->
+        <div class="room-item">
+<!--=================房屋类型================================================================-->
+
+            <div class="row">
+                <div class="col-13 col-xs-24">
+                    <div class="pics">
+                        <img src="<%= room.room[i].mainPicPath %>" alt="">
+                    </div>
+                </div>
+
+                <div class="col-11 col-xs-24">
+                    <h2 class="hidden-xs room-name"><%= room.room[i].room_type_name %></h2>
+                    <div class="room-info">
+                        <div class="facility">
+                            <% for(var j=0;j<room.room[i].device.length;j++){ %>
+                            <label><%=room.device[room.room[i].device[j]]%></label>
+                            <%}%>
+                        </div>
+                        <div class="desc">
+                            <div>
+                                <a  class="show-desc"><i class="iconfont icon-plus"></i><span>更多</span></a>
+                            </div>
+                            <div class="content none">
+                                <!--数据库写的列名是more-->
+                                <%=room.room[i].room_type_more%>
+                            </div>
+                        </div>
+                        <div class="price-block">
+                            <div class="price">
+                                <span>每晚</span>
+                                <strong>RMB <%=room.room[i].roomPrice%></strong>
+                                <span>起</span></div>
+                            <p class="no-charge">不含税金和服务费用</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chaKan col-24 button full-button show-offers">
+                    <div class="hide">
+                        <i class="iconfont ">+</i>
+                        <span>查看适用价格</span>
+                    </div>
+                </div>
+                <div class="shouQi col-24 button full-button show-offers">
+                    <div class="hide">
+                        <i class="iconfont ">-</i>
+                        <span>收起价格</span>
+                    </div>
+                </div>
+            </div>
+
+
+<!--========================套餐=================================================-->
+            <div class="offer-list enabled-offers none">
+
+                <%for(var n=0;n<room.room[i].consume.length;n++){%>
+                <div class="row offer-item ">
+                    <h3 class="offer-name">
+                        <span><%=room.room[i].consume[n].room_consume_name%></span>
+                    </h3>
+                    <div class="col-12 col-xs-24 desc">
+                        <div class="cont">
+                            <%=room.room[i].consume[n].more%>
+                        </div>
+                        <div class="hidden-xs">
+                            <a href="javascript:;" id="" class="priceDetail tab-item ">
+                                <i class="iconfont icon-plus"></i>
+                                <span>查看价格明细</span>
+                            </a>
+                            <a href="javascript:;" id="" class="consumeInclude tab-item ">
+                                <i class="iconfont icon-plus"></i>
+                                <span>套餐包含</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-1 col-xs-0"></div>
+                    <div class="col-11 col-xs-24">
+                        <div class="price-block">
+                            <div class="price">
+                                <span>每晚平均</span>&nbsp;<strong>RMB <%=room.room[i].consume[n].consume_price%></strong>
+                            </div>
+                            <p class="no-charge">不含税金和服务费用</p>
+                        </div>
+                        <div class="order-button">
+                            <a href="/guest.html?coordI=<%=i%>&coordN=<%=n%>">
+                                <button class="button full-button"><span>立即预订</span></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--价格明细-->
+                    <div class="col-24 price-breakdown none">
+                        <div class="visible-xs tab-item ">
+                            <i class="iconfont icon-plus"></i>
+                            <span>查看价格明细</span>
+                        </div>
+                        <div class="tab-content row">
+                            <div class="col-12 col-xs-24 date-price">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <label class="uppercase">客房费用</label>
+                                    </div>
+                                    <div class="col-15">
+                                        <div class="row">
+                                            <div class="col-10">晚数： &nbsp;<%=sum%></div>
+                                            <div class="col-14 dp">单价：RMB <%=room.room[i].consume[n].consume_price%></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <label class="uppercase">客房数量</label>
+                                    </div>
+                                    <div class="col-15"><%=room_number%></div>
+                                </div>
+                            </div>
+                            <div class="col-1 col-xs-0">
+                                <div class="fee-line"></div>
+                            </div>
+                            <div class="col-11 col-xs-24 fee">
+                                <div class="col-16">
+                                    <label class="uppercase">服务费</label>
+                                </div>
+                                <!--<div class="col-8 text-right">RMB <%=serverMoney[i][n]%></div>-->
+                                <div class="col-16">
+                                    <label class="uppercase">税金</label>
+                                </div>
+                                <!--<div class="col-8 text-right">RMB <%=tax[i][n]%></div>-->
+                            </div>
+                            <div class="col-11 col-offset-13 col-xs-24 col-xs-offset-0 total">
+                                <div class="col-12">
+                                    <label class="uppercase"><b>预计总额</b></label>
+                                </div>
+                                <div class="col-12 text-right">
+                                    <!--<strong>RMB <%=allMoney[i][n]%></strong>-->
+                                </div>
+                            </div>
+                            <div class="col-24 total-tips">
+                                <label>* 儿童及成人加床产生的额外费用将根据实际情况收取，详见预订条款。</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--套餐包含-->
+                    <div class="col-24 included none">
+                        <div class="visible-xs tab-item">
+                            <i class="iconfont icon-minus"></i>
+                            <span>套餐包含</span>
+                        </div>
+                        <div class="tab-content row">
+                            <%for(let value of room.room[i].consume[n].active_consume){%>
+                            <div class="col-12 col-xs-24"><%= room.active[value]%></div>
+                            <%}%>
+                        </div>
+                    </div>
+                </div>
+                <%}%>
+            </div>
+        </div>
+        <%}%>
+    </div>
+
+</div>
+<!--页尾开始-->
+<div class="page-bottom">
+    <div class="help-bottom container">
+        <h3>需要帮助？</h3>
+        <div class="contact">
+            <p>请联系裸心专业预订团队:</p>
+            <h4 class="phone">
+                <a href="tel:400 9200 518">400 9200 518</a> <span>或</span>
+                <a href="tel:021 6431 8901">＋86 21 6431 8901</a><br>Email:
+                <a href="mailto:reservations@nakedretreats.cn">reservations@nakedretreats.cn</a>
+            </h4>
+        </div>
+        <div class="time">
+            <h4>工作时间</h4>
+            <p><span>周一至周五</span> <span>08:00-20:00</span></p>
+            <p><span>周六及周日</span> <span>10:00-17:00</span></p>
+        </div>
+    </div>
+    <div class="footer container">
+        <a class="back-top visible-xs" href="javascript:;">
+            <span class="top">回到顶部</span>
+            <i class="iconfont icon-up"></i>
+        </a>
+        <div class="copyright">Copyright 2011-2018 all rights reserved <a href="http://www.miitbeian.gov.cn">沪ICP备14028165号-7</a></div>
+    </div>
+</div>
+<!--页尾结束-->
+<script>
+    var roomid='<%=room.room[0].room_type_id%>';
+    console.log("sdafad:"+roomid);
+    //查看详情
+    $(".chaKan").click(function () {
+        $(".chaKan").css("display","none"),
+            $(".shouQi").css("display","block"),
+            $(".offer-list").css("display","block")
+    });
+    $(".shouQi").click(function () {
+        $(".chaKan").css("display","block"),
+            $(".offer-list").css("display","none")
+    });
+
+    $(".show-desc").click(function () {
+        $(".content").toggleClass("none block")
+    });
+
+
+
+    $(".priceDetail").click(function () {
+        $(".priceDetail").attr("title","true"),
+            $(".price-breakdown").css("display","block"),
+            $(".included").css("display","none")
+    });
+
+    $(".consumeInclude").click(function () {
+        $(".included").css("display","block"),
+            $(".price-breakdown").css("display","none")
+
+    })
+</script>
+
+</body>
+</html>

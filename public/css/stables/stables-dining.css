@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*banner大图*/
+.bannerTitle{
+    text-align: center;
+    background-color: #d9e3d9;
+}
+.bannerTitle p{
+    padding: 15px;
+}
+
+/*3钟类型的餐厅*/
+.threeRestaurant{
+    padding: 30px;
+}
+.restaurantBox{
+    padding-bottom: 20px;
+    background-color: #f2efe1;
+}
+.restaurantBox h2{
+    padding: 20px 20px 5px;
+    color: #1e522f;
+    margin-top: 0;
+}
+.resP{
+    line-height: 30px;
+    padding: 5px 20px;
+}
+.restaurantBox a p{
+    margin-left: 20px;
+}
+
+.restaurantBox span{
+    border: 1px solid #1e522f;
+    padding: 10px 30px;
+}
+
+.lastResBox{
+    margin-top: 30px;
+}
+.imgWidth{
+    width: 100%;
+}
+
+
+
+
+/*预定热线*/
+.bookPhone{
+    background-color: grey;
+    padding: 30px;
+}
+.bookPhone p{
+    color: #1e522e;
+    font-weight: bold;
+}
+.telephone{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.telephone h2{
+    color: white;
+}

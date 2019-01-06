@@ -1,0 +1,709 @@
+/*公共的板块*/
+.col-8 {
+    width: 33.33333333%;
+}
+.col-16 {
+    width: 66.66666667%;
+}
+.col-12 {
+    width: 50%;
+}
+
+.col-11 {
+    width: 45.83333333%;
+}
+.col-15 {
+    width: 62.5%;
+}
+.col-10 {
+    width: 41.66666667%;
+}
+.col-14 {
+    width: 58.33333333%;
+}
+
+.col-9 {
+    width: 37.5%;
+}
+.col-1 {
+    width: 4.16666667%;
+}
+.col-24 {
+    width: 100%;
+}
+.col-11 {
+    width: 45.83333333%;
+}
+.col-13 {
+    width: 54.16666667%;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+input{
+    border: none;
+}
+.page-room .offer-item .included, .page-room .offer-item .price-breakdown {
+    margin: 0;
+}
+body, button, input, select {
+    font-family: Helvetica Neue,PingFang SC,Heiti SC,STHeiti,Microsoft YaHei,calibri;
+}
+button, input, select {
+    border-radius: 0;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16, .col-17, .col-18, .col-19, .col-20, .col-21, .col-22, .col-23, .col-24, .col-lg-24, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .col-xs-19, .col-xs-20, .col-xs-21, .col-xs-22, .col-xs-23, .col-xs-24 {
+    display: block;
+    position: relative;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, li, p, ul {
+    margin: 0;
+    font-weight: 400;
+    color: inherit;
+}
+h2 {
+    font-size: 1.72em;
+}
+li, ul {
+    list-style: none none;
+    padding: 0;
+}
+.zh-CN .booking-status li.step1 .text, .zh-CN .booking-status li.step3 .text {
+    width: 100%;
+}
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*背景图片区*/
+.page-room {
+    padding-bottom: 1px;
+}
+.page {
+    background-color: #f6f6f6;
+}
+
+.booking-status {
+    padding-top: 60px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+/*进度条*/
+.booking-status .container {
+    overflow: hidden;
+    padding:0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.booking-status ul {
+    font-size: 0;
+    width: 104%;
+    margin-left: -2%;
+    position: relative;
+    display: table;
+}
+.booking-status li {
+    display: table-cell;
+    /*height: 100%;*/
+    font-size: .857rem;
+    position: relative;
+    height: 36px;
+    cursor: pointer;
+}
+.booking-status li .bg {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 2px;
+}
+
+ .booking-status li.done .bg div {
+    background-color: #96b6a1;
+}
+
+.booking-status li .bg div {
+    width: 100%;
+    height: 100%;
+    background: #e6e6e6;
+    -webkit-transform: skew(-25deg);
+    transform: skew(-25deg);
+}
+
+/*文字*/
+.booking-status li .text {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    color: #b9b9b9;
+}
+.booking-status li.done .text {
+    color: #333;
+}
+.booking-status li.done .text .number {
+    border-color: #333;
+}
+.booking-status li .text span.number {
+    font-size: 1em;
+    height: 20px;
+    width: 20px;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid #b9b9b9;
+    border-radius: 50%;
+    margin-right: .6em;
+}
+
+.booking-status li .text span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ .booking-status li.active .bg div {
+    background-color: #004712;
+}
+
+ /*内容部分*/
+
+/*预定信息部分*/
+    .booking-option-detail {
+        margin-top: 38px;
+        margin-bottom: 20px;
+    }
+.booking-option-detail {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+    .booking-option-detail h2 {
+        height: 4.642rem;
+        line-height: 4.642rem;
+        padding: 0 20px;
+    }
+
+    .booking-option-detail h2 {
+        font-size: 1.285em;
+        height: 4.285rem;
+        line-height: 4.285rem;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+
+.icon-triangle-down:before {
+    content: "\E61D";
+}
+
+ .booking-option-detail h2 .iconfont {
+        float: none;
+        font-size: .5em;
+        margin-left: 1em;
+        margin-top: 0;
+ }
+.booking-option-detail h2:after {
+    clear: both;
+}
+
+.booking-option-detail h2:after, .booking-option-detail h2:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/*登录信息*/
+.booking-option-detail .booking-info {
+    padding: 0 20px 23px;
+}
+
+    .booking-option-detail .booking-info.horizontal dl {
+        display: inline-block;
+        vertical-align: top;
+        margin: .15em 0 .5em;
+    }
+
+    .booking-option-detail .booking-info dl {
+        margin: 0 auto 20px;
+    }
+
+    .booking-option-detail .booking-info.horizontal dt {
+        margin-right: .3em;
+    }
+        .booking-option-detail .booking-info.horizontal dd, .booking-option-detail .booking-info.horizontal dt {
+            width: auto;
+            display: inline-block;
+            float: none;
+            line-height: 1.2em;
+            margin-bottom: 0;
+        }
+        .booking-option-detail .booking-info dt {
+            width: 40%;
+            float: left;
+            margin-bottom: .7em;
+            color: #666;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            clear: left;
+        }
+
+    .booking-option-detail .booking-info.horizontal dd {
+        margin-right: 2.5em;
+        margin-left: 0;
+    }
+
+.booking-option-detail .booking-info.horizontal dd, .booking-option-detail .booking-info.horizontal dt {
+    width: auto;
+    display: inline-block;
+    float: none;
+    font-weight: inherit;
+    line-height: 1.2em;
+    margin-bottom: 0;
+}
+        .booking-option-detail .booking-info dd {
+            margin-left: 40%;
+            margin-bottom: .7em;
+            min-height: 1.5rem;
+            line-height: 1.5rem;
+        }
+/*返回重新选择日期*/
+
+.booking-option-detail .booking-info.horizontal .gray-button {
+    margin-left: 0;
+    vertical-align: top;
+}
+.booking-option-detail .booking-info .gray-button {
+    height: auto;
+    line-height: 1.2em;
+    background-color: transparent;
+    padding: 0;
+    color: #5f9271;
+    margin-left: 40%;
+}
+.gray-button {
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    height: 2.86rem;
+    line-height: 2.76rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.147em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+}
+/*边框*/
+.page-room .room-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+    background-color: #fff;
+}
+
+/*房屋模块信息简介*/
+
+.row {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    display: block;
+    zoom: 1;
+}
+/*//小屋标题*/
+.col-0 {
+    display: none;
+}
+
+/*左边图片*/
+.page-room .room-item .col-13 {
+    padding-right: 13px;
+}
+
+.page-room .room-item .pics {
+    cursor: pointer;
+    position: relative;
+}
+.page-room .room-item .pics img {
+    display: block;
+    width: 100%;
+}
+/*放大icon*/
+.page-room .room-item .pics .zoom {
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 32px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABACAYAAACjgtGkAAAABGdBT…A0Y4ZEQhwGnGbMkEiIw4DT7LiX0QbFGR+6ZpwyQ3fJ9xjwP1GQ+e5ebT1wAAAAAElFTkSuQmCC) no-repeat 50%/contain;
+    right: 20px;
+    bottom: 20px;
+}
+/*右侧信息栏*/
+.page-room .room-item .col-11 {
+    padding-left: 13px;
+}
+
+/*标题*/
+.page-room .room-item h2 {
+    margin-bottom: .5em;
+}
+.hidden-xs {
+    display: block!important;
+}
+
+/*信息详情*/
+.page-room .room-item .facility label {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 0 18px;
+    color: #888;
+    margin: 0 8px 8px 0;
+}
+
+/*描述*/
+.page-room .room-item .desc {
+    margin-bottom: 2em;
+    margin-top: .5em;
+}
+.page-room .room-item .show-desc {
+    color: #5f9271;
+}
+.page-room .room-item .show-desc .iconfont {
+    font-size: 12px;
+}
+
+.page-room .room-item .show-desc>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+.icon-minus:before {
+    content: "\E620";
+}
+.page-room .room-item .show-desc span {
+    font-size: 1.142em;
+    margin-left: .3em;
+}
+
+.page-room .room-item .desc .content {
+    margin-top: .6em;
+    color: #666;
+}
+/*价格*/
+.page-room .room-item .price {
+    font-size: 1.142em;
+}
+.page-room .room-item .price strong {
+    color: #ed8123;
+    font-size: 1.4em;
+}
+.page-room .room-item .no-charge {
+    color: #aaa;
+}
+
+/*收起价格btn*/
+#chaKan{
+    position: relative;
+    top: 65px;
+    left:0;
+    z-index: 2;
+}
+#shouQi{
+    position: relative;
+    top: -6px;
+    left:0;
+    z-index: 1;
+}
+.height1{
+    height: 1px;
+}
+/*#priceDetail{*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left:0;*/
+    /*z-index: 1;*/
+/*}*/
+/*#consumeInclude{*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left:0;*/
+    /*z-index: 1;*/
+/*}*/
+.heightNormal{
+    height: inherit;
+}
+.page-room .room-item .show-offers {
+    padding: 0;
+}
+
+.button{
+    color: #fff;
+    cursor: pointer;
+}
+.nS .button, .nS a.button {
+    background-color: #5f9271;
+}
+.full-button {
+    display: block;
+    width: 100%;
+    height: 4.285rem;
+    line-height: 4.285rem;
+    font-size: 1.285em;
+}
+
+.page-room .room-item .show-offers .hide {
+
+    background-color: #888;
+}
+/*.enabled-offers{*/
+    /*display: none;*/
+/*}*/
+.show {
+    display: block !important;
+}
+.block{
+    display: block;
+}
+.none{
+    display:none;
+}
+.hide{
+    display: block !important;
+}
+.page-room .room-item .show-offers>div {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.page-room .room-item .show-offers .iconfont {
+    margin-right: .5em;
+}
+.page-room .room-item .show-offers span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*详情内容*/
+.page-room .offer-item {
+    background-color: #f6f6f6;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 1px 0 #e3e3e3;
+}
+
+/*标题*/
+.page-room .offer-item h3 {
+    margin: .3em 0 .5em;
+}
+.page-room .offer-item h3 .best-choice {
+    display: none;
+    vertical-align: bottom;
+    height: 30px;
+    line-height: 30px;
+    font-size: .7em;
+    padding: 0 15px;
+    background-color: #ed8123;
+    color: #fff;
+    opacity: .5;
+    margin-left: 1em;
+}
+/*content*/
+.page-room .offer-item .desc {
+    margin: 0;
+}
+
+.page-room .offer-item .desc .content {
+    font-size: 1.142em;
+    line-height: 1.4em;
+    min-height: 5em;
+    margin-bottom: 1em;
+}
+
+.page-room .room-item .desc .content {
+    margin-top: .6em;
+    color: #666;
+}
+
+
+
+
+/*查看价格明细show*/
+.page-room .offer-item .tab-item.show {
+    background-color: #fff;
+    color: #333!important;
+}
+
+.page-room .offer-item .tab-item {
+    display: inline-block;
+    padding: 1.5em 20px;
+}
+/*icon*/
+.page-room .offer-item .tab-item .iconfont {
+    font-size: .858em;
+    vertical-align: middle;
+    margin-right: .8em;
+}
+/*title*/
+
+.page-room .offer-item .tab-item span {
+    font-size: 1.142em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ .page-room .offer-item .tab-item,  .page-room .room-item .show-desc {
+    color: #5f9271;
+}
+
+.page-room .offer-item .tab-item {
+    display: inline-block;
+    padding: 1.5em 20px;
+}
+/*右侧预定价格*/
+
+.page-room .room-item .col-11 {
+    padding-left: 13px;
+}
+
+.page-room .room-item .price {
+    font-size: 1.142em;
+}
+/*btn*/
+.page-room .offer-item .order-button {
+    box-shadow: 0 1px 1px 1px #e3e3e3;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.button, a.button {
+    background-color: #5f9271;
+}
+
+/*价格明细*/
+.page-room .offer-item .tab-content {
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    margin-top: -1px;
+    line-height: 2em;
+}
+.page-room .offer-item .tab-content .date-price, .page-room .offer-item .tab-content .fee {
+    line-height: 2em;
+}
+
+
+.page-room .offer-item .tab-content label {
+    color: #888;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.page-room .offer-item .tab-content .fee-line {
+    margin-right: 13px;
+    border-right: 1px solid #ddd;
+    height: 6em;
+}
+
+
+.page-room .room-item .col-11 {
+    padding-left: 13px;
+}
+
+
+
+.text-right {
+    text-align: right;
+}
+
+
+
+.page-room .offer-item .tab-content .total {
+    padding-top: 1em;
+    font-weight: 700;
+}
+
+.page-room .room-item .col-11 {
+    padding-left: 13px;
+}
+
+.col-offset-13 {
+    margin-left: 54.16666667%;
+}
+
+.page-room .offer-item .tab-content .total-tips {
+    text-align: right;
+}
+
+.page-room .room-item .col-24 {
+    margin-top: 20px;
+}
+
+.page-room .offer-item .tab-content label {
+    color: #888;
+}
+.page-room .offer-item .tab-content .total strong {
+    color: #ed8123;
+    font-size: 1.142em;
+}
+
+/*套餐清单*/
+.page-room .disabled-offers {
+    opacity: .4;
+}
+
+/*内容板块*/
+.page-room .disabled-offers .offer-item:first-child {
+    margin-top: 10px;
+}
+
+.page-room .offer-item {
+    background-color: #f6f6f6;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 1px 0 #e3e3e3;
+}
+
+.page-room .offer-item h3 {
+    margin: .3em 0 .5em;
+}
+
+.page-room .offer-item .desc {
+    margin: 0;
+}
+/*右侧预定价格*/
+.page-room .room-item .no-charge {
+    color: #aaa;
+}
+.page-room .disabled-offers .message {
+    margin-top: 2em;
+    color: #d95353;
+}

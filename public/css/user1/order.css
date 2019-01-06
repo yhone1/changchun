@@ -1,0 +1,146 @@
+/*订单界面样式*/
+.orderList h3{
+    margin-left: 10px;
+    font-weight: inherit;
+    font-size: 20px;
+    color: #666;
+}
+.orderInfo img{
+    margin-top: 20px;
+    float: left;
+}
+.orderInfo b{
+    /*font-size: 20px;*/
+}
+.orderInfo p{
+    color: #666;
+    font-size: 14px;
+}
+.orderInfo span{
+    color: #666;
+}
+.orderInfo strong{
+    color: #beaf88;
+}
+.ordered{
+    color: #beaf88;
+}
+.ordering{
+    color: rgb(92,133,96);
+}
+th{
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    width: 15%;
+    padding: 2% 1%;
+}
+td{
+    text-align: center;
+    border-top: 2px solid #fafafa;
+}
+.detailBtn{
+    background-color:rgb(92,133,96);
+}
+.buttont{
+    display: inline-block;
+    width: 50px;
+    height:25px ;
+    color: whitesmoke;
+    line-height: 25px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.buttont:hover{
+    color: white;
+}
+.deleteBtn{
+    background-color: #beaf88;
+}
+.orderList{
+    width: 100%;
+    font-size: 18px;
+}
+.order-title{
+    line-height: 250%;
+    padding-left: 4%;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #fafafa;
+}
+td{
+    padding: 0 1%;
+}
+.button{
+    display: inline-block;
+    width: 100px;
+    height:33px ;
+    color: whitesmoke;
+    line-height: 33px;
+    font-size: 14px;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 5%;
+    background-color:rgb(92,133,96);
+}
+.button:hover{
+    color: white;
+    background: #1e522f
+}
+.modalblock{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 40%;
+    background-color: #f1f1f1;
+    background-image: url(../../images/stables/stables-private/companyactivity/bg-pattern-5.png);
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,0.2);
+    border-radius: 5px;
+}
+.title{
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+.title span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.title i{
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.group{
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.group span{
+    font-weight: bold;
+}
+.m_input{
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    border:1px solid #1e522f;
+    background: transparent;
+}
+.cancel,.confirm{
+    margin: 0 3%;
+    border: 1px solid #3c3c3c;
+}
+.cancel{
+    background: transparent;
+    color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+}
+.cancel:hover{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+.logout{
+    top: 28%;
+    height: 150px;
+}

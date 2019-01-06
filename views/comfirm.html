@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>确认订单</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../css/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../css/booking/main.css">
+    <link rel="stylesheet" href="../../css/booking/comfirm.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--页头开始-->
+<div class="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <i class="iconfont icon-nakedcn"></i>
+        </a>
+        <h1><a href="booking.html"><span>客房预订</span></a>
+        </h1><a href="javascript:;" class="enfont lang"><span class="glyphicon glyphicon-user ren"></span></a>
+    </div>
+</div>
+<!--页头结束-->
+<div class="page-confirm">
+    <div class="booking-status" style="background-image: url(../../images/booking/ban-stables.jpg);">
+        <div class="container">
+            <ul>
+                <li class="step1 done">
+                    <div class="bg">
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <span class="number">1</span><span class="cont">选择日期</span>
+                    </div>
+                </li>
+                <li class="step2 done">
+                    <div class="bg">
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <span class="number">2</span><span class="cont">房间及价格</span>
+                    </div>
+                </li>
+                <li class="step3 done">
+                    <div class="bg">
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <span class="number">3</span><span class="cont">宾客信息</span>
+                    </div>
+                </li>
+                <li class="step4 active">
+                    <div class="bg">
+                        <div></div>
+                    </div>
+                    <div class="text">
+                        <span class="number">4</span><span class="cont">确认</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container content-block">
+        <h2><span>您的预订信息</span></h2>
+        <div class="detail-block detail">
+            <div class="row">
+                <div class="col-12 col-xs-24">
+                    <div class="col-8">
+                        <label>酒店名称</label>
+                    </div>
+                    <div class="col-16"><span>裸心谷</span></div>
+                </div>
+                <div class="col-12 col-xs-24">
+                    <div class="col-8"><label>客房数量</label></div>
+                    <div class="col-16">1</div>
+                </div>
+                <div class="col-12 col-xs-24">
+                    <div class="col-8"><label>入离日期</label></div>
+                    <div class="col-16"><%=in_date%><span>入店</span><br><%=out_date%><span>离店</span></div>
+                </div>
+                <div class="col-12 col-xs-24">
+                    <div class="col-8"><label>每套成人</label></div>
+                    <div class="col-16"><%=adultNum%></div>
+                </div>
+                <div class="col-12 col-xs-24">
+                    <div class="col-8"><label>入住晚数</label></div>
+                    <div class="col-16"><%=sum%></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xs-24">
+                    <div class="col-8"><label>客房类型</label></div>
+                    <div class="col-16"><span><%=room_type_name%></span></div>
+                </div>
+                <div class="col-12 col-xs-24">
+                    <div class="col-8"><label>价格类型</label></div>
+                    <div class="col-16"><%=room_consume_name%></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-24 col-xs-24">
+                    <div class="col-4 col-xs-8"><label>客人姓名</label></div>
+                    <div class="col-20 col-xs-16"><span><%=UserOrder.guest_name%></span></div>
+                </div>
+                <div class="col-12 col-xs-24">
+                    <div class="col-8"><label>手机号码</label></div>
+                    <div class="col-16"><span><%=UserOrder.guest_tel%></span></div>
+                </div>
+                <div class="col-12 col-xs-24">
+                    <div class="col-8"><label>电子邮件</label></div>
+                    <div class="col-16"><%=UserOrder.guest_email%></div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-block included">
+            <h3>套餐包含</h3>
+            <div class="row">
+                <div class="col-8 col-xs-24">
+                    <div class="col-2 col-xs-8">
+                        <div class="hidden-xs" style="margin-left: 10px;">-</div>
+                    </div>
+                    <div class="col-22 col-xs-16">自助式早餐</div>
+                </div>
+                <div class="col-8 col-xs-24">
+                    <div class="col-2 col-xs-8">
+                        <div class="hidden-xs" style="margin-left: 10px;">-</div>
+                    </div>
+                    <div class="col-22 col-xs-16">自助式午餐</div>
+                </div>
+                <div class="col-8 col-xs-24">
+                    <div class="col-2 col-xs-8">
+                        <div class="hidden-xs" style="margin-left: 10px;">-</div>
+                    </div>
+                    <div class="col-22 col-xs-16">主厨特制西式晚餐</div>
+                </div>
+                <div class="col-8 col-xs-24">
+                    <div class="col-2 col-xs-8">
+                        <div class="hidden-xs" style="margin-left: 10px;">-</div>
+                    </div>
+                    <div class="col-22 col-xs-16">山地骑行</div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-block payment">
+            <div class="row">
+                <div class="col-4 col-xs-8"><label>支付方式</label></div>
+                <div class="col-20 col-xs-16"><span><%=UserOrder.pay%>预付担保金，余款店内支付</span></div>
+                <div class="col-4 col-xs-8"><label>预计总额</label></div>
+                <div class="col-20 col-xs-16">
+                    <strong class="money">RMB <%=s_allMoney%></strong>
+                    <p class="deposit">您本次应付预订担保金 <span class="money">RMB <%=subscription%></span> (余款到店内支付)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container row submit-button">
+        <a href="/booking/order.html">
+        <button  class="button full-button uppercase">确认并提交订单</button>
+        </a>
+    </div>
+</div>
+<!--页尾开始-->
+<div class="page-bottom">
+    <div class="help-bottom container">
+        <h3>需要帮助？</h3>
+        <div class="contact">
+            <p>请联系裸心专业预订团队:</p>
+            <h4 class="phone">
+                <a href="tel:400 9200 518">400 9200 518</a> <span>或</span>
+                <a href="tel:021 6431 8901">＋86 21 6431 8901</a><br>Email:
+                <a href="mailto:reservations@nakedretreats.cn">reservations@nakedretreats.cn</a>
+            </h4>
+        </div>
+        <div class="time">
+            <h4>工作时间</h4>
+            <p><span>周一至周五</span> <span>08:00-20:00</span></p>
+            <p><span>周六及周日</span> <span>10:00-17:00</span></p>
+        </div>
+    </div>
+    <div class="footer container">
+        <a class="back-top visible-xs" href="javascript:;">
+            <span class="top">回到顶部</span>
+            <i class="iconfont icon-up"></i>
+        </a>
+        <div class="copyright">Copyright 2011-2018 all rights reserved <a href="http://www.miitbeian.gov.cn">沪ICP备14028165号-7</a></div>
+    </div>
+</div>
+<!--页尾结束-->
+</body>
+</html>

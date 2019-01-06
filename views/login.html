@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+<div class="logon1">changqing</div>
+<!--导航-->
+<nav>
+    <ul>
+        <li class="active"><a href="home.html">首页</a></li>
+        <li><a href="../html/stables/stables.html">裸心谷</a></li>
+        <li><a href="../html/castle/castle.html">裸心堡</a></li>
+        <li><a href="../html/sail/sail.html">裸心帆</a></li>
+    </ul>
+    <!--<span><a href="login.html">登录/注册</a></span>-->
+</nav>
+<!--登录界面-->
+<div class="flip-container ">
+    <div class="flipper">
+        <!--正面的登录页面-->
+        <div class="logon" id="log">
+            <div class="guanbi"></div>
+            <div class="head"></div>
+            <form action="/login.do" class="" method="post">
+                <div class="form-group">
+                    <label for="account">
+                        <input required="required" class="form-control" name="account"id="account" type="text">
+                        <span class="form-label"> 用户名：</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input required="required" class="form-control" type="password" name="password">
+                        <span class="form-label"> 密码：</span>
+                    </label>
+                    <div class="nav-zi">
+                        <button class="c-btn c-btn--border-line" href="#"  >登录</button>
+                    </div>
+                </div>
+
+                <br>
+                <span class="account" id="zhuce">注册账号</span>
+                <span class="account1"><a href="/retrievePassword.html">找回密码</a></span>
+            </form>
+        </div>
+        <!--反面的注册页面-->
+        <div class="zhuce">
+            <form id="form">
+                <br>
+                <div class="fanhui"></div>
+                <span>手机号：</span>
+                <input type="text" id="phone">
+                <div id="zz"></div>
+
+                <span >创建密码：</span>
+                <input type="password" id="pwd" maxlength="16">
+                <div id="xianshi"></div>
+                <div class="qd1">
+                    <span class="qd">密码强度：</span>
+                    <em id="strength"></em>
+                    <div id="strengthLevel" class="strengthLv0"></div>
+                </div>
+                <div id="tjian"></div>
+                <div class="yanz" id="yanz">
+                    <input type="text" id="code" placeholder="请输入验证码">
+                    <div class="button" type="reset" id="butt">获取验证码</div>
+                </div>
+                <input id="zc" type="submit" value="注册账号">
+            </form>
+            <br>
+            <!--协议上面的线-->
+            <div class="hr"></div>
+            <span class="xieyi" >拥有帐户表示您同意本公司的 <i class="tiaojian">条件和条款</i>以及 <i class="tiaojian">隐私声明</i></span>
+        </div>
+    </div>
+</div>
+<!--右侧的导航-->
+<div id="rightfixed">
+    <ul>
+        <li><span>1</span><a href="construction/teambuilding.html">常青家族</a></li>
+        <li><span>2</span><a href="jobOpportunity/jobOpportunity.html#lxwh">常青文化</a></li>
+        <li><span>3</span><a href="jobOpportunity/jobOpportunity.html#cqgs">常青故事</a></li>
+        <li><span>4</span><a href="media.html">媒体中心</a></li>
+        <li><span>5</span><a href="user/user.html">个人中心</a></li>
+        <li><span>6</span> <a href="booking/booking.html">个人预定</a></li>
+        <li><span>7</span><a href="jobOpportunity/policy.html">政策条款</a></li>
+        <li><span>8</span><a href="jobOpportunity/privacy.html">隐私策略</a></li>
+        <li><span>9</span><a href="jobOpportunity/CommonProblems.html">常见问题</a></li>
+        <li><span>10</span><a href="about-our.html">关注我们</a></li>
+        <li><span>11</span><a href="sail/sail-contact.html">联系我们</a></li>
+        <li><span>12</span><a href="home.html#gylx">关于我们</a></li>
+    </ul>
+</div>
+
+
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/login.js"></script>
+<script>
+
+</script>
+</body>
+</html>

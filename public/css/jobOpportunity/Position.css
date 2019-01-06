@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f6;
+}
+.div{
+    border: 1px red solid;
+}
+
+.span1{
+    font-size: 14px;
+}
+.span2{
+    font-size: 16px;
+    color: #cccccc;
+    font-weight: bold;
+}
+.span3{
+    font-size: 14px;
+}
+
+.header{
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.position{
+    width: 890px;
+    height: 220px;
+    margin-left: 80px;
+    background-color: white;
+    float: left;
+    overflow: hidden;
+}
+.position1{
+    width: 300px;
+    height: 440px;
+    margin-left: 30px;
+    background-color: white;
+    float: left;
+    overflow: hidden;
+    border-top:2px #0c8cf6 solid;
+    text-align: center;
+}
+.position2{
+     width: 890px;
+     height: 1000px;
+     margin-left: 80px;
+     background-color: white;
+     overflow: hidden;
+     float: left;
+    margin-top: -190px;
+    padding: 20px;
+ }
+.shaixuan{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: block;
+}
+.cfenxiang{
+    float: right;
+    margin-right: 15px;
+    margin-top: -30px;
+    color: #cdcdcd;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+form{
+    margin-top: 20px;
+}
+.input1{
+    width: 630px;
+    height: 50px;
+    margin-left: 20px;
+    box-shadow: 1px 2px 3px 1px gainsboro;
+    border: none;
+    padding-left: 20px;
+}
+.input2{
+    width: 120px;
+    height: 50px;
+    box-shadow: 1px 2px 5px 2px gainsboro;
+    border: none;
+    /*padding-left: 20px;*/
+    background-color: #0c8cf6;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    left: -5px;
+}
+
+select{
+    width: 260px;
+    height: 40px;
+    border: 1px gainsboro solid;
+    margin-top: 30px;
+    margin-left: 50px;
+    padding-left: 20px;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: 华文细黑;
+
+}
+.select{
+    width: 260px;
+    height: 40px;
+    border: 1px gainsboro solid;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.next{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px #c7c7c7 solid;
+}
+.next:hover{
+    background-color: #eeeeee;
+}
+
+.right{
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 华文细黑;
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px gainsboro solid;
+}

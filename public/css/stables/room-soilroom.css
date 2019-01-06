@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+/*夯土小屋*/
+.soilRoom{
+    background-color: #f1f1f1;
+    padding-bottom: 30px;
+}
+.soilTitle{
+    padding: 30px;
+    text-align: center;
+}
+.soilContain{
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.area{
+    padding-bottom: 30px;
+}
+.area li{
+    line-height: 30px;
+}
+
+.bookRoomBox{
+    text-align: center;
+}
+.bookRoom:hover{
+    background-color: #5c8560;
+    cursor: pointer;
+}
+.bookRoom{
+    padding: 10px 40px;
+    background-color: #1e522e;
+    display: inline-block;
+    color: white;
+}
+
+
+/*服务与设施*/
+.serviceTitle{
+    text-align: center;
+    padding: 30px;
+}
+.service{
+    padding-bottom: 30px;
+}
+.service li{
+    line-height: 30px;
+}
+
+/*预定热线*/
+.bookPhone{
+    background-color: grey;
+    padding: 30px;
+}
+.bookPhone p{
+    color: #1e522e;
+    font-weight: bold;
+}
+.telephone{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.telephone h2{
+    color: white;
+}
